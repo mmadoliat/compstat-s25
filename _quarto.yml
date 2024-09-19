@@ -1,0 +1,84 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "MATH 4720"
+  description: "Homepage for MATH 4720 - Statistical Methods at Marquette University, Spring 2025."
+  site-url: "https://tinyurl.com/Stat-Meth"
+
+  repo-url: https://github.com/mmadoliat/statmeth-s25/
+  repo-actions: [edit, issue]
+
+  open-graph: true
+  twitter-card:
+    creator: "@mmadoliat"
+    image: "images/twitter-card.png"
+
+  sidebar:
+    background: "#FFCC00" # Arylide Yellow
+    logo: "images/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/mmadoliat/statmeth-s25/
+        text: "GitHub organization"
+      - icon: code-square
+        href: https://tinyurl.com/Stat-Meth
+        text: "TinyURL"
+      - icon: person-fill
+        href: https://d2l.mu.edu/
+        text: "D2L"
+
+    style: docked
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+          - href: course-overview.qmd
+            text: Overview
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: course-team.qmd
+            text: Teaching team
+          - href: index.qmd
+            text: Schedule
+          - href: course-links.qmd
+            text: Useful links
+      - section: "Computing"
+        contents:
+          - href: computing/computing-cheatsheets.qmd
+            text: Cheatsheets
+      - section: "HW"
+        contents:
+          - href: hw/hw-1.qmd
+            text: HW 1
+      - section: "Student work"
+        contents:
+          - href: student-work/ugly-plot.qmd
+            text: Ugly plots
+
+  page-footer:
+    right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2025, Mehdi Maadooliat"
+    background: "#FFCC00" # Arylide Yellow
+    
+format:
+  html:
+    theme:
+      light: [cosmo, style/sta313.scss]
+      dark: [cosmo, style/sta313.scss, style/dark.scss]
+    linkcolor: "#003366" # Glossy Grape
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y-dark
+    code-link: true
+
+execute:
+  freeze: auto
+
+editor: visual

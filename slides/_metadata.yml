@@ -1,0 +1,21 @@
+institute: "Marquette University <br> MATH 4720 - Spring 2025"
+author: "Dr. Mehdi Maadooliat"
+footer: "[🔗 tinyurl.com/Stat-Meth](https://tinyurl.com/Stat-Meth)"
+logo: "../logo.png"
+format:
+  revealjs:
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    highlight-style: a11y-dark
+editor: visual
+execute:
+  freeze: auto
+  echo: true
+  warning: true
+engine: knitr
+knitr:
+  opts_chunk: 
+    R.options:
+      width: 80
