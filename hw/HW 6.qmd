@@ -1,0 +1,13 @@
+---
+title: "HW 6 (MATH 4750/5750)"
+format: pdf
+editor: visual
+---
+
+## From Textbook
+
+Questions 8.1, 8.4, 8.5, 8.6, 8.7, 8.8 and 8.9 from the Textbook.
+
+-   5 out of 7 Questions (for Undergraduate students)
+
+-   6 out of 7 Questions (for Graduate students)

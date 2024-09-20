@@ -1,5 +1,5 @@
 ---
-title: "MATH 4720: Statistical Methods"
+title: "MATH 4750: Computational Statistics"
 execute: 
   freeze: false
 ---
@@ -14,7 +14,7 @@ library(googlesheets4)
 library(gt)
 library(tidyverse)
 gs4_deauth()
-d <- read_sheet("https://docs.google.com/spreadsheets/d/1_FBrQxZGL4vgLjAlAlXueWs1wp6HnYs-bu-nSkH6lQQ/edit?usp=sharing")
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1IzjWc4KqeTntLlbGvPxt5eGwb4sby9dZNwD2AHZnh8Y/edit?usp=sharing")
 ```
 
 ```{r}

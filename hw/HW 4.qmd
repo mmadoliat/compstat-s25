@@ -1,0 +1,13 @@
+---
+title: "HW 4 (MATH 4750/5750)"
+format: pdf
+editor: visual
+---
+
+## From Textbook
+
+Questions 6.1, 6.2, 6.3, 6.6, 6.7, 6.9, and 6.12 from the Textbook.
+
+-   5 out of 7 Questions (for Undergraduate students)
+
+-   6 out of 7 Questions (for Graduate students)

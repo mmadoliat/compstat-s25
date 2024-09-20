@@ -3,11 +3,11 @@ project:
 
 website:
   page-navigation: true
-  title: "MATH 4720"
-  description: "Homepage for MATH 4720 - Statistical Methods at Marquette University, Spring 2025."
-  site-url: "https://tinyurl.com/Stat-Meth"
+  title: "MATH 4750"
+  description: "Homepage for MATH 4750: Computational Statistics at Marquette University, Spring 2025."
+  site-url: "https://tinyurl.com/Comp-Stat"
 
-  repo-url: https://github.com/mmadoliat/statmeth-s25/
+  repo-url: https://github.com/mmadoliat/compstat-s25/
   repo-actions: [edit, issue]
 
   open-graph: true
@@ -22,10 +22,10 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/mmadoliat/statmeth-s25/
+        href: https://github.com/mmadoliat/compstat-s25/
         text: "GitHub organization"
       - icon: code-square
-        href: https://tinyurl.com/Stat-Meth
+        href: https://tinyurl.com/Comp-Stat
         text: "TinyURL"
       - icon: person-fill
         href: https://d2l.mu.edu/

@@ -1,0 +1,55 @@
+
+---
+title: "Computational Statistics"
+subtitle: "Chapter 12 - Probability Density Estimation"
+title-slide-attributes:
+  data-background-image: ../vizdata-bg.png
+  data-background-size: stretch
+  data-slide-number: none
+format: revealjs
+---
+
+# Probability Density Estimation
+
+## Histogram Density Estimates
+
+- Introduction to density estimation using histograms
+- Example: Histogram density estimates using Sturges' Rule
+
+```{{r}}
+set.seed(12345)
+n <- 25
+x <- rnorm(n)
+
+# Calculate breaks according to Sturges' Rule
+nclass <- ceiling(1 + log2(n))
+cwidth <- diff(range(x) / nclass)
+breaks <- min(x) + cwidth * 0:nclass
+
+# Default histogram
+h.default <- hist(x, freq = FALSE, xlab = "default", main = "Histogram: Default")
+```
+
+## Kernel Density Estimation
+
+- Introduction to kernel density estimation (KDE)
+- Example: Applying KDE to data
+
+```{{r}}
+# Kernel density estimate
+dens <- density(x)
+plot(dens, main = "Kernel Density Estimate", col = "blue", lwd = 2)
+```
+
+## Visualizing Kernel Density
+
+```{{r}}
+# Overlay histogram and KDE
+hist(x, freq = FALSE, col = "lightgray", border = "white", main = "Histogram with KDE")
+lines(dens, col = "red", lwd = 2)
+```
+
+## Conclusion
+
+- Recap of histogram density estimation and kernel density estimation
+- Practice: Apply density estimation techniques to other datasets

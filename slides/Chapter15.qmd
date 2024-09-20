@@ -1,0 +1,63 @@
+
+---
+title: "Computational Statistics"
+subtitle: "Chapter 15 - Programming Topics"
+title-slide-attributes:
+  data-background-image: ../vizdata-bg.png
+  data-background-size: stretch
+  data-slide-number: none
+format: revealjs
+---
+
+# Programming Topics in R
+
+## Benchmarking Methods
+
+- Overview of benchmarking in R
+- Example: Benchmarking methods to generate a sequence
+
+```{{r}}
+s1 <- 1:10
+s2 <- seq(1, 10, 1)
+s3 <- seq.int(1, 10, 1)
+
+# Benchmarking
+library(microbenchmark)
+library(ggplot2)
+
+n <- 1000
+mb <- microbenchmark(
+  seq(1, n, 1),
+  1:n,
+  times = 100
+)
+mb
+autoplot(mb)
+```
+
+## Profiling Code for Performance
+
+- Introduction to profiling in R
+- Example: Profiling a function using `profvis`
+
+```{{r}}
+# Install profvis for profiling
+library(profvis)
+
+# Example: Profile a sorting function
+profvis({
+  x <- rnorm(1e4)
+  y <- sort(x)
+})
+```
+
+## Visualizing Profiling Results
+
+```{{r}}
+# profvis visual interface will show the profiling output
+```
+
+## Conclusion
+
+- Recap of benchmarking and profiling in R
+- Practice: Apply these techniques to optimize code in R

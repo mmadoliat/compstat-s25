@@ -1,0 +1,110 @@
+
+---
+title: "Computational Statistics"
+subtitle: "Chapter 2 - Probability and Statistics Review"
+title-slide-attributes:
+  data-background-image: ../vizdata-bg.png
+  data-background-size: stretch
+  data-slide-number: none
+format: revealjs
+---
+
+# Lecture 1: Probability Concepts (Part 1)
+
+## Random Variables and Distributions
+
+- Overview of random variables
+- Discrete vs Continuous random variables
+- Important distributions (Binomial, Normal, Chi-Square)
+
+```{{r}}
+# Simulating random variables
+N <- 100; mu <- 5; sig <- 2
+Y <- rnorm(N, mean = mu, sd = sig)
+hist(Y, main="Histogram of Normal Distribution", xlab="Y values", col="lightblue")
+```
+
+## Example: Central Limit Theorem
+
+- Discuss the CLT and its importance in statistics
+- Simulating the CLT with normal distributions
+
+```{{r}}
+# Central Limit Theorem simulation
+means <- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))
+hist(means, main="Central Limit Theorem", col="lightgreen", border="black")
+```
+
+# Lecture 2: Discrete and Continuous Distributions (Part 2)
+
+## Common Distributions in Statistical Computing
+
+- Binomial Distribution
+- Poisson Distribution
+- Normal Distribution and its properties
+
+```{{r}}
+# Simulating binomial and Poisson distributions
+x_binom <- rbinom(100, size = 10, prob = 0.5)
+x_pois <- rpois(100, lambda = 3)
+
+par(mfrow=c(1, 2))  # Two plots side by side
+hist(x_binom, main="Binomial Distribution", col="orange")
+hist(x_pois, main="Poisson Distribution", col="lightcoral")
+```
+
+## Joint and Conditional Distributions
+
+- Joint distributions and their importance
+- Conditional distributions with examples
+
+```{{r}}
+# Simulating joint distributions
+mu <- c(5, 10); sigma <- matrix(c(1, 0.5, 0.5, 2), 2, 2)
+library(MASS)
+X <- mvrnorm(1000, mu = mu, Sigma = sigma)
+
+plot(X[,1], X[,2], main="Scatter plot of Joint Distribution", xlab="X1", ylab="X2", col="blue")
+```
+
+# Lecture 3: Statistics Review (Part 3)
+
+## Estimators and Their Properties
+
+- Discuss point estimators: Mean, Variance, etc.
+- Review bias, consistency, and efficiency
+
+```{{r}}
+# Example of calculating mean and variance from samples
+set.seed(123)
+sample_data <- rnorm(100, mean = 5, sd = 2)
+mean(sample_data)
+var(sample_data)
+```
+
+## Hypothesis Testing
+
+- Hypothesis testing steps
+- Type I and II errors, significance level, and power
+
+```{{r}}
+# Example of hypothesis testing
+t_test_result <- t.test(rnorm(100, mean = 5, sd = 2), mu=5)
+t_test_result
+```
+
+## Confidence Intervals
+
+- Constructing confidence intervals for population mean
+- Example with real data
+
+```{{r}}
+# Example: Confidence interval for normal data
+conf_interval <- t.test(rnorm(100, mean = 5, sd = 2))$conf.int
+conf_interval
+```
+
+# Conclusion
+
+- Recap of probability concepts, distributions, and hypothesis testing
+- Review key formulas and concepts for exam preparation

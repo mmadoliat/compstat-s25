@@ -1,0 +1,13 @@
+---
+title: "HW 3 (MATH 4750/5750)"
+format: pdf
+editor: visual
+---
+
+## From Textbook
+
+Questions 5.1, 5.2, 5.3, 5.4, 5.5, 5.6 from the Textbook.
+
+-   5 out of 6 Questions (for Undergraduate students)
+
+-   All Questions (for Graduate students)

@@ -1,0 +1,13 @@
+---
+title: "HW 7 (MATH 4750/5750)"
+format: pdf
+editor: visual
+---
+
+## From Textbook
+
+Questions 8.2, 8.10, 8.11, 9.1, 9.4 from the Textbook, and "Course Evaluation".
+
+-   4 out of 6 Questions (for Undergraduate students)
+
+-   5 out of 6 Questions (for Graduate students)
