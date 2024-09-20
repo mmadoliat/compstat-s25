@@ -1,0 +1,295 @@
+[
+  {
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio containers\n🔗 on Duke Container Manager\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Canvas\n\n\nTexbooks\n🔗 ggplot2: Elegant Graphics for Data Analysis\n🔗 Fundamentals of Data Visualization\n🔗 Data Visualization: A Practical Introduction\n🔗 R for Data Science\n\n\nPackage documentation\n🔗 ggplot2: ggplot2.tidyverse.org\n🔗 dplyr: dplyr.tidyverse.org\n🔗 tidyr: tidyr.tidyverse.org\n🔗 forcats: forcats.tidyverse.org\n🔗 stringr: stringr.tidyverse.org\n🔗 lubridate: lubridate.tidyverse.org\n🔗 readr: readr.tidyverse.org",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Mine Çetinkaya-Rundel (she/her) is Professor of the Practice and Director of Undergraduate Studies at the Department of Statistical Science at Duke University and an affiliated faculty in the Computational Media, Arts, and Cultures. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.\n\n\n\nOffice hours\nLocation\n\n\n\n\nTuesdays 2:30 - 3:30 pm\nOld Chem 213 (or Zoom upon request)",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Mine Çetinkaya-Rundel (she/her) is Professor of the Practice and Director of Undergraduate Studies at the Department of Statistical Science at Duke University and an affiliated faculty in the Computational Media, Arts, and Cultures. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.\n\n\n\nOffice hours\nLocation\n\n\n\n\nTuesdays 2:30 - 3:30 pm\nOld Chem 213 (or Zoom upon request)",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#teaching-assistants",
+    "href": "course-team.html#teaching-assistants",
+    "title": "Teaching team",
+    "section": "Teaching assistants",
+    "text": "Teaching assistants\n\n\n\n\nName\nRole\nLab section\nOffice hours\n\n\n\n\n\nHolly Cui\nLab TA\nSection 1 - W 1:25PM - 2:40PM\nTuesdays 11:30 am-12:30 pm in Old Chem 203B\nThursdays 11:30 am-12:30 pm in Old Chem 203B\n\n\n\nEli Gnesin\nHead + Lab TA\nSection 2 - W 3:05PM - 4:20PM\nMonday 10:30-11:30 am in Old Chem 203B\nTuesdays 8:15-9:45 am in Old Chem 203B\n\n\n\nKelsey Brod\nProject lead + Lecture TA\n\nMondays 3-5 pm on Zoom\n\n\n\nShelby Tisdale\nProject support + Lecture TA\n\nSundays 7-8 pm on Zoom\nMondays 9-10 am in Old Chem 025\n\n\n\nGlenn Palmer\n\n\nFridays 2-3 pm in Old Chem 203B",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "student-work/ugly-plot.html",
+    "href": "student-work/ugly-plot.html",
+    "title": "Ugly plots",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Student work",
+      "Ugly plots"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html",
+    "href": "course-syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "STA 313 - Advanced Data Visualization is all about the art and science of visualizing data. Three themes (what, why, and how) will run alongside each other as we cycle through the course topics. In “what” we focus on specific types of visualizations for a particular purpose (e.g. maps for spatial data, Sankey diagrams for proportions, etc.) as well as the tooling to produce them (e.g. specific R packages). In “how” we focus on the process – each visualization starts with a design (which we’ll often ask you to do with a rough sketch accompanied by pseudo code), then often needs pre-processing of the data (wrangling, reshaping, joining, etc. to get it into a tidy, rectangular format for visualization), then attributes of the data are mapped to plot aesthetics, then the creator of the visualization needs to make a series of strategic decisions about visual encoding (e.g. accessibility concerns), and finally creating effective visualizations requires post-processing for visual appeal as well as annotation. In “why” we discuss the theory that ties the “how” and the “what” together, often focusing on the grammar of graphics. Like any data analysis, data visualization is also an iterative process. We don’t expect you to land on the perfect visualization on the first try, so we promote the iterative process via critical and constructive review of one’s own and each others’ work. Independent modules will also touch on topics such as using statistical graphics for visual inference, creating data-based art, and a review of the literature on non-visual approaches to representing data.\nThe course will focus on the use of the R statistical programming language and introduce you to a variety of modern data visualization packages in R. In addition, you will continue to use hone their data science workflow skills that they acquired in pre-requisite courses by working with Git and GitHub for version control and collaboration.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-description",
+    "href": "course-syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "",
+    "text": "STA 313 - Advanced Data Visualization is all about the art and science of visualizing data. Three themes (what, why, and how) will run alongside each other as we cycle through the course topics. In “what” we focus on specific types of visualizations for a particular purpose (e.g. maps for spatial data, Sankey diagrams for proportions, etc.) as well as the tooling to produce them (e.g. specific R packages). In “how” we focus on the process – each visualization starts with a design (which we’ll often ask you to do with a rough sketch accompanied by pseudo code), then often needs pre-processing of the data (wrangling, reshaping, joining, etc. to get it into a tidy, rectangular format for visualization), then attributes of the data are mapped to plot aesthetics, then the creator of the visualization needs to make a series of strategic decisions about visual encoding (e.g. accessibility concerns), and finally creating effective visualizations requires post-processing for visual appeal as well as annotation. In “why” we discuss the theory that ties the “how” and the “what” together, often focusing on the grammar of graphics. Like any data analysis, data visualization is also an iterative process. We don’t expect you to land on the perfect visualization on the first try, so we promote the iterative process via critical and constructive review of one’s own and each others’ work. Independent modules will also touch on topics such as using statistical graphics for visual inference, creating data-based art, and a review of the literature on non-visual approaches to representing data.\nThe course will focus on the use of the R statistical programming language and introduce you to a variety of modern data visualization packages in R. In addition, you will continue to use hone their data science workflow skills that they acquired in pre-requisite courses by working with Git and GitHub for version control and collaboration.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#prerequisites",
+    "href": "course-syllabus.html#prerequisites",
+    "title": "Syllabus",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nThis course assumes that this is not your first interaction with working with data in R, using RStudio, and along with version control with Git, and collaboration on GitHub. Any of the following courses meet the prerequisite for the course: STA 198, STA 199, or STA 210. The course will start with a quick review of the relevant technologies.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#learning-goals",
+    "href": "course-syllabus.html#learning-goals",
+    "title": "Syllabus",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nUnderstand the principles of designing and creating effective data visualizations.\nEvaluate, critique, and improve upon one’s own and others’ data visualizations based on how good a job the visualization does for communicating a message clearly and correctly.\nPost-process and refine plots for effective communication.\nUse visualizations for evaluating statistical models and for statistical inference.\nMaster using R and a variety of modern data visualization packages to create data visualizations.\nWork reproducibly individually and collaboratively using Git and GitHub.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#textbooks",
+    "href": "course-syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks\nReadings for the course will come from the following textbooks. All of them are freely available online and you do not need to purchase a physical copy of either book to succeed in this class.\n\n[ggplot2-book] Hadley Wickham, Danielle Navarro, and Thomas Lin Pedersen. ggplot2: Elegant Graphics for Data Analysis. (in progress) 3rd edition. Springer, 2023.\n[socviz] Kieran Healy. Data Visualization: A Practical Introduction. Princeton University Press, 2018.\n[fdv] Claus O. Wilke. Fundamentals of Data Visualization. O’Reilly Media, 2019.\n[r4ds] Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. (in progress) 2nd edition. O’Reilly, 2022.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-community",
+    "href": "course-syllabus.html#course-community",
+    "title": "Syllabus",
+    "section": "Course community",
+    "text": "Course community\n\nDuke Community Standard\nAll students must adhere to the Duke Community Standard (DCS): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity.\nTo uphold the Duke Community Standard, students agree:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised.\n\n\n\n\n\nInclusive community\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with Duke’s Commitment to Diversity and Inclusion. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.\nFurthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:\n\nIf you have a name that differs from those that appear in your official Duke records, please let me know! You’ll be able to note this in the Getting to know you survey.\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.\n\n\n\nPronouns\nPronouns are meaningful tools to communicate identities and experiences, and using pronouns supports a campus environment where all community members can thrive. Please update your gender pronouns in Duke Hub. You can learn more at the Center for Sexual and Gender Diversity’s website.\n\n\nAccessibility\nIf there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website: vizdata.org.\nI will regularly send course announcements via email and Sakai, make sure to check one or the other of these regularly. If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day. If an announcement is sent on a Friday or over the weekend, I will assume that you have read it by Monday.\n\n\nWhere to get help\n\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!\nOutside of class and office hours, any general questions about course content or assignments should be posted on the course Slack. There is a chance another student has already asked a similar question, so please check the other posts on Slack before adding a new question. If you know the answer to a question posted on Slack, I encourage you to respond!\n\nCheck out the Support page for more resources.\nI want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don’t hesitate to ask.\n\nYou never owe me personal information about your health (mental or physical) but you’re always welcome to talk to me. If I can’t help, I likely know someone who can.\nI want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded during this crisis.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#lectures-and-lab",
+    "href": "course-syllabus.html#lectures-and-lab",
+    "title": "Syllabus",
+    "section": "Lectures and lab",
+    "text": "Lectures and lab\nThe goal of both the lectures and the labs is for them to be as interactive as possible. My role as instructor is to introduce you new tools and techniques, but it is up to you to take them and make use of them. A lot of what you do in this course will involve writing code, and coding is a skill that is best learned by doing. Therefore, as much as possible, you will be working on a variety of tasks and activities throughout each lecture and lab. Attendance will not be taken during class but you are expected to attend all lecture and lab sessions and meaningfully contribute to in-class exercises and discussion.\nYou are expected to bring a laptop to each class so that you can take part in the in-class exercises. Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone. See [Technology accommodations] if you need a loaner laptop.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#assessment",
+    "href": "course-syllabus.html#assessment",
+    "title": "Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\nAssessment for the course is comprised of four components: attendance and participation, reading quizzes, homework assignments, and projects.\n\nAttendance and participation is required throughout the semester. Students who attend at least 80% of the lectures and participate regularly during lecture will receive full credit for this portion of their grade. Participation in labs as well as on Slack will also count towards this component.\nReading quizzes, due every other week (roughly), completed individually. Lowest quiz score is dropped.\nReading quizzes will be linked from the course schedule. They always cover reading that is due since the previous quiz and up to and including the deadline for the given quiz. They’re due by 10 am ET (beginning of class) on the indicated day on the course schedule.\nHomework assignments, due every other week (roughly), completed individually. Lowest homework assignment score is dropped.\nHomework assignments are due by 5 pm ET on the indicated day on the course schedule.\nProjects (2), mid-semester and end of semester, completed in teams.\n\nProject 1: Teams will be given a dataset (or a set of datasets to choose from) to visualize. Project 1 is worth 15% of the course grade.\nProject 2: Teams will choose the focus of their own project. One requirement is that you need to do something new. Project 2 is worth 25% of the course grade.\n\nThe deliverables for each project will include a data visualization, a write up of the process and findings, and a presentation. For the second project, you will be encouraged to think beyond a traditional two-dimensional data visualization (e.g. interactive web apps/dashboards, data art, generative art, physical/tangible visualizations, ggplot2 extensions, etc.).\nEach project will have a peer review component to provide at least one round of feedback during the process of development. Teams will provide periodic peer feedback to their teammates while working on the projects as well as upon completion. The scores from the peer evaluations, along with individual contributions tracked by commits on GitHub, will be used to ensure that each student has contributed to the teamwork.\nAll team members must take part in the presentation. Presentations can be given in person in class, or via Zoom if the team prefers. My preference is that the team stick to one method of delivery (all presenters in person or all presenters on Zoom), but I realize a lot can change throughout this semester, and we’ll adjust accordingly.\n\nAll work is expected to be submitted by the deadline and there are no make ups for any missed assessments. See the late work policy for more details.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#grading",
+    "href": "course-syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\nCategory\nPercentage\n\n\n\n\nAttendance and participation\n5%\n\n\nReading quizzes\n10%\n\n\nHomework assignments\n45%\n\n\nProject 1\n15%\n\n\nProject 2\n25%\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA\n&gt;= 93\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60\n\n\n\nThese are upper bounds for grade cutoffs, depending on the class performance the cutoffs may be lowered but they won’t be increased.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#teams",
+    "href": "course-syllabus.html#teams",
+    "title": "Syllabus",
+    "section": "Teams",
+    "text": "Teams\nYou will be assigned to a different team for each of your two projects. You are encouraged to sit with your teammates in lecture and you will also work with them in the lab sessions. All team members are expected to contribute equally to the completion of each project and you will be asked to evaluate your team members after each assignment is due. Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team’s overall mark.\nYou are expected to make use of the provided GitHub repository as their central collaborative platform. Commits to this repository will be used as a metric (one of several) of each team member’s relative contribution for each project.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-policies",
+    "href": "course-syllabus.html#course-policies",
+    "title": "Syllabus",
+    "section": "Course policies",
+    "text": "Course policies\n\nAcademic honesty\nTL;DR: Don’t cheat!\nPlease abide by the following as you work on assignments in this course:\n\nCollaboration: Only work that is clearly assigned as team work should be completed collaboratively.\n\nThe homework assignments must also be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what’s the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to lab questions (including any code) with anyone other than myself and the teaching assistants.\nThe reading quizzes must be completed individually with absolutely no communication with classmates.\nFor the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project across teams.\nOn individual assignments you may not directly share code with another student in this class, and on team assignments you may not directly share code with another team in this class.\n\nOnline resources: I am well aware that a huge volume of code is available on the web to solve any number of problems. Unless I explicitly tell you not to use something, the course’s policy is that you may make use of any online resources (e.g., StackOverflow) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\nUse of generative artificial intelligence (AI): You should treat generative AI, such as ChatGPT, the same as other online resources. There are two guiding principles that govern how you can use AI in this course:1 (1) Cognitive dimension: Working with AI should not reduce your ability to think clearly. We will practice using AI to facilitate—rather than hinder—learning. (2) Ethical dimension: Students using AI should be transparent about their use and make sure it aligns with academic integrity.\n\n✅ AI tools for code: You may make use of the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines for citing AI-generated content.\n❌ AI tools for narrative: Unless instructed otherwise, you may not use generative AI to write narrative on assignments. In general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you.\n\nYou are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.\n\nIf you are unsure if the use of a particular resource complies with the academic honesty policy, please ask a member of the teaching team.\nRegardless of course delivery format, it is the responsibility of all students to understand and follow all Duke policies, including academic integrity (e.g., completing one’s own work, following proper citation of sources, adhering to guidance around group work projects, and more). Ignoring these requirements is a violation of the Duke Community Standard. Any questions and/or concerns regarding academic integrity can be directed to the Office of Student Conduct and Community Standards at conduct@duke.edu.\nAny violations in academic honesty standards as outlined in the Duke Community Standard and those specific to this course will\n\nautomatically result in a 0 for the assignment,\ncan further impact your overall course grade, and\nwill be reported to the Office of Student Conduct for further action.\n\n\n\nLate work & extensions\nThe due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline.\nPolicy on late work depends on the particular course component:\n\nReading quizzes: Late quizzes are not accepted and there are no make ups for missed quizzes.\nHomework assignments: GitHub repositories will be closed to contributions at the deadline. If you need to submit your work late, send a DM on Slack to the Head TA to reopen your repository.\n\nLate, within 24 hours of deadline: -10% of available points\nLate, within 24-48 hours of deadline: -20% of available points\nMore than 48 hours later: No credit, and we will not provide written feedback\n\nProjects: The following three components contribute to your project score.\n\nPresentation: Late presentations are not accepted and there are no make ups for missed presentations.\nWrite up: GitHub repositories will be closed to contributions at the deadline. If you need to submit your work late, Slack/email me to reopen your repository.\n\nLate, within 24 hours of deadline: -10% of available points\nLate, within 24-48 hours of deadline: -20% of available points\nMore than 48 hours later: No credit, and we will not provide written feedback\n\nPeer evaluation: Late peer evaluations are not accepted and there are no make ups for missed presentations. If you do not turn in your peer evaluation, you get 0 points for your own peer score as well, regardless of how your teammates have evaluated you.\n\n\n\n\nWaiver for extenuating circumstances\nIf there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, you may email or DM the Head TA before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used for once in the semester, so only use it for a truly extenuating circumstance.\nIf there are circumstances that are having a longer-term impact on your academic performance, please let your academic dean know, as they can be a resource. Please let me know if you need help contacting your academic dean.\n\n\nRegrade requests\nRegrade requests must be made within one week of when the assignment is returned, and must be typed up and submitted via email to the course Head TA. These will be considered if points were tallied incorrectly or if you feel your answer is correct but it was marked wrong. No regrade will be made to alter the number of points deducted for a mistake. There will be no grade changes after the second project presentations. Note that during the regrade process your score could go up or go down or not change.\nNo grades will be changed after the project presentations.\n\n\nAttendance policy\nResponsibility for class attendance rests with individual students. Since regular and punctual class attendance is expected, students must accept the consequences of failure to attend. More details on Trinity attendance policies are available here.\nHowever, there may be many reasons why you cannot be in class on a given day, particularly with possible extra personal and academic stress and health concerns this semester. All course lectures will be recorded and available to enrolled students after class. If you miss a lecture, make sure to to review the lecture material before the next class session. Lab time is dedicated to working on your homework assignments and collaborating with your teammates on your project. If you miss a lab session, make sure to communicate with your team about how you can make up your contribution. Given the technologies we use in the course, this is straightforward to do asynchronously. If you know you’re going to miss a lab session and you’re feeling well enough to do so, notify your teammates ahead of time. Overall these policies are put in place to ensure communication between team members, respect for each others’ time, and also to give you a safety net in the case of illness or other reasons that keep you away from attending class.\nNote that attendance and participation is part of your grade as well.\n\n\nAttendance policy related to COVID symptoms, exposure, or infection\nStudent health, safety, and well-being are the university’s top priorities. To help ensure your well-being and the well-being of those around you, please do not come to class if you have symptoms related to COVID-19, have had a known exposure to COVID-19, or have tested positive for COVID-19. If any of these situations apply to you, you must follow university guidance related to the ongoing COVID-19 pandemic and current health and safety protocols. If you are experiencing any COVID-19 symptoms, contact student health at 919-681-9355. To keep the university community as safe and healthy as possible, you will be expected to follow these guidelines. Please reach out to me and your academic dean as soon as possible if you need to quarantine or isolate so that we can discuss arrangements for your continued participation in class.\n\n\nInclement weather policy\nIn the event of inclement weather or other connectivity-related events that prohibit class attendance, I will notify you how we will make up missed course content and work. This might entail holding the class on Zoom synchronously or watching a recording of the class.\n\n\nPolicy on video recording course content\nIf you feel that you need record the lectures yourself, you must get permission from me ahead of time and these recordings should be used for personal study only, no for distribution. The full policy on recording of lectures falls under the Duke University Policy on Intellectual Property Rights, available at provost.duke.edu/sites/default/files/FHB_App_P.pdf. Unauthorized distribution is a cause for disciplinary action by the Judicial Board.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#accommodations",
+    "href": "course-syllabus.html#accommodations",
+    "title": "Syllabus",
+    "section": "Accommodations",
+    "text": "Accommodations\n\nAcademic accommodations\nIf you are a student with a disability and need accommodations for this class, it is your responsibility to register with the Student Disability Access Office (SDAO) and provide them with documentation of your disability. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: sdao@duke.edu or access.duke.edu.\n\n\nReligious accommodations\nStudents are permitted by university policy to be absent from class to observe a religious holiday. Accordingly, Trinity College of Arts & Sciences and the Pratt School of Engineering have established procedures to be followed by students for notifying their instructors of an absence necessitated by the observance of a religious holiday. Please submit requests for religious accommodations at the beginning of the semester so that we can work to make suitable arrangements well ahead of time. You can find the policy and relevant notification form here: https://trinity.duke.edu/undergraduate/academic-policies/religious-holidays.\nNote: If you’ve read this far in the syllabus, post a picture of your pet and their name if you have one or your favorite meme to the #random channel on Slack!",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#important-dates",
+    "href": "course-syllabus.html#important-dates",
+    "title": "Syllabus",
+    "section": "Important dates",
+    "text": "Important dates\n\nWednesday, January 10: Classes begin, Monday schedule (no class for us)\nWednesday, January 24: Drop/add ends\nWednesday, February 28: Project 1 presentations\nFriday, February 23: Mid-semester grades reported\nSaturday - Sunday, March 9 - 17: Spring Break\nWednesday, March 27: Last day to withdraw with W\nWednesday, April 24: Classes end\nThursday - Sunday, April 25 – 28: Reading period\nWednesday, May 1, 9 am - 12 pm: Project 2 presentations\n\nFor more important dates, see the full Duke Academic Calendar.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "computing/computing-cheatsheets.html",
+    "href": "computing/computing-cheatsheets.html",
+    "title": "R cheatsheets",
+    "section": "",
+    "text": "The following cheatsheets come from https://posit.co/resources/cheatsheets. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.",
+    "crumbs": [
+      "Computing",
+      "Cheatsheets"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MATH 4720: Statistical Methods",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n\n1\nTue, Jan 14\n\n\nWhat is Statistics?\nChapt 1-2  PDF\n\n\n\n\n\n\nThu, Jan 16\n\n\nBasics of Statistics\nChapt 3\n\n\n\n\n\n\nFri, Jan 17\n\n\n\n\n\n\n📝 [HW 0] at 11:50 pm\n\n\n2\nTue, Jan 21\n\n\nBasics of Statistics cont.\nChapt 3 cont.\n\n\n\n\n\n\nThu, Jan 23\n\n\nProbability Basics\nChapt 4A\n\n\n\n\n\n\nFri, Jan 24\n\n\n\n\n\n\n📝 [HW 1] at 11:50 pm\n\n\n3\nTue, Jan 28\n\n\nConditional Probability & Bayes Theorem\nChatp 4A cont.\n\n\n\n\n\n\nThu, Jan 30\n\n\nDiscrete Random Variables (Binomial, Poisson)\nChapt 4A cont.\n\n\n\n\n\n\nFri, Jan 31\n\n\n\n\n\n\n📝 [HW 2] at 11:50 pm\n\n\n4\nTue, Feb 4\n\n\nContinous Random Variable (Normal)\nChapt 4B\n\n\n\n\n\n\nThu, Feb 6\n\n\nSampling distribution (CLT)  Confidence Interval\nChapt 4B cont.  Chapt 5A\n\n\n\n\n\n\nFri, Feb 7\n\n\n\n\n\n\n📝 [HW 3] at 11:50 pm\n\n\n5\nTue, Feb 11\n\n\nReview for Exam\n\n\n\n\n\n\n\n\nThu, Feb 13\n\n\n\n\n📑 Exam 1\n\n\n\n\n6\nTue, Feb 18\n\n\nReturn Exam and Start Hypothesis Testing\n\n\n\n\n\n\n\n\nThu, Feb 20\n\n\nHypothesis Testing\nChapt 5B\n\n\n\n\n\n\nFri, Feb 21\n\n\n\n\n\n\n📝 [HW 4] at 11:50 pm\n\n\n7\nTue, Feb 25\n\n\np-value? Test for mean with unknown σ\nChapt 5C\n\n\n\n\n\n\nThu, Feb 27\n\n\nTest for mean, two independent population\nChapt 6A\n\n\n\n\n\n\nFri, Feb 28\n\n\n\n\n\n\n📝 [HW 5] at 11:50 pm\n\n\n8\nWed, Mar 5\n\n\nTest for mean, two dependent population  Power Analysis\nChapt 6B\n\n\n\n\n\n\nFri, Mar 7\n\n\nNonparametric Tests\nChapt 6C\n\n\n\n\n\n\nSat, Mar 8\n\n\n\n\n\n\n📝 [HW 6] at 11:50 pm\n\n\n\n\nWed, Mar 12\n\n\n🌴 Spring Break\n\n\n\n\n\n\n\n\nFri, Mar 14\n\n\n🌴 Spring Break\n\n\n\n\n\n\n9\nWed, Mar 19\n\n\nTest for Variance\nChatp 7\n\n\n\n\n\n\nFri, Mar 21\n\n\nANOVA\nChapt 8A\n\n\n\n\n\n\nSat, Mar 22\n\n\n\n\n\n\n📝 [HW 7] at 11:50 pm\n\n\n10\nWed, Mar 26\n\n\nReview for Exam\n\n\n\n\n\n\n\n\nFri, Mar 28\n\n\n\n\n📑 Exam 2\n\n\n\n\n11\nWed, Apr 2\n\n\nReturn Exam and start ANOVA\n\n\n\n\n\n\n\n\nFri, Apr 4\n\n\nANOVA cont.\nChapt 8B\n📝 [HW 8] at 11:50 pm\n\n\n\n\nSat, Apr 5\n\n\n\n\n\n\n\n\n\n\n12\nWed, Apr 9\n\n\nMultiple Testing\nChapt 9\n\n\n\n\n\n\nFri, Apr 11\n\n\nTest for Proportion\nChapt 10A\n\n\n\n\n\n\nSat, Apr 12\n\n\n\n\n\n\n📝 [HW 9] at 11:50 pm\n\n\n13\nWed, Apr 16\n\n\nGoodness of Fit Test\nChapt 10B\n\n\n\n\n\n\nFri, Apr 18\n\n\n🌴 Easter Break\n\n\n\n\n\n\n14\nWed, Apr 23\n\n\nRegression Analysis\nChapt 11\n\n\n\n\n\n\nThu, Apr 24\n\n\nRegression Analysis cont.\nChapt 11 cont.\n\n\n\n\n\n\nFri, Apr 25\n\n\n\n\n\n\n📝 [HW 10] at 11:50 pm\n\n\n15\nWed, Apr 30\n\n\nReview for Final\n\n\n\n\n\n\n\n\nThu, May 1\n\n\nReview for Final cont.\n\n\n📝 [HW 11] at 11:50 pm\n\n\n16\nWed, May 1\n📚📃✅ 📑 📝🎤❌🌴🎥",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "hw/hw-1.html",
+    "href": "hw/hw-1.html",
+    "title": "HW 1",
+    "section": "",
+    "text": "For any exercise where you’re writing code, insert a code chunk and make sure to label the chunk. Use a short and informative label. For any exercise where you’re creating a plot, make sure to label all axes, legends, etc. and give it an informative title. For any exercise where you’re including a description and/or interpretation, use full sentences. Make a commit at least after finishing each exercise, or better yet, more frequently. Push your work regularly to GitHub. Once you’re done, inspect your GitHub repo to make sure you’ve pushed all of your changes.",
+    "crumbs": [
+      "HW",
+      "HW 1"
+    ]
+  },
+  {
+    "objectID": "hw/hw-1.html#question-1",
+    "href": "hw/hw-1.html#question-1",
+    "title": "HW 1",
+    "section": "Question 1",
+    "text": "Question 1\nNYC marathon winners.\nThe New York City Marathon is an annual marathon (26.2 miles / 42.195 kilometers) that courses through the five boroughs of New York City. Marathon times of runners in the Men and Women divisions of the New York City Marathon between 1970 and 2020 can be found in the nyc_marathon dataset in the openintro package (which is already installed for you). You can find out more about the dataset by inspecting its documentation with ?nyc_marathon and you can also find this information here.\na. Create a histogram and a box plot of the distribution of marathon times of all runners in the dataset. What features of the distribution are apparent in the histogram and not the box plot? What features are apparent in the box plot but not in the histogram?\nb. Create a side-by-side box plots of marathon times for men and women. Use different colors for the each of the box plots – do not use the default colors, but instead manually define them (you can choose any two colors you want). Based on the plots you made, compare the distribution of marathon times for men and women.\nc. What information in the above plot is redundant? Redo the plot avoiding this redundancy. How does this update change the data-to-ink ratio?\nd. Visualize the marathon times of men and women over the years. As is usual with time series plot, year should go on the x-axis. Use different colors and shapes to represent the times for men and women. Make sure your colors match those in the previous part. Once you have your plot, describe what is visible in this plot but not in the others.",
+    "crumbs": [
+      "HW",
+      "HW 1"
+    ]
+  },
+  {
+    "objectID": "hw/hw-1.html#question-2",
+    "href": "hw/hw-1.html#question-2",
+    "title": "HW 1",
+    "section": "Question 2",
+    "text": "Question 2\nUS counties.\nThe following questions use the county dataset in the openintro package. You can find out more about the dataset by inspecting its documentation with ?county and you can also find this information here.\na. What does the following code do? Does it work? Does it make sense? Why/why not?\n\nggplot(county) +\n  geom_point(aes(x = median_edu, y = median_hh_income)) +\n  geom_boxplot(aes(x = smoking_ban, y = pop2017))\n\nb. Which of the following two plots makes it easier to compare poverty levels (poverty) across people from different median education levels (median_edu)? What does this say about when to place a faceting variable across rows or columns?\n\nggplot(county |&gt; filter(!is.na(median_edu))) + \n  geom_point(aes(x = homeownership, y = poverty)) + \n  facet_grid(median_edu ~ .)\n\n\n\n\n\n\n\n\n\nggplot(county |&gt; filter(!is.na(median_edu))) + \n  geom_point(aes(x = homeownership, y = poverty)) + \n  facet_grid(. ~ median_edu)\n\n\n\n\n\n\n\n\nc. Recreate the R code necessary to generate the following graphs. Note that wherever a categorical variable is used in the plot, it’s metro.",
+    "crumbs": [
+      "HW",
+      "HW 1"
+    ]
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "Course overview",
+    "section": "",
+    "text": "This is the homepage for STA 313 - Advanced Data Visualization taught by Dr. Mine Çetinkaya-Rundel in Spring 2024 at Duke University. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#class-meetings",
+    "href": "course-overview.html#class-meetings",
+    "title": "Course overview",
+    "section": "Class meetings",
+    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nLSRC D106\nTue & Thur 10:05 - 11:20 pm\n\n\nLab 1\nLink Classroom 5\nWed 1:25 - 2:40 pm\n\n\nLab 2\nLink Classroom 5\nWed 3:05 - 4:20 pm",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#license",
+    "href": "course-overview.html#license",
+    "title": "Course overview",
+    "section": "License",
+    "text": "License\n\nThis online work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International. Visit here for more information about the license.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
