@@ -4,7 +4,7 @@
     "href": "course-links.html",
     "title": "Useful links",
     "section": "",
-    "text": "RStudio containers\n🔗 on Duke Container Manager\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Canvas\n\n\nTexbooks\n🔗 ggplot2: Elegant Graphics for Data Analysis\n🔗 Fundamentals of Data Visualization\n🔗 Data Visualization: A Practical Introduction\n🔗 R for Data Science\n\n\nPackage documentation\n🔗 ggplot2: ggplot2.tidyverse.org\n🔗 dplyr: dplyr.tidyverse.org\n🔗 tidyr: tidyr.tidyverse.org\n🔗 forcats: forcats.tidyverse.org\n🔗 stringr: stringr.tidyverse.org\n🔗 lubridate: lubridate.tidyverse.org\n🔗 readr: readr.tidyverse.org",
+    "text": "Homework\n🔗 on D2L\n\n\nTexbooks\n🔗 Computational Statistics in Python\n🔗 R Package\n🔗 Advanced R by Hadley Wickham\n🔗 Quarto\n🔗 R Markdown\n🔗 ggplot2: Elegant Graphics for Data Analysis\n🔗 Fundamentals of Data Visualization\n🔗 Data Visualization: A Practical Introduction\n🔗 R for Data Science\n\n\nSome Package documentation\n🔗 ggplot2: ggplot2.tidyverse.org\n🔗 dplyr: dplyr.tidyverse.org\n🔗 tidyr: tidyr.tidyverse.org\n🔗 forcats: forcats.tidyverse.org\n🔗 stringr: stringr.tidyverse.org\n🔗 lubridate: lubridate.tidyverse.org\n🔗 readr: readr.tidyverse.org",
     "crumbs": [
       "Course information",
       "Useful links"
@@ -15,65 +15,61 @@
     "href": "course-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Mine Çetinkaya-Rundel (she/her) is Professor of the Practice and Director of Undergraduate Studies at the Department of Statistical Science at Duke University and an affiliated faculty in the Computational Media, Arts, and Cultures. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.\n\n\n\nOffice hours\nLocation\n\n\n\n\nTuesdays 2:30 - 3:30 pm\nOld Chem 213 (or Zoom upon request)",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
+    "text": "Dr. Mine Çetinkaya-Rundel (she/her) is Professor of the Practice and Director of Undergraduate Studies at the Department of Statistical Science at Duke University and an affiliated faculty in the Computational Media, Arts, and Cultures. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.\n\n\n\nOffice hours\nLocation\n\n\n\n\nTuesdays 2:30 - 3:30 pm\nOld Chem 213 (or Zoom upon request)"
   },
   {
     "objectID": "course-team.html#instructor",
     "href": "course-team.html#instructor",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Mine Çetinkaya-Rundel (she/her) is Professor of the Practice and Director of Undergraduate Studies at the Department of Statistical Science at Duke University and an affiliated faculty in the Computational Media, Arts, and Cultures. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.\n\n\n\nOffice hours\nLocation\n\n\n\n\nTuesdays 2:30 - 3:30 pm\nOld Chem 213 (or Zoom upon request)",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
+    "text": "Dr. Mine Çetinkaya-Rundel (she/her) is Professor of the Practice and Director of Undergraduate Studies at the Department of Statistical Science at Duke University and an affiliated faculty in the Computational Media, Arts, and Cultures. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.\n\n\n\nOffice hours\nLocation\n\n\n\n\nTuesdays 2:30 - 3:30 pm\nOld Chem 213 (or Zoom upon request)"
   },
   {
     "objectID": "course-team.html#teaching-assistants",
     "href": "course-team.html#teaching-assistants",
     "title": "Teaching team",
     "section": "Teaching assistants",
-    "text": "Teaching assistants\n\n\n\n\nName\nRole\nLab section\nOffice hours\n\n\n\n\n\nHolly Cui\nLab TA\nSection 1 - W 1:25PM - 2:40PM\nTuesdays 11:30 am-12:30 pm in Old Chem 203B\nThursdays 11:30 am-12:30 pm in Old Chem 203B\n\n\n\nEli Gnesin\nHead + Lab TA\nSection 2 - W 3:05PM - 4:20PM\nMonday 10:30-11:30 am in Old Chem 203B\nTuesdays 8:15-9:45 am in Old Chem 203B\n\n\n\nKelsey Brod\nProject lead + Lecture TA\n\nMondays 3-5 pm on Zoom\n\n\n\nShelby Tisdale\nProject support + Lecture TA\n\nSundays 7-8 pm on Zoom\nMondays 9-10 am in Old Chem 025\n\n\n\nGlenn Palmer\n\n\nFridays 2-3 pm in Old Chem 203B",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
+    "text": "Teaching assistants\n\n\n\n\nName\nRole\nLab section\nOffice hours\n\n\n\n\n\nHolly Cui\nLab TA\nSection 1 - W 1:25PM - 2:40PM\nTuesdays 11:30 am-12:30 pm in Old Chem 203B\nThursdays 11:30 am-12:30 pm in Old Chem 203B\n\n\n\nEli Gnesin\nHead + Lab TA\nSection 2 - W 3:05PM - 4:20PM\nMonday 10:30-11:30 am in Old Chem 203B\nTuesdays 8:15-9:45 am in Old Chem 203B\n\n\n\nKelsey Brod\nProject lead + Lecture TA\n\nMondays 3-5 pm on Zoom\n\n\n\nShelby Tisdale\nProject support + Lecture TA\n\nSundays 7-8 pm on Zoom\nMondays 9-10 am in Old Chem 025\n\n\n\nGlenn Palmer\n\n\nFridays 2-3 pm in Old Chem 203B"
   },
   {
     "objectID": "student-work/ugly-plot.html",
     "href": "student-work/ugly-plot.html",
     "title": "Ugly plots",
     "section": "",
-    "text": "To be posted.",
-    "crumbs": [
-      "Student work",
-      "Ugly plots"
-    ]
+    "text": "To be posted."
   },
   {
     "objectID": "hw/HW 1.html",
     "href": "hw/HW 1.html",
     "title": "HW 1 (MATH 4750/5750)",
     "section": "",
-    "text": "Questions 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 1.8\n\n7 out of 8 Question (for Undergraduates)\nAll Questions (for Graduates)"
+    "text": "Questions 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 1.8\n\n7 out of 8 Question (for Undergraduates)\nAll Questions (for Graduates)",
+    "crumbs": [
+      "HW",
+      "HW 1"
+    ]
   },
   {
     "objectID": "hw/HW 1.html#from-the-textbook",
     "href": "hw/HW 1.html#from-the-textbook",
     "title": "HW 1 (MATH 4750/5750)",
     "section": "",
-    "text": "Questions 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 1.8\n\n7 out of 8 Question (for Undergraduates)\nAll Questions (for Graduates)"
+    "text": "Questions 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 1.8\n\n7 out of 8 Question (for Undergraduates)\nAll Questions (for Graduates)",
+    "crumbs": [
+      "HW",
+      "HW 1"
+    ]
   },
   {
     "objectID": "hw/HW 1.html#extra-question",
     "href": "hw/HW 1.html#extra-question",
     "title": "HW 1 (MATH 4750/5750)",
     "section": "Extra Question",
-    "text": "Extra Question\nFollow the example we had in the classroom, find the \\(E(X)\\) and \\(Var(X)\\) based on (i) equations (2.1) and (2.2), and (ii) simulation for the following cases. Does (i) and (ii) give you the same result?\n(a) \\(X\\sim\\chi^2(\\nu=N+1)\\), where \\(N\\sim Poisson(\\lambda)\\).\n(b) (Only for Graduate Students) \\(X\\sim Binomial(n=Y, p=P)\\), where \\(Y\\sim Poisson(\\lambda)\\) and \\(P\\sim Beta(\\alpha, \\beta)\\)."
+    "text": "Extra Question\nFollow the example we had in the classroom, find the \\(E(X)\\) and \\(Var(X)\\) based on (i) equations (2.1) and (2.2), and (ii) simulation for the following cases. Does (i) and (ii) give you the same result?\n(a) \\(X\\sim\\chi^2(\\nu=N+1)\\), where \\(N\\sim Poisson(\\lambda)\\).\n(b) (Only for Graduate Students) \\(X\\sim Binomial(n=Y, p=P)\\), where \\(Y\\sim Poisson(\\lambda)\\) and \\(P\\sim Beta(\\alpha, \\beta)\\).",
+    "crumbs": [
+      "HW",
+      "HW 1"
+    ]
   },
   {
     "objectID": "hw/HW 3.html",
@@ -106,9 +102,31 @@
   {
     "objectID": "course-syllabus.html",
     "href": "course-syllabus.html",
-    "title": "Syllabus",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
     "section": "",
-    "text": "STA 313 - Advanced Data Visualization is all about the art and science of visualizing data. Three themes (what, why, and how) will run alongside each other as we cycle through the course topics. In “what” we focus on specific types of visualizations for a particular purpose (e.g. maps for spatial data, Sankey diagrams for proportions, etc.) as well as the tooling to produce them (e.g. specific R packages). In “how” we focus on the process – each visualization starts with a design (which we’ll often ask you to do with a rough sketch accompanied by pseudo code), then often needs pre-processing of the data (wrangling, reshaping, joining, etc. to get it into a tidy, rectangular format for visualization), then attributes of the data are mapped to plot aesthetics, then the creator of the visualization needs to make a series of strategic decisions about visual encoding (e.g. accessibility concerns), and finally creating effective visualizations requires post-processing for visual appeal as well as annotation. In “why” we discuss the theory that ties the “how” and the “what” together, often focusing on the grammar of graphics. Like any data analysis, data visualization is also an iterative process. We don’t expect you to land on the perfect visualization on the first try, so we promote the iterative process via critical and constructive review of one’s own and each others’ work. Independent modules will also touch on topics such as using statistical graphics for visual inference, creating data-based art, and a review of the literature on non-visual approaches to representing data.\nThe course will focus on the use of the R statistical programming language and introduce you to a variety of modern data visualization packages in R. In addition, you will continue to use hone their data science workflow skills that they acquired in pre-requisite courses by working with Git and GitHub for version control and collaboration.",
+    "text": "Course Title: MATH 4750/MSSC 5750: Computational Statistics\nMeeting Time: TuTh 2:00pm - 3:15pm\nLocation: Cudahy Hall 145 (Microsoft Teams)",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-information",
+    "href": "course-syllabus.html#course-information",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "",
+    "text": "Course Title: MATH 4750/MSSC 5750: Computational Statistics\nMeeting Time: TuTh 2:00pm - 3:15pm\nLocation: Cudahy Hall 145 (Microsoft Teams)",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#instructor-details",
+    "href": "course-syllabus.html#instructor-details",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Instructor Details",
+    "text": "Instructor Details\n\nName: Mehdi Maadooliat, Ph.D.\nOffice: CU 351\nOffice Hours: TuTh 12:25 - 1:55pm in CU 351 or by e-mail",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -117,9 +135,20 @@
   {
     "objectID": "course-syllabus.html#course-description",
     "href": "course-syllabus.html#course-description",
-    "title": "Syllabus",
-    "section": "",
-    "text": "STA 313 - Advanced Data Visualization is all about the art and science of visualizing data. Three themes (what, why, and how) will run alongside each other as we cycle through the course topics. In “what” we focus on specific types of visualizations for a particular purpose (e.g. maps for spatial data, Sankey diagrams for proportions, etc.) as well as the tooling to produce them (e.g. specific R packages). In “how” we focus on the process – each visualization starts with a design (which we’ll often ask you to do with a rough sketch accompanied by pseudo code), then often needs pre-processing of the data (wrangling, reshaping, joining, etc. to get it into a tidy, rectangular format for visualization), then attributes of the data are mapped to plot aesthetics, then the creator of the visualization needs to make a series of strategic decisions about visual encoding (e.g. accessibility concerns), and finally creating effective visualizations requires post-processing for visual appeal as well as annotation. In “why” we discuss the theory that ties the “how” and the “what” together, often focusing on the grammar of graphics. Like any data analysis, data visualization is also an iterative process. We don’t expect you to land on the perfect visualization on the first try, so we promote the iterative process via critical and constructive review of one’s own and each others’ work. Independent modules will also touch on topics such as using statistical graphics for visual inference, creating data-based art, and a review of the literature on non-visual approaches to representing data.\nThe course will focus on the use of the R statistical programming language and introduce you to a variety of modern data visualization packages in R. In addition, you will continue to use hone their data science workflow skills that they acquired in pre-requisite courses by working with Git and GitHub for version control and collaboration.",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Course Description",
+    "text": "Course Description\nComputational statistics and statistical computing are two areas that employ computational, graphical, and numerical approaches to solve statistical problems. Competent statisticians must not just run existing programs but understand the principles behind them. This class introduces statistically-oriented programming targeted at statistics majors, with no extensive programming background assumed.\nThis course covers traditional core material of computational statistics with an emphasis on using R through an example-based approach.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#learning-outcomes",
+    "href": "course-syllabus.html#learning-outcomes",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of the course, students will: - Understand core programming concepts, including data structures, functions, iteration, debugging, logical design, and abstraction. - Write maintainable code, debug, and test code for correctness. - Set up and run stochastic simulations in parallel. - Fit basic statistical models and assess the results. - Work with and filter large datasets. - Comment and organize code effectively.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -128,20 +157,9 @@
   {
     "objectID": "course-syllabus.html#prerequisites",
     "href": "course-syllabus.html#prerequisites",
-    "title": "Syllabus",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
     "section": "Prerequisites",
-    "text": "Prerequisites\nThis course assumes that this is not your first interaction with working with data in R, using RStudio, and along with version control with Git, and collaboration on GitHub. Any of the following courses meet the prerequisite for the course: STA 198, STA 199, or STA 210. The course will start with a quick review of the relevant technologies.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#learning-goals",
-    "href": "course-syllabus.html#learning-goals",
-    "title": "Syllabus",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nUnderstand the principles of designing and creating effective data visualizations.\nEvaluate, critique, and improve upon one’s own and others’ data visualizations based on how good a job the visualization does for communicating a message clearly and correctly.\nPost-process and refine plots for effective communication.\nUse visualizations for evaluating statistical models and for statistical inference.\nMaster using R and a variety of modern data visualization packages to create data visualizations.\nWork reproducibly individually and collaboratively using Git and GitHub.",
+    "text": "Prerequisites\n\nCOSC 1010\nMATH 3100\nMATH 4700 or MATH 4780",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -150,86 +168,64 @@
   {
     "objectID": "course-syllabus.html#textbooks",
     "href": "course-syllabus.html#textbooks",
-    "title": "Syllabus",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
     "section": "Textbooks",
-    "text": "Textbooks\nReadings for the course will come from the following textbooks. All of them are freely available online and you do not need to purchase a physical copy of either book to succeed in this class.\n\n[ggplot2-book] Hadley Wickham, Danielle Navarro, and Thomas Lin Pedersen. ggplot2: Elegant Graphics for Data Analysis. (in progress) 3rd edition. Springer, 2023.\n[socviz] Kieran Healy. Data Visualization: A Practical Introduction. Princeton University Press, 2018.\n[fdv] Claus O. Wilke. Fundamentals of Data Visualization. O’Reilly Media, 2019.\n[r4ds] Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. (in progress) 2nd edition. O’Reilly, 2022.",
+    "text": "Textbooks\n\nMain: Statistical Computing with R, 2nd edition by Maria L. Rizzo. Chapman and Hall/CRC, 2019. ISBN: 1466553324.\nSupplementary: Computational Statistics, 2nd Edition by Geof H. Givens and Jennifer A. Hoeting. Wiley, 2012. ISBN: 9780470533314.",
     "crumbs": [
       "Course information",
       "Syllabus"
     ]
   },
   {
-    "objectID": "course-syllabus.html#course-community",
-    "href": "course-syllabus.html#course-community",
-    "title": "Syllabus",
-    "section": "Course community",
-    "text": "Course community\n\nDuke Community Standard\nAll students must adhere to the Duke Community Standard (DCS): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity.\nTo uphold the Duke Community Standard, students agree:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised.\n\n\n\n\n\nInclusive community\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with Duke’s Commitment to Diversity and Inclusion. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.\nFurthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:\n\nIf you have a name that differs from those that appear in your official Duke records, please let me know! You’ll be able to note this in the Getting to know you survey.\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.\n\n\n\nPronouns\nPronouns are meaningful tools to communicate identities and experiences, and using pronouns supports a campus environment where all community members can thrive. Please update your gender pronouns in Duke Hub. You can learn more at the Center for Sexual and Gender Diversity’s website.\n\n\nAccessibility\nIf there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website: vizdata.org.\nI will regularly send course announcements via email and Sakai, make sure to check one or the other of these regularly. If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day. If an announcement is sent on a Friday or over the weekend, I will assume that you have read it by Monday.\n\n\nWhere to get help\n\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!\nOutside of class and office hours, any general questions about course content or assignments should be posted on the course Slack. There is a chance another student has already asked a similar question, so please check the other posts on Slack before adding a new question. If you know the answer to a question posted on Slack, I encourage you to respond!\n\nCheck out the Support page for more resources.\nI want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don’t hesitate to ask.\n\nYou never owe me personal information about your health (mental or physical) but you’re always welcome to talk to me. If I can’t help, I likely know someone who can.\nI want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded during this crisis.",
+    "objectID": "course-syllabus.html#grading-breakdown",
+    "href": "course-syllabus.html#grading-breakdown",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Grading Breakdown",
+    "text": "Grading Breakdown\n\nClass Participation: 10%\nHomework: 30%\nTeam Project: 30%\nFinal Exam or HW/Project (Instructor will decide): 30%\n\n\nGrading Scale\n\n\n\nGrade\nRange\n\n\n\n\nA\n95 - 100%\n\n\nA-\n89 - 94.99%\n\n\nB+\n84 - 88.99%\n\n\nB\n78 - 83.99%\n\n\nB-\n73 - 77.99%\n\n\nC+\n67 - 72.99%\n\n\nC\n62 - 66.99%\n\n\nC-\n56 - 61.99%\n\n\nD+\n51 - 55.99%\n\n\nD\n45 - 50.99%\n\n\nF\n&lt; 44.99%\n\n\n\nNote: No late homework will be accepted, and no make-up work will be allowed unless in the case of an emergency. Submit incomplete work if necessary, but ensure scanned PDFs are legible before submission.",
     "crumbs": [
       "Course information",
       "Syllabus"
     ]
   },
   {
-    "objectID": "course-syllabus.html#lectures-and-lab",
-    "href": "course-syllabus.html#lectures-and-lab",
-    "title": "Syllabus",
-    "section": "Lectures and lab",
-    "text": "Lectures and lab\nThe goal of both the lectures and the labs is for them to be as interactive as possible. My role as instructor is to introduce you new tools and techniques, but it is up to you to take them and make use of them. A lot of what you do in this course will involve writing code, and coding is a skill that is best learned by doing. Therefore, as much as possible, you will be working on a variety of tasks and activities throughout each lecture and lab. Attendance will not be taken during class but you are expected to attend all lecture and lab sessions and meaningfully contribute to in-class exercises and discussion.\nYou are expected to bring a laptop to each class so that you can take part in the in-class exercises. Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone. See [Technology accommodations] if you need a loaner laptop.",
+    "objectID": "course-syllabus.html#make-up-policy",
+    "href": "course-syllabus.html#make-up-policy",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Make-up Policy",
+    "text": "Make-up Policy\nNo make-up exams or homework unless there is an emergency.",
     "crumbs": [
       "Course information",
       "Syllabus"
     ]
   },
   {
-    "objectID": "course-syllabus.html#assessment",
-    "href": "course-syllabus.html#assessment",
-    "title": "Syllabus",
-    "section": "Assessment",
-    "text": "Assessment\nAssessment for the course is comprised of four components: attendance and participation, reading quizzes, homework assignments, and projects.\n\nAttendance and participation is required throughout the semester. Students who attend at least 80% of the lectures and participate regularly during lecture will receive full credit for this portion of their grade. Participation in labs as well as on Slack will also count towards this component.\nReading quizzes, due every other week (roughly), completed individually. Lowest quiz score is dropped.\nReading quizzes will be linked from the course schedule. They always cover reading that is due since the previous quiz and up to and including the deadline for the given quiz. They’re due by 10 am ET (beginning of class) on the indicated day on the course schedule.\nHomework assignments, due every other week (roughly), completed individually. Lowest homework assignment score is dropped.\nHomework assignments are due by 5 pm ET on the indicated day on the course schedule.\nProjects (2), mid-semester and end of semester, completed in teams.\n\nProject 1: Teams will be given a dataset (or a set of datasets to choose from) to visualize. Project 1 is worth 15% of the course grade.\nProject 2: Teams will choose the focus of their own project. One requirement is that you need to do something new. Project 2 is worth 25% of the course grade.\n\nThe deliverables for each project will include a data visualization, a write up of the process and findings, and a presentation. For the second project, you will be encouraged to think beyond a traditional two-dimensional data visualization (e.g. interactive web apps/dashboards, data art, generative art, physical/tangible visualizations, ggplot2 extensions, etc.).\nEach project will have a peer review component to provide at least one round of feedback during the process of development. Teams will provide periodic peer feedback to their teammates while working on the projects as well as upon completion. The scores from the peer evaluations, along with individual contributions tracked by commits on GitHub, will be used to ensure that each student has contributed to the teamwork.\nAll team members must take part in the presentation. Presentations can be given in person in class, or via Zoom if the team prefers. My preference is that the team stick to one method of delivery (all presenters in person or all presenters on Zoom), but I realize a lot can change throughout this semester, and we’ll adjust accordingly.\n\nAll work is expected to be submitted by the deadline and there are no make ups for any missed assessments. See the late work policy for more details.",
+    "objectID": "course-syllabus.html#attendance",
+    "href": "course-syllabus.html#attendance",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Attendance",
+    "text": "Attendance\nAttendance is required and subject to the College of Arts and Sciences policy.",
     "crumbs": [
       "Course information",
       "Syllabus"
     ]
   },
   {
-    "objectID": "course-syllabus.html#grading",
-    "href": "course-syllabus.html#grading",
-    "title": "Syllabus",
-    "section": "Grading",
-    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\nCategory\nPercentage\n\n\n\n\nAttendance and participation\n5%\n\n\nReading quizzes\n10%\n\n\nHomework assignments\n45%\n\n\nProject 1\n15%\n\n\nProject 2\n25%\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA\n&gt;= 93\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60\n\n\n\nThese are upper bounds for grade cutoffs, depending on the class performance the cutoffs may be lowered but they won’t be increased.",
+    "objectID": "course-syllabus.html#academic-honesty",
+    "href": "course-syllabus.html#academic-honesty",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Academic Honesty",
+    "text": "Academic Honesty\nStudents are expected to follow the University’s policy on academic honesty as outlined in the Bulletin.\nTL;DR: Don’t cheat!\nPlease abide by the following as you work on assignments in this course:\n\nCollaboration: Only work that is clearly assigned as team work should be completed collaboratively.\n\nThe homework assignments must also be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what’s the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to lab questions (including any code) with anyone other than myself and the teaching assistants.\nThe reading quizzes must be completed individually with absolutely no communication with classmates.\nFor the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project across teams.\nOn individual assignments you may not directly share code with another student in this class, and on team assignments you may not directly share code with another team in this class.\n\nOnline resources: I am well aware that a huge volume of code is available on the web to solve any number of problems. Unless I explicitly tell you not to use something, the course’s policy is that you may make use of any online resources (e.g., StackOverflow) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\nUse of generative artificial intelligence (AI): You should treat generative AI, such as ChatGPT, the same as other online resources. There are two guiding principles that govern how you can use AI in this course:1 (1) Cognitive dimension: Working with AI should not reduce your ability to think clearly. We will practice using AI to facilitate—rather than hinder—learning. (2) Ethical dimension: Students using AI should be transparent about their use and make sure it aligns with academic integrity.\n\n✅ AI tools for code: You may make use of the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines for citing AI-generated content.\n❌ AI tools for narrative: Unless instructed otherwise, you may not use generative AI to write narrative on assignments. In general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you.\n\nYou are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.\n\nIf you are unsure if the use of a particular resource complies with the academic honesty policy, please ask the instructor.",
     "crumbs": [
       "Course information",
       "Syllabus"
     ]
   },
   {
-    "objectID": "course-syllabus.html#teams",
-    "href": "course-syllabus.html#teams",
-    "title": "Syllabus",
-    "section": "Teams",
-    "text": "Teams\nYou will be assigned to a different team for each of your two projects. You are encouraged to sit with your teammates in lecture and you will also work with them in the lab sessions. All team members are expected to contribute equally to the completion of each project and you will be asked to evaluate your team members after each assignment is due. Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team’s overall mark.\nYou are expected to make use of the provided GitHub repository as their central collaborative platform. Commits to this repository will be used as a metric (one of several) of each team member’s relative contribution for each project.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#course-policies",
-    "href": "course-syllabus.html#course-policies",
-    "title": "Syllabus",
-    "section": "Course policies",
-    "text": "Course policies\n\nAcademic honesty\nTL;DR: Don’t cheat!\nPlease abide by the following as you work on assignments in this course:\n\nCollaboration: Only work that is clearly assigned as team work should be completed collaboratively.\n\nThe homework assignments must also be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what’s the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to lab questions (including any code) with anyone other than myself and the teaching assistants.\nThe reading quizzes must be completed individually with absolutely no communication with classmates.\nFor the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project across teams.\nOn individual assignments you may not directly share code with another student in this class, and on team assignments you may not directly share code with another team in this class.\n\nOnline resources: I am well aware that a huge volume of code is available on the web to solve any number of problems. Unless I explicitly tell you not to use something, the course’s policy is that you may make use of any online resources (e.g., StackOverflow) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\nUse of generative artificial intelligence (AI): You should treat generative AI, such as ChatGPT, the same as other online resources. There are two guiding principles that govern how you can use AI in this course:1 (1) Cognitive dimension: Working with AI should not reduce your ability to think clearly. We will practice using AI to facilitate—rather than hinder—learning. (2) Ethical dimension: Students using AI should be transparent about their use and make sure it aligns with academic integrity.\n\n✅ AI tools for code: You may make use of the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines for citing AI-generated content.\n❌ AI tools for narrative: Unless instructed otherwise, you may not use generative AI to write narrative on assignments. In general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you.\n\nYou are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.\n\nIf you are unsure if the use of a particular resource complies with the academic honesty policy, please ask a member of the teaching team.\nRegardless of course delivery format, it is the responsibility of all students to understand and follow all Duke policies, including academic integrity (e.g., completing one’s own work, following proper citation of sources, adhering to guidance around group work projects, and more). Ignoring these requirements is a violation of the Duke Community Standard. Any questions and/or concerns regarding academic integrity can be directed to the Office of Student Conduct and Community Standards at conduct@duke.edu.\nAny violations in academic honesty standards as outlined in the Duke Community Standard and those specific to this course will\n\nautomatically result in a 0 for the assignment,\ncan further impact your overall course grade, and\nwill be reported to the Office of Student Conduct for further action.\n\n\n\nLate work & extensions\nThe due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline.\nPolicy on late work depends on the particular course component:\n\nReading quizzes: Late quizzes are not accepted and there are no make ups for missed quizzes.\nHomework assignments: GitHub repositories will be closed to contributions at the deadline. If you need to submit your work late, send a DM on Slack to the Head TA to reopen your repository.\n\nLate, within 24 hours of deadline: -10% of available points\nLate, within 24-48 hours of deadline: -20% of available points\nMore than 48 hours later: No credit, and we will not provide written feedback\n\nProjects: The following three components contribute to your project score.\n\nPresentation: Late presentations are not accepted and there are no make ups for missed presentations.\nWrite up: GitHub repositories will be closed to contributions at the deadline. If you need to submit your work late, Slack/email me to reopen your repository.\n\nLate, within 24 hours of deadline: -10% of available points\nLate, within 24-48 hours of deadline: -20% of available points\nMore than 48 hours later: No credit, and we will not provide written feedback\n\nPeer evaluation: Late peer evaluations are not accepted and there are no make ups for missed presentations. If you do not turn in your peer evaluation, you get 0 points for your own peer score as well, regardless of how your teammates have evaluated you.\n\n\n\n\nWaiver for extenuating circumstances\nIf there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, you may email or DM the Head TA before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used for once in the semester, so only use it for a truly extenuating circumstance.\nIf there are circumstances that are having a longer-term impact on your academic performance, please let your academic dean know, as they can be a resource. Please let me know if you need help contacting your academic dean.\n\n\nRegrade requests\nRegrade requests must be made within one week of when the assignment is returned, and must be typed up and submitted via email to the course Head TA. These will be considered if points were tallied incorrectly or if you feel your answer is correct but it was marked wrong. No regrade will be made to alter the number of points deducted for a mistake. There will be no grade changes after the second project presentations. Note that during the regrade process your score could go up or go down or not change.\nNo grades will be changed after the project presentations.\n\n\nAttendance policy\nResponsibility for class attendance rests with individual students. Since regular and punctual class attendance is expected, students must accept the consequences of failure to attend. More details on Trinity attendance policies are available here.\nHowever, there may be many reasons why you cannot be in class on a given day, particularly with possible extra personal and academic stress and health concerns this semester. All course lectures will be recorded and available to enrolled students after class. If you miss a lecture, make sure to to review the lecture material before the next class session. Lab time is dedicated to working on your homework assignments and collaborating with your teammates on your project. If you miss a lab session, make sure to communicate with your team about how you can make up your contribution. Given the technologies we use in the course, this is straightforward to do asynchronously. If you know you’re going to miss a lab session and you’re feeling well enough to do so, notify your teammates ahead of time. Overall these policies are put in place to ensure communication between team members, respect for each others’ time, and also to give you a safety net in the case of illness or other reasons that keep you away from attending class.\nNote that attendance and participation is part of your grade as well.\n\n\nAttendance policy related to COVID symptoms, exposure, or infection\nStudent health, safety, and well-being are the university’s top priorities. To help ensure your well-being and the well-being of those around you, please do not come to class if you have symptoms related to COVID-19, have had a known exposure to COVID-19, or have tested positive for COVID-19. If any of these situations apply to you, you must follow university guidance related to the ongoing COVID-19 pandemic and current health and safety protocols. If you are experiencing any COVID-19 symptoms, contact student health at 919-681-9355. To keep the university community as safe and healthy as possible, you will be expected to follow these guidelines. Please reach out to me and your academic dean as soon as possible if you need to quarantine or isolate so that we can discuss arrangements for your continued participation in class.\n\n\nInclement weather policy\nIn the event of inclement weather or other connectivity-related events that prohibit class attendance, I will notify you how we will make up missed course content and work. This might entail holding the class on Zoom synchronously or watching a recording of the class.\n\n\nPolicy on video recording course content\nIf you feel that you need record the lectures yourself, you must get permission from me ahead of time and these recordings should be used for personal study only, no for distribution. The full policy on recording of lectures falls under the Duke University Policy on Intellectual Property Rights, available at provost.duke.edu/sites/default/files/FHB_App_P.pdf. Unauthorized distribution is a cause for disciplinary action by the Judicial Board.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#accommodations",
-    "href": "course-syllabus.html#accommodations",
-    "title": "Syllabus",
-    "section": "Accommodations",
-    "text": "Accommodations\n\nAcademic accommodations\nIf you are a student with a disability and need accommodations for this class, it is your responsibility to register with the Student Disability Access Office (SDAO) and provide them with documentation of your disability. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: sdao@duke.edu or access.duke.edu.\n\n\nReligious accommodations\nStudents are permitted by university policy to be absent from class to observe a religious holiday. Accordingly, Trinity College of Arts & Sciences and the Pratt School of Engineering have established procedures to be followed by students for notifying their instructors of an absence necessitated by the observance of a religious holiday. Please submit requests for religious accommodations at the beginning of the semester so that we can work to make suitable arrangements well ahead of time. You can find the policy and relevant notification form here: https://trinity.duke.edu/undergraduate/academic-policies/religious-holidays.\nNote: If you’ve read this far in the syllabus, post a picture of your pet and their name if you have one or your favorite meme to the #random channel on Slack!",
+    "objectID": "course-syllabus.html#course-topics",
+    "href": "course-syllabus.html#course-topics",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Course Topics",
+    "text": "Course Topics\n\nManaging Input/Output in R\nData structures in R\nData transformations: strings, factors, dates\nStatistical summaries and basic tests in R\nGraphics in R\nMonte Carlo Integration & Variance Reduction\nBootstrap and Jackknife\nDensity Estimation\nRegularization:\n\nRidge and Lasso\nSmoothing\n\nDimension Reduction and Clustering\n\nK-Means and Hierarchical Clustering\nPrincipal Component Analysis (PCA)\n\nNumerical Methods in R\n\nOptimization\nExpectation-Maximization (EM) Algorithm\n\nAdvanced R Programming\n\nIntroduction to Parallel Computing\nObject Oriented Programming in R\nDeveloping an R Package\nDeveloping an Interactive Shiny App\nFunctions and loops in C and using C in R\n\nDeep Learning in R\n\nBasics of Neural Network\n\nImplementation using TensorFlow and Keras\n\nFully Connected Network (FCN)\nConvolutional Neural Networks (CNN)",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -238,9 +234,20 @@
   {
     "objectID": "course-syllabus.html#important-dates",
     "href": "course-syllabus.html#important-dates",
-    "title": "Syllabus",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
     "section": "Important dates",
-    "text": "Important dates\n\nWednesday, January 10: Classes begin, Monday schedule (no class for us)\nWednesday, January 24: Drop/add ends\nWednesday, February 28: Project 1 presentations\nFriday, February 23: Mid-semester grades reported\nSaturday - Sunday, March 9 - 17: Spring Break\nWednesday, March 27: Last day to withdraw with W\nWednesday, April 24: Classes end\nThursday - Sunday, April 25 – 28: Reading period\nWednesday, May 1, 9 am - 12 pm: Project 2 presentations\n\nFor more important dates, see the full Duke Academic Calendar.",
+    "text": "Important dates\n\nMonday, January 13: Classes begin\nTuesday, January 21: Drop/add ends\nSaturday - Sunday, March 8 - 16: Spring Break\nFriday, April 11: Last day to withdraw with W\nSaturday, May 3: Classes end\nTuesday, May 6, 10 am - 12 pm: Presentations\n\nFor more important dates, see the full MU Academic Calendar.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#important-note",
+    "href": "course-syllabus.html#important-note",
+    "title": "Syllabus - MATH 4750/MSSC 5750: Computational Statistics",
+    "section": "Important Note",
+    "text": "Important Note\nThe syllabus may be modified throughout the course. Any substantial modifications will result in a reissued syllabus.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -251,168 +258,264 @@
     "href": "slides/Chapter5.html#customizing-scatterplot-matrices",
     "title": "Computational Statistics",
     "section": "Customizing Scatterplot Matrices",
-    "text": "Customizing Scatterplot Matrices\n\nCustomizing scatterplot matrices with density plots\n\n```{r}\n# Adding density plots to scatterplot matrix\npanel.d &lt;- function(x, ...) {\n    usr &lt;- par(\"usr\")\n    on.exit(par(usr))\n    par(usr = c(usr[1:2], 0, .5))\n    lines(density(x), col=\"red\")\n}\npairs(iris[101:150, 1:4], panel = panel.d, main=\"Customized Scatterplot Matrix\")\n```"
+    "text": "Customizing Scatterplot Matrices\n\nCustomizing scatterplot matrices with density plots\n\n```{r}\n# Adding density plots to scatterplot matrix\npanel.d &lt;- function(x, ...) {\n    usr &lt;- par(\"usr\")\n    on.exit(par(usr))\n    par(usr = c(usr[1:2], 0, .5))\n    lines(density(x), col=\"red\")\n}\npairs(iris[101:150, 1:4], panel = panel.d, main=\"Customized Scatterplot Matrix\")\n```",
+    "crumbs": [
+      "Slides",
+      "Visualization"
+    ]
   },
   {
     "objectID": "slides/Chapter9.html#introduction-to-jackknife-after-bootstrap",
     "href": "slides/Chapter9.html#introduction-to-jackknife-after-bootstrap",
     "title": "Computational Statistics",
     "section": "Introduction to Jackknife-after-Bootstrap",
-    "text": "Introduction to Jackknife-after-Bootstrap\n\nExplanation of the jackknife-after-bootstrap method\nUsed to estimate bias and standard errors after bootstrap\n\n```{r}\nlibrary(boot)\nlibrary(bootstrap)\nset.seed(1111)\n\n# Function to compute the patch ratio statistic\ntheta.boot &lt;- function(patch, i) {\n  y &lt;- patch[i, \"y\"]\n  z &lt;- patch[i, \"z\"]\n  mean(y) / mean(z)\n}\n\n# Bootstrap the patch dataset\nboot.out &lt;- boot(bootstrap::patch, statistic = theta.boot, R=2000)\nboot.out\n```"
+    "text": "Introduction to Jackknife-after-Bootstrap\n\nExplanation of the jackknife-after-bootstrap method\nUsed to estimate bias and standard errors after bootstrap\n\n```{r}\nlibrary(boot)\nlibrary(bootstrap)\nset.seed(1111)\n\n# Function to compute the patch ratio statistic\ntheta.boot &lt;- function(patch, i) {\n  y &lt;- patch[i, \"y\"]\n  z &lt;- patch[i, \"z\"]\n  mean(y) / mean(z)\n}\n\n# Bootstrap the patch dataset\nboot.out &lt;- boot(bootstrap::patch, statistic = theta.boot, R=2000)\nboot.out\n```",
+    "crumbs": [
+      "Slides",
+      "Jackknife-after-Bootstrap"
+    ]
   },
   {
     "objectID": "slides/Chapter9.html#applying-jackknife-after-bootstrap",
     "href": "slides/Chapter9.html#applying-jackknife-after-bootstrap",
     "title": "Computational Statistics",
     "section": "Applying Jackknife-after-Bootstrap",
-    "text": "Applying Jackknife-after-Bootstrap\n\nExample: Using the jackknife-after-bootstrap method\nChecking the bootstrap array\n\n```{r}\n# Check the bootstrap array\nA &lt;- boot.array(boot.out)\nhead(A, 3)\n\n# Proportion of cases that are not resampled\nmean(A[, 1] == 0)\n```"
+    "text": "Applying Jackknife-after-Bootstrap\n\nExample: Using the jackknife-after-bootstrap method\nChecking the bootstrap array\n\n```{r}\n# Check the bootstrap array\nA &lt;- boot.array(boot.out)\nhead(A, 3)\n\n# Proportion of cases that are not resampled\nmean(A[, 1] == 0)\n```",
+    "crumbs": [
+      "Slides",
+      "Jackknife-after-Bootstrap"
+    ]
   },
   {
     "objectID": "slides/Chapter9.html#visualizing-results",
     "href": "slides/Chapter9.html#visualizing-results",
     "title": "Computational Statistics",
     "section": "Visualizing Results",
-    "text": "Visualizing Results\n```{r}\n# Plotting the bootstrap results\nplot(boot.out, index=1)\n```"
+    "text": "Visualizing Results\n```{r}\n# Plotting the bootstrap results\nplot(boot.out, index=1)\n```",
+    "crumbs": [
+      "Slides",
+      "Jackknife-after-Bootstrap"
+    ]
   },
   {
     "objectID": "slides/Chapter9.html#conclusion",
     "href": "slides/Chapter9.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of jackknife-after-bootstrap technique\nImportance of combining jackknife and bootstrap for robust estimates\nPractice: Apply jackknife-after-bootstrap to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth"
+    "text": "Conclusion\n\nRecap of jackknife-after-bootstrap technique\nImportance of combining jackknife and bootstrap for robust estimates\nPractice: Apply jackknife-after-bootstrap to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth",
+    "crumbs": [
+      "Slides",
+      "Jackknife-after-Bootstrap"
+    ]
   },
   {
     "objectID": "slides/Chapter7.html#basic-monte-carlo-estimation",
     "href": "slides/Chapter7.html#basic-monte-carlo-estimation",
     "title": "Computational Statistics",
     "section": "Basic Monte Carlo Estimation",
-    "text": "Basic Monte Carlo Estimation\n\nIntroduction to Monte Carlo estimation\nExample: Estimating the expected difference of two normal variables\n\n```{r}\nm &lt;- 1000\ng &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(2)\n    g[i] &lt;- abs(x[1] - x[2])\n}\nest &lt;- mean(g)\nest\n```"
+    "text": "Basic Monte Carlo Estimation\n\nIntroduction to Monte Carlo estimation\nExample: Estimating the expected difference of two normal variables\n\n```{r}\nm &lt;- 1000\ng &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(2)\n    g[i] &lt;- abs(x[1] - x[2])\n}\nest &lt;- mean(g)\nest\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
   },
   {
     "objectID": "slides/Chapter7.html#visualizing-monte-carlo-simulations",
     "href": "slides/Chapter7.html#visualizing-monte-carlo-simulations",
     "title": "Computational Statistics",
     "section": "Visualizing Monte Carlo Simulations",
-    "text": "Visualizing Monte Carlo Simulations\n```{r}\n# Histogram of the simulated differences\nhist(g, main=\"Histogram of Differences (Monte Carlo)\", col=\"lightblue\")\n```"
+    "text": "Visualizing Monte Carlo Simulations\n```{r}\n# Histogram of the simulated differences\nhist(g, main=\"Histogram of Differences (Monte Carlo)\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
   },
   {
     "objectID": "slides/Chapter7.html#estimating-the-mean-squared-error-mse",
     "href": "slides/Chapter7.html#estimating-the-mean-squared-error-mse",
     "title": "Computational Statistics",
     "section": "Estimating the Mean Squared Error (MSE)",
-    "text": "Estimating the Mean Squared Error (MSE)\n\nMonte Carlo estimation of MSE for trimmed means\n\n```{r}\nn &lt;- 20\nm &lt;- 1000\nmean_trim &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    mean_trim[i] &lt;- mean(x, trim = 0.1)\n}\nmse &lt;- mean((mean_trim - 0)^2)\nmse\n```"
+    "text": "Estimating the Mean Squared Error (MSE)\n\nMonte Carlo estimation of MSE for trimmed means\n\n```{r}\nn &lt;- 20\nm &lt;- 1000\nmean_trim &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    mean_trim[i] &lt;- mean(x, trim = 0.1)\n}\nmse &lt;- mean((mean_trim - 0)^2)\nmse\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
   },
   {
     "objectID": "slides/Chapter7.html#visualizing-mse-simulations",
     "href": "slides/Chapter7.html#visualizing-mse-simulations",
     "title": "Computational Statistics",
     "section": "Visualizing MSE Simulations",
-    "text": "Visualizing MSE Simulations\n```{r}\n# Histogram of the trimmed means\nhist(mean_trim, main=\"Trimmed Means (Monte Carlo MSE)\", col=\"lightgreen\")\n```"
+    "text": "Visualizing MSE Simulations\n```{r}\n# Histogram of the trimmed means\nhist(mean_trim, main=\"Trimmed Means (Monte Carlo MSE)\", col=\"lightgreen\")\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
   },
   {
     "objectID": "slides/Chapter7.html#additional-monte-carlo-techniques",
     "href": "slides/Chapter7.html#additional-monte-carlo-techniques",
     "title": "Computational Statistics",
     "section": "Additional Monte Carlo Techniques",
-    "text": "Additional Monte Carlo Techniques\n\nExploring advanced Monte Carlo techniques for inference\nExample: Hypothesis testing with Monte Carlo methods\n\n```{r}\n# Monte Carlo test example: Hypothesis testing\nn &lt;- 50\nm &lt;- 1000\ntest_stat &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    test_stat[i] &lt;- mean(x)\n}\np_value &lt;- mean(test_stat &gt;= 1.96)\np_value\n```"
+    "text": "Additional Monte Carlo Techniques\n\nExploring advanced Monte Carlo techniques for inference\nExample: Hypothesis testing with Monte Carlo methods\n\n```{r}\n# Monte Carlo test example: Hypothesis testing\nn &lt;- 50\nm &lt;- 1000\ntest_stat &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    test_stat[i] &lt;- mean(x)\n}\np_value &lt;- mean(test_stat &gt;= 1.96)\np_value\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
   },
   {
     "objectID": "slides/Chapter7.html#conclusion",
     "href": "slides/Chapter7.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of Monte Carlo methods in inference, MSE estimation, and hypothesis testing\nPractice: Apply these methods to other inferential problems\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth"
+    "text": "Conclusion\n\nRecap of Monte Carlo methods in inference, MSE estimation, and hypothesis testing\nPractice: Apply these methods to other inferential problems\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
   },
   {
     "objectID": "slides/Chapter8.html#bootstrap-resampling-method",
     "href": "slides/Chapter8.html#bootstrap-resampling-method",
     "title": "Computational Statistics",
     "section": "Bootstrap Resampling Method",
-    "text": "Bootstrap Resampling Method\n\nIntroduction to the bootstrap method\nExample: Bootstrap estimate of standard error\n\n```{r}\n# Bootstrap example: Estimate correlation between LSAT and GPA\nlibrary(bootstrap)    #for the law data\nprint(cor(law$LSAT, law$GPA))\nprint(cor(law82$LSAT, law82$GPA))\n# Set up the bootstrap\nB &lt;- 200            # number of replicates\nn &lt;- nrow(law)      # sample size\nR &lt;- numeric(B)     # storage for replicates\n# Bootstrap estimate of correlation\nfor (i in 1:B) {\n  idx &lt;- sample(1:n, size=n, replace=TRUE)\n  law_boot &lt;- law[idx, ]\n  R[i] &lt;- cor(law_boot$LSAT, law_boot$GPA)\n}\nmean(R)\nsd(R)  # Bootstrap standard error\n```"
+    "text": "Bootstrap Resampling Method\n\nIntroduction to the bootstrap method\nExample: Bootstrap estimate of standard error\n\n```{r}\n# Bootstrap example: Estimate correlation between LSAT and GPA\nlibrary(bootstrap)    #for the law data\nprint(cor(law$LSAT, law$GPA))\nprint(cor(law82$LSAT, law82$GPA))\n# Set up the bootstrap\nB &lt;- 200            # number of replicates\nn &lt;- nrow(law)      # sample size\nR &lt;- numeric(B)     # storage for replicates\n# Bootstrap estimate of correlation\nfor (i in 1:B) {\n  idx &lt;- sample(1:n, size=n, replace=TRUE)\n  law_boot &lt;- law[idx, ]\n  R[i] &lt;- cor(law_boot$LSAT, law_boot$GPA)\n}\nmean(R)\nsd(R)  # Bootstrap standard error\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
   },
   {
     "objectID": "slides/Chapter8.html#visualizing-bootstrap-resamples",
     "href": "slides/Chapter8.html#visualizing-bootstrap-resamples",
     "title": "Computational Statistics",
     "section": "Visualizing Bootstrap Resamples",
-    "text": "Visualizing Bootstrap Resamples\n```{r}\n# Plotting the bootstrap distribution\nhist(R, main=\"Bootstrap Distribution of Correlation\", col=\"lightblue\")\n```"
+    "text": "Visualizing Bootstrap Resamples\n```{r}\n# Plotting the bootstrap distribution\nhist(R, main=\"Bootstrap Distribution of Correlation\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
   },
   {
     "objectID": "slides/Chapter8.html#introduction-to-the-jackknife-method",
     "href": "slides/Chapter8.html#introduction-to-the-jackknife-method",
     "title": "Computational Statistics",
     "section": "Introduction to the Jackknife Method",
-    "text": "Introduction to the Jackknife Method\n\nThe jackknife method for bias reduction\nExample: Jackknife estimate of the mean\n\n```{r}\n# Jackknife estimate of mean\nn &lt;- nrow(law)\ntheta_hat &lt;- mean(law$LSAT)\ntheta_jack &lt;- numeric(n)\n\n# Leave-one-out jackknife\nfor (i in 1:n) {\n  theta_jack[i] &lt;- mean(law$LSAT[-i])\n}\n\n# Jackknife estimate of bias\nbias_jack &lt;- (n - 1) * (mean(theta_jack) - theta_hat)\nbias_jack\n```"
+    "text": "Introduction to the Jackknife Method\n\nThe jackknife method for bias reduction\nExample: Jackknife estimate of the mean\n\n```{r}\n# Jackknife estimate of mean\nn &lt;- nrow(law)\ntheta_hat &lt;- mean(law$LSAT)\ntheta_jack &lt;- numeric(n)\n\n# Leave-one-out jackknife\nfor (i in 1:n) {\n  theta_jack[i] &lt;- mean(law$LSAT[-i])\n}\n\n# Jackknife estimate of bias\nbias_jack &lt;- (n - 1) * (mean(theta_jack) - theta_hat)\nbias_jack\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
   },
   {
     "objectID": "slides/Chapter8.html#bootstrap-confidence-intervals",
     "href": "slides/Chapter8.html#bootstrap-confidence-intervals",
     "title": "Computational Statistics",
     "section": "Bootstrap Confidence Intervals",
-    "text": "Bootstrap Confidence Intervals\n\nIntroduction to bootstrap confidence intervals\nExample: Bootstrap percentile confidence interval\n\n```{r}\n# Bootstrap confidence intervals\nalpha &lt;- 0.05\nci &lt;- quantile(R, probs = c(alpha/2, 1 - alpha/2))\nci  # Bootstrap confidence interval\n```"
+    "text": "Bootstrap Confidence Intervals\n\nIntroduction to bootstrap confidence intervals\nExample: Bootstrap percentile confidence interval\n\n```{r}\n# Bootstrap confidence intervals\nalpha &lt;- 0.05\nci &lt;- quantile(R, probs = c(alpha/2, 1 - alpha/2))\nci  # Bootstrap confidence interval\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
   },
   {
     "objectID": "slides/Chapter8.html#comparison-of-bootstrap-and-jackknife",
     "href": "slides/Chapter8.html#comparison-of-bootstrap-and-jackknife",
     "title": "Computational Statistics",
     "section": "Comparison of Bootstrap and Jackknife",
-    "text": "Comparison of Bootstrap and Jackknife\n\nDiscuss the differences and use cases of bootstrap and jackknife\nRecap of methods and their benefits in reducing bias and estimating uncertainty"
+    "text": "Comparison of Bootstrap and Jackknife\n\nDiscuss the differences and use cases of bootstrap and jackknife\nRecap of methods and their benefits in reducing bias and estimating uncertainty",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
   },
   {
     "objectID": "slides/Chapter12.html#histogram-density-estimates",
     "href": "slides/Chapter12.html#histogram-density-estimates",
     "title": "Computational Statistics",
     "section": "Histogram Density Estimates",
-    "text": "Histogram Density Estimates\n\nIntroduction to density estimation using histograms\nExample: Histogram density estimates using Sturges’ Rule\n\n```{r}\nset.seed(12345)\nn &lt;- 25\nx &lt;- rnorm(n)\n\n# Calculate breaks according to Sturges' Rule\nnclass &lt;- ceiling(1 + log2(n))\ncwidth &lt;- diff(range(x) / nclass)\nbreaks &lt;- min(x) + cwidth * 0:nclass\n\n# Default histogram\nh.default &lt;- hist(x, freq = FALSE, xlab = \"default\", main = \"Histogram: Default\")\n```"
+    "text": "Histogram Density Estimates\n\nIntroduction to density estimation using histograms\nExample: Histogram density estimates using Sturges’ Rule\n\n```{r}\nset.seed(12345)\nn &lt;- 25\nx &lt;- rnorm(n)\n\n# Calculate breaks according to Sturges' Rule\nnclass &lt;- ceiling(1 + log2(n))\ncwidth &lt;- diff(range(x) / nclass)\nbreaks &lt;- min(x) + cwidth * 0:nclass\n\n# Default histogram\nh.default &lt;- hist(x, freq = FALSE, xlab = \"default\", main = \"Histogram: Default\")\n```",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
   },
   {
     "objectID": "slides/Chapter12.html#kernel-density-estimation",
     "href": "slides/Chapter12.html#kernel-density-estimation",
     "title": "Computational Statistics",
     "section": "Kernel Density Estimation",
-    "text": "Kernel Density Estimation\n\nIntroduction to kernel density estimation (KDE)\nExample: Applying KDE to data\n\n```{r}\n# Kernel density estimate\ndens &lt;- density(x)\nplot(dens, main = \"Kernel Density Estimate\", col = \"blue\", lwd = 2)\n```"
+    "text": "Kernel Density Estimation\n\nIntroduction to kernel density estimation (KDE)\nExample: Applying KDE to data\n\n```{r}\n# Kernel density estimate\ndens &lt;- density(x)\nplot(dens, main = \"Kernel Density Estimate\", col = \"blue\", lwd = 2)\n```",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
   },
   {
     "objectID": "slides/Chapter12.html#visualizing-kernel-density",
     "href": "slides/Chapter12.html#visualizing-kernel-density",
     "title": "Computational Statistics",
     "section": "Visualizing Kernel Density",
-    "text": "Visualizing Kernel Density\n```{r}\n# Overlay histogram and KDE\nhist(x, freq = FALSE, col = \"lightgray\", border = \"white\", main = \"Histogram with KDE\")\nlines(dens, col = \"red\", lwd = 2)\n```"
+    "text": "Visualizing Kernel Density\n```{r}\n# Overlay histogram and KDE\nhist(x, freq = FALSE, col = \"lightgray\", border = \"white\", main = \"Histogram with KDE\")\nlines(dens, col = \"red\", lwd = 2)\n```",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
   },
   {
     "objectID": "slides/Chapter12.html#conclusion",
     "href": "slides/Chapter12.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of histogram density estimation and kernel density estimation\nPractice: Apply density estimation techniques to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth"
+    "text": "Conclusion\n\nRecap of histogram density estimation and kernel density estimation\nPractice: Apply density estimation techniques to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
   },
   {
     "objectID": "slides/Chapter15.html#benchmarking-methods",
     "href": "slides/Chapter15.html#benchmarking-methods",
     "title": "Computational Statistics",
     "section": "Benchmarking Methods",
-    "text": "Benchmarking Methods\n\nOverview of benchmarking in R\nExample: Benchmarking methods to generate a sequence\n\n```{r}\ns1 &lt;- 1:10\ns2 &lt;- seq(1, 10, 1)\ns3 &lt;- seq.int(1, 10, 1)\n\n# Benchmarking\nlibrary(microbenchmark)\nlibrary(ggplot2)\n\nn &lt;- 1000\nmb &lt;- microbenchmark(\n  seq(1, n, 1),\n  1:n,\n  times = 100\n)\nmb\nautoplot(mb)\n```"
+    "text": "Benchmarking Methods\n\nOverview of benchmarking in R\nExample: Benchmarking methods to generate a sequence\n\n```{r}\ns1 &lt;- 1:10\ns2 &lt;- seq(1, 10, 1)\ns3 &lt;- seq.int(1, 10, 1)\n\n# Benchmarking\nlibrary(microbenchmark)\nlibrary(ggplot2)\n\nn &lt;- 1000\nmb &lt;- microbenchmark(\n  seq(1, n, 1),\n  1:n,\n  times = 100\n)\nmb\nautoplot(mb)\n```",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
   },
   {
     "objectID": "slides/Chapter15.html#profiling-code-for-performance",
     "href": "slides/Chapter15.html#profiling-code-for-performance",
     "title": "Computational Statistics",
     "section": "Profiling Code for Performance",
-    "text": "Profiling Code for Performance\n\nIntroduction to profiling in R\nExample: Profiling a function using profvis\n\n```{r}\n# Install profvis for profiling\nlibrary(profvis)\n\n# Example: Profile a sorting function\nprofvis({\n  x &lt;- rnorm(1e4)\n  y &lt;- sort(x)\n})\n```"
+    "text": "Profiling Code for Performance\n\nIntroduction to profiling in R\nExample: Profiling a function using profvis\n\n```{r}\n# Install profvis for profiling\nlibrary(profvis)\n\n# Example: Profile a sorting function\nprofvis({\n  x &lt;- rnorm(1e4)\n  y &lt;- sort(x)\n})\n```",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
   },
   {
     "objectID": "slides/Chapter15.html#visualizing-profiling-results",
     "href": "slides/Chapter15.html#visualizing-profiling-results",
     "title": "Computational Statistics",
     "section": "Visualizing Profiling Results",
-    "text": "Visualizing Profiling Results\n```{r}\n# profvis visual interface will show the profiling output\n```"
+    "text": "Visualizing Profiling Results\n```{r}\n# profvis visual interface will show the profiling output\n```",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
   },
   {
     "objectID": "slides/Chapter15.html#conclusion",
     "href": "slides/Chapter15.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of benchmarking and profiling in R\nPractice: Apply these techniques to optimize code in R\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth"
+    "text": "Conclusion\n\nRecap of benchmarking and profiling in R\nPractice: Apply these techniques to optimize code in R\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
   },
   {
     "objectID": "computing/computing-cheatsheets.html",
@@ -441,224 +544,352 @@
     "href": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
     "title": "Computational Statistics",
     "section": "Introduction to Monte Carlo Integration",
-    "text": "Introduction to Monte Carlo Integration\n\nBasic concepts of Monte Carlo integration\nExample: Integrating using uniform distribution\n\n```{r}\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x))\ntheta.hat\n1 - exp(-1)\n```"
+    "text": "Introduction to Monte Carlo Integration\n\nBasic concepts of Monte Carlo integration\nExample: Integrating using uniform distribution\n\n```{r}\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x))\ntheta.hat\n1 - exp(-1)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter6.html#example-monte-carlo-integration-with-bounded-intervals",
     "href": "slides/Chapter6.html#example-monte-carlo-integration-with-bounded-intervals",
     "title": "Computational Statistics",
     "section": "Example: Monte Carlo integration with bounded intervals",
-    "text": "Example: Monte Carlo integration with bounded intervals\n```{r}\nm &lt;- 10000\nx &lt;- runif(m, min=2, max=4)\ntheta.hat &lt;- mean(exp(-x)) * 2\ntheta.hat\nexp(-2) - exp(-4)\n```"
+    "text": "Example: Monte Carlo integration with bounded intervals\n```{r}\nm &lt;- 10000\nx &lt;- runif(m, min=2, max=4)\ntheta.hat &lt;- mean(exp(-x)) * 2\ntheta.hat\nexp(-2) - exp(-4)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter6.html#unbounded-intervals",
     "href": "slides/Chapter6.html#unbounded-intervals",
     "title": "Computational Statistics",
     "section": "Unbounded Intervals",
-    "text": "Unbounded Intervals\n\nHandling unbounded intervals in Monte Carlo integration\n\n```{r}\n# Plotting a function over an unbounded interval\nx &lt;- seq(.1, 2.5, length.out = 100)\ny &lt;- exp(-x^2 / 2)\nplot(x, y, type=\"l\", main=\"Function Plot for Unbounded Interval\", col=\"blue\")\n```"
+    "text": "Unbounded Intervals\n\nHandling unbounded intervals in Monte Carlo integration\n\n```{r}\n# Plotting a function over an unbounded interval\nx &lt;- seq(.1, 2.5, length.out = 100)\ny &lt;- exp(-x^2 / 2)\nplot(x, y, type=\"l\", main=\"Function Plot for Unbounded Interval\", col=\"blue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter6.html#introduction-to-importance-sampling",
     "href": "slides/Chapter6.html#introduction-to-importance-sampling",
     "title": "Computational Statistics",
     "section": "Introduction to Importance Sampling",
-    "text": "Introduction to Importance Sampling\n\nImportance sampling and its applications\nExample: Applying importance sampling\n\n```{r}\n# Example of importance sampling\ng &lt;- function(x) exp(-x^2 / 2)\nf &lt;- function(x) dnorm(x, mean = 1)\nx &lt;- rnorm(10000, mean = 1)\ntheta.hat &lt;- mean(g(x) / f(x))\ntheta.hat\n```"
+    "text": "Introduction to Importance Sampling\n\nImportance sampling and its applications\nExample: Applying importance sampling\n\n```{r}\n# Example of importance sampling\ng &lt;- function(x) exp(-x^2 / 2)\nf &lt;- function(x) dnorm(x, mean = 1)\nx &lt;- rnorm(10000, mean = 1)\ntheta.hat &lt;- mean(g(x) / f(x))\ntheta.hat\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter6.html#visualizing-importance-sampling",
     "href": "slides/Chapter6.html#visualizing-importance-sampling",
     "title": "Computational Statistics",
     "section": "Visualizing Importance Sampling",
-    "text": "Visualizing Importance Sampling\n```{r}\n# Compare the original function with the importance sampling function\ncurve(g, from = -3, to = 3, col = \"blue\", lwd = 2, main=\"Importance Sampling: g(x) vs f(x)\")\ncurve(f, add = TRUE, col = \"red\", lty = 2, lwd = 2)\nlegend(\"topright\", legend=c(\"g(x)\", \"f(x)\"), col=c(\"blue\", \"red\"), lty=c(1, 2), lwd=2)\n```"
+    "text": "Visualizing Importance Sampling\n```{r}\n# Compare the original function with the importance sampling function\ncurve(g, from = -3, to = 3, col = \"blue\", lwd = 2, main=\"Importance Sampling: g(x) vs f(x)\")\ncurve(f, add = TRUE, col = \"red\", lty = 2, lwd = 2)\nlegend(\"topright\", legend=c(\"g(x)\", \"f(x)\"), col=c(\"blue\", \"red\"), lty=c(1, 2), lwd=2)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter6.html#control-variates",
     "href": "slides/Chapter6.html#control-variates",
     "title": "Computational Statistics",
     "section": "Control Variates",
-    "text": "Control Variates\n\nExplanation of control variates and how they reduce variance\nExample: Using control variates in Monte Carlo integration\n\n```{r}\n# Control variates example\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x)) - (mean(x) - 0.5)\ntheta.hat\n```"
+    "text": "Control Variates\n\nExplanation of control variates and how they reduce variance\nExample: Using control variates in Monte Carlo integration\n\n```{r}\n# Control variates example\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x)) - (mean(x) - 0.5)\ntheta.hat\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter6.html#antithetic-variables",
     "href": "slides/Chapter6.html#antithetic-variables",
     "title": "Computational Statistics",
     "section": "Antithetic Variables",
-    "text": "Antithetic Variables\n\nExplanation of antithetic variables and how they reduce variance\nExample: Applying antithetic variables\n\n```{r}\n# Antithetic variables example\nu &lt;- runif(5000)\ntheta.hat &lt;- mean((exp(-u) + exp(-(1 - u))) / 2)\ntheta.hat\n1 - exp(-1)\n```"
+    "text": "Antithetic Variables\n\nExplanation of antithetic variables and how they reduce variance\nExample: Applying antithetic variables\n\n```{r}\n# Antithetic variables example\nu &lt;- runif(5000)\ntheta.hat &lt;- mean((exp(-u) + exp(-(1 - u))) / 2)\ntheta.hat\n1 - exp(-1)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#random-variables-and-distributions",
     "href": "slides/Chapter2.html#random-variables-and-distributions",
     "title": "Computational Statistics",
     "section": "Random Variables and Distributions",
-    "text": "Random Variables and Distributions\n\nOverview of random variables\nDiscrete vs Continuous random variables\nImportant distributions (Binomial, Normal, Chi-Square)\n\n```{r}\n# Simulating random variables\nN &lt;- 100; mu &lt;- 5; sig &lt;- 2\nY &lt;- rnorm(N, mean = mu, sd = sig)\nhist(Y, main=\"Histogram of Normal Distribution\", xlab=\"Y values\", col=\"lightblue\")\n```"
+    "text": "Random Variables and Distributions\n\nOverview of random variables\nDiscrete vs Continuous random variables\nImportant distributions (Binomial, Normal, Chi-Square)\n\n```{r}\n# Simulating random variables\nN &lt;- 100; mu &lt;- 5; sig &lt;- 2\nY &lt;- rnorm(N, mean = mu, sd = sig)\nhist(Y, main=\"Histogram of Normal Distribution\", xlab=\"Y values\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#example-central-limit-theorem",
     "href": "slides/Chapter2.html#example-central-limit-theorem",
     "title": "Computational Statistics",
     "section": "Example: Central Limit Theorem",
-    "text": "Example: Central Limit Theorem\n\nDiscuss the CLT and its importance in statistics\nSimulating the CLT with normal distributions\n\n```{r}\n# Central Limit Theorem simulation\nmeans &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))\nhist(means, main=\"Central Limit Theorem\", col=\"lightgreen\", border=\"black\")\n```"
+    "text": "Example: Central Limit Theorem\n\nDiscuss the CLT and its importance in statistics\nSimulating the CLT with normal distributions\n\n```{r}\n# Central Limit Theorem simulation\nmeans &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))\nhist(means, main=\"Central Limit Theorem\", col=\"lightgreen\", border=\"black\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#common-distributions-in-statistical-computing",
     "href": "slides/Chapter2.html#common-distributions-in-statistical-computing",
     "title": "Computational Statistics",
     "section": "Common Distributions in Statistical Computing",
-    "text": "Common Distributions in Statistical Computing\n\nBinomial Distribution\nPoisson Distribution\nNormal Distribution and its properties\n\n```{r}\n# Simulating binomial and Poisson distributions\nx_binom &lt;- rbinom(100, size = 10, prob = 0.5)\nx_pois &lt;- rpois(100, lambda = 3)\n\npar(mfrow=c(1, 2))  # Two plots side by side\nhist(x_binom, main=\"Binomial Distribution\", col=\"orange\")\nhist(x_pois, main=\"Poisson Distribution\", col=\"lightcoral\")\n```"
+    "text": "Common Distributions in Statistical Computing\n\nBinomial Distribution\nPoisson Distribution\nNormal Distribution and its properties\n\n```{r}\n# Simulating binomial and Poisson distributions\nx_binom &lt;- rbinom(100, size = 10, prob = 0.5)\nx_pois &lt;- rpois(100, lambda = 3)\n\npar(mfrow=c(1, 2))  # Two plots side by side\nhist(x_binom, main=\"Binomial Distribution\", col=\"orange\")\nhist(x_pois, main=\"Poisson Distribution\", col=\"lightcoral\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#joint-and-conditional-distributions",
     "href": "slides/Chapter2.html#joint-and-conditional-distributions",
     "title": "Computational Statistics",
     "section": "Joint and Conditional Distributions",
-    "text": "Joint and Conditional Distributions\n\nJoint distributions and their importance\nConditional distributions with examples\n\n```{r}\n# Simulating joint distributions\nmu &lt;- c(5, 10); sigma &lt;- matrix(c(1, 0.5, 0.5, 2), 2, 2)\nlibrary(MASS)\nX &lt;- mvrnorm(1000, mu = mu, Sigma = sigma)\n\nplot(X[,1], X[,2], main=\"Scatter plot of Joint Distribution\", xlab=\"X1\", ylab=\"X2\", col=\"blue\")\n```"
+    "text": "Joint and Conditional Distributions\n\nJoint distributions and their importance\nConditional distributions with examples\n\n```{r}\n# Simulating joint distributions\nmu &lt;- c(5, 10); sigma &lt;- matrix(c(1, 0.5, 0.5, 2), 2, 2)\nlibrary(MASS)\nX &lt;- mvrnorm(1000, mu = mu, Sigma = sigma)\n\nplot(X[,1], X[,2], main=\"Scatter plot of Joint Distribution\", xlab=\"X1\", ylab=\"X2\", col=\"blue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#estimators-and-their-properties",
     "href": "slides/Chapter2.html#estimators-and-their-properties",
     "title": "Computational Statistics",
     "section": "Estimators and Their Properties",
-    "text": "Estimators and Their Properties\n\nDiscuss point estimators: Mean, Variance, etc.\nReview bias, consistency, and efficiency\n\n```{r}\n# Example of calculating mean and variance from samples\nset.seed(123)\nsample_data &lt;- rnorm(100, mean = 5, sd = 2)\nmean(sample_data)\nvar(sample_data)\n```"
+    "text": "Estimators and Their Properties\n\nDiscuss point estimators: Mean, Variance, etc.\nReview bias, consistency, and efficiency\n\n```{r}\n# Example of calculating mean and variance from samples\nset.seed(123)\nsample_data &lt;- rnorm(100, mean = 5, sd = 2)\nmean(sample_data)\nvar(sample_data)\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#hypothesis-testing",
     "href": "slides/Chapter2.html#hypothesis-testing",
     "title": "Computational Statistics",
     "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nHypothesis testing steps\nType I and II errors, significance level, and power\n\n```{r}\n# Example of hypothesis testing\nt_test_result &lt;- t.test(rnorm(100, mean = 5, sd = 2), mu=5)\nt_test_result\n```"
+    "text": "Hypothesis Testing\n\nHypothesis testing steps\nType I and II errors, significance level, and power\n\n```{r}\n# Example of hypothesis testing\nt_test_result &lt;- t.test(rnorm(100, mean = 5, sd = 2), mu=5)\nt_test_result\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter2.html#confidence-intervals",
     "href": "slides/Chapter2.html#confidence-intervals",
     "title": "Computational Statistics",
     "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nConstructing confidence intervals for population mean\nExample with real data\n\n```{r}\n# Example: Confidence interval for normal data\nconf_interval &lt;- t.test(rnorm(100, mean = 5, sd = 2))$conf.int\nconf_interval\n```"
+    "text": "Confidence Intervals\n\nConstructing confidence intervals for population mean\nExample with real data\n\n```{r}\n# Example: Confidence interval for normal data\nconf_interval &lt;- t.test(rnorm(100, mean = 5, sd = 2))$conf.int\nconf_interval\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
   },
   {
     "objectID": "slides/Chapter14.html#introduction-to-optimization",
     "href": "slides/Chapter14.html#introduction-to-optimization",
     "title": "Computational Statistics",
     "section": "Introduction to Optimization",
-    "text": "Introduction to Optimization\n\nOverview of optimization methods\nExample: One-dimensional optimization using optimize\n\n```{r}\nf &lt;- function(x) log(x + log(x)) / log(1 + x)\n\n# Plotting the function\ncurve(f(x), from = 2, to = 15, ylab = \"f(x)\")\n\n# Finding the maximum\nres &lt;- optimize(f, lower = 4, upper = 8, maximum = TRUE)\nabline(v=res$maximum)\nres$maximum\n```"
+    "text": "Introduction to Optimization\n\nOverview of optimization methods\nExample: One-dimensional optimization using optimize\n\n```{r}\nf &lt;- function(x) log(x + log(x)) / log(1 + x)\n\n# Plotting the function\ncurve(f(x), from = 2, to = 15, ylab = \"f(x)\")\n\n# Finding the maximum\nres &lt;- optimize(f, lower = 4, upper = 8, maximum = TRUE)\nabline(v=res$maximum)\nres$maximum\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
   },
   {
     "objectID": "slides/Chapter14.html#visualizing-optimization-results",
     "href": "slides/Chapter14.html#visualizing-optimization-results",
     "title": "Computational Statistics",
     "section": "Visualizing Optimization Results",
-    "text": "Visualizing Optimization Results\n```{r}\n# Add a line indicating the maximum\nabline(v=res$maximum, col = \"red\", lwd = 2)\n```"
+    "text": "Visualizing Optimization Results\n```{r}\n# Add a line indicating the maximum\nabline(v=res$maximum, col = \"red\", lwd = 2)\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
   },
   {
     "objectID": "slides/Chapter14.html#introduction-to-mle",
     "href": "slides/Chapter14.html#introduction-to-mle",
     "title": "Computational Statistics",
     "section": "Introduction to MLE",
-    "text": "Introduction to MLE\n\nIntroduction to Maximum Likelihood Estimation (MLE)\nExample: MLE for Gamma distribution\n\n```{r}\n# MLE for Gamma distribution\nm &lt;- 20000\nest &lt;- matrix(0, m, 2)\nn &lt;- 2000\nr &lt;- 5\nlambda &lt;- 2\n\nobj &lt;- function(lambda, xbar, logx.bar) {\n  r &lt;- length(xbar)\n  log(lambda) - lambda * mean(xbar) + logx.bar\n}\n```"
+    "text": "Introduction to MLE\n\nIntroduction to Maximum Likelihood Estimation (MLE)\nExample: MLE for Gamma distribution\n\n```{r}\n# MLE for Gamma distribution\nm &lt;- 20000\nest &lt;- matrix(0, m, 2)\nn &lt;- 2000\nr &lt;- 5\nlambda &lt;- 2\n\nobj &lt;- function(lambda, xbar, logx.bar) {\n  r &lt;- length(xbar)\n  log(lambda) - lambda * mean(xbar) + logx.bar\n}\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
   },
   {
     "objectID": "slides/Chapter14.html#optimizing-mle",
     "href": "slides/Chapter14.html#optimizing-mle",
     "title": "Computational Statistics",
     "section": "Optimizing MLE",
-    "text": "Optimizing MLE\n```{r}\n# Optimizing the MLE\nxbar &lt;- rnorm(n, mean = r/lambda, sd = 1)\nlogx.bar &lt;- mean(log(xbar))\nresult &lt;- optimize(obj, lower = 1, upper = 10, xbar = xbar, logx.bar = logx.bar, maximum = TRUE)\nresult\n```"
+    "text": "Optimizing MLE\n```{r}\n# Optimizing the MLE\nxbar &lt;- rnorm(n, mean = r/lambda, sd = 1)\nlogx.bar &lt;- mean(log(xbar))\nresult &lt;- optimize(obj, lower = 1, upper = 10, xbar = xbar, logx.bar = logx.bar, maximum = TRUE)\nresult\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
   },
   {
     "objectID": "slides/Chapter14.html#conclusion",
     "href": "slides/Chapter14.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of one-dimensional optimization and MLE techniques\nPractice: Apply optimization to other statistical problems and models\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth"
+    "text": "Conclusion\n\nRecap of one-dimensional optimization and MLE techniques\nPractice: Apply optimization to other statistical problems and models\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#sampling-from-a-finite-population",
     "href": "slides/Chapter3.html#sampling-from-a-finite-population",
     "title": "Computational Statistics",
     "section": "Sampling from a Finite Population",
-    "text": "Sampling from a Finite Population\n\nIntroduction to finite population sampling\nExample: Tossing coins, choosing lottery numbers\n\n```{r}\n# Sampling examples\nsample(0:1, size = 10, replace = TRUE)  # Tossing coins\nsample(1:100, size = 6, replace = FALSE)  # Choosing lottery numbers\nsample(letters)  # Permutation of letters\n```"
+    "text": "Sampling from a Finite Population\n\nIntroduction to finite population sampling\nExample: Tossing coins, choosing lottery numbers\n\n```{r}\n# Sampling examples\nsample(0:1, size = 10, replace = TRUE)  # Tossing coins\nsample(1:100, size = 6, replace = FALSE)  # Choosing lottery numbers\nsample(letters)  # Permutation of letters\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#multinomial-distribution",
     "href": "slides/Chapter3.html#multinomial-distribution",
     "title": "Computational Statistics",
     "section": "Multinomial Distribution",
-    "text": "Multinomial Distribution\n\nIntroduction to multinomial distribution\nExample: Sampling from a multinomial distribution\n\n```{r}\n# Sample from multinomial distribution\nx &lt;- sample(1:3, size = 100, replace = TRUE, prob = c(.2, .3, .5))\ntable(x)\n```"
+    "text": "Multinomial Distribution\n\nIntroduction to multinomial distribution\nExample: Sampling from a multinomial distribution\n\n```{r}\n# Sample from multinomial distribution\nx &lt;- sample(1:3, size = 100, replace = TRUE, prob = c(.2, .3, .5))\ntable(x)\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#continuous-case",
     "href": "slides/Chapter3.html#continuous-case",
     "title": "Computational Statistics",
     "section": "Continuous Case",
-    "text": "Continuous Case\n\nExplanation of the inverse transform method for continuous distributions\nExample: Simulating exponential random variables\n\n```{r}\n# Inverse transform method for exponential distribution\nn &lt;- 1000\nU &lt;- runif(n)\nX &lt;- -log(1 - U)\nhist(X, main=\"Exponential Distribution via Inverse Transform\", col=\"lightblue\")\n```"
+    "text": "Continuous Case\n\nExplanation of the inverse transform method for continuous distributions\nExample: Simulating exponential random variables\n\n```{r}\n# Inverse transform method for exponential distribution\nn &lt;- 1000\nU &lt;- runif(n)\nX &lt;- -log(1 - U)\nhist(X, main=\"Exponential Distribution via Inverse Transform\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#discrete-case",
     "href": "slides/Chapter3.html#discrete-case",
     "title": "Computational Statistics",
     "section": "Discrete Case",
-    "text": "Discrete Case\n\nExample of applying the inverse transform method to discrete random variables\n\n```{r}\n# Inverse transform method for geometric distribution\np &lt;- 0.5\nX_geom &lt;- ceiling(log(1 - runif(n)) / log(1 - p))\nhist(X_geom, main=\"Geometric Distribution via Inverse Transform\", col=\"lightgreen\")\n```"
+    "text": "Discrete Case\n\nExample of applying the inverse transform method to discrete random variables\n\n```{r}\n# Inverse transform method for geometric distribution\np &lt;- 0.5\nX_geom &lt;- ceiling(log(1 - runif(n)) / log(1 - p))\nhist(X_geom, main=\"Geometric Distribution via Inverse Transform\", col=\"lightgreen\")\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#introduction-to-acceptance-rejection-method",
     "href": "slides/Chapter3.html#introduction-to-acceptance-rejection-method",
     "title": "Computational Statistics",
     "section": "Introduction to Acceptance-Rejection Method",
-    "text": "Introduction to Acceptance-Rejection Method\n\nExplanation of the acceptance-rejection method\nExample: Sampling from a target distribution\n\n```{r}\n# Acceptance-rejection method example\ntarget &lt;- function(x) { ifelse(x &gt; 0, exp(-x), 0) }\nproposal &lt;- function(x) { dnorm(x, mean = 2, sd = 1) }\n\nX &lt;- rnorm(1000, mean = 2, sd = 1)\naccept &lt;- runif(1000) &lt; target(X) / (1.5 * proposal(X))\n\nhist(X[accept], main=\"Accepted Samples from Target Distribution\", col=\"lightcoral\")\n```"
+    "text": "Introduction to Acceptance-Rejection Method\n\nExplanation of the acceptance-rejection method\nExample: Sampling from a target distribution\n\n```{r}\n# Acceptance-rejection method example\ntarget &lt;- function(x) { ifelse(x &gt; 0, exp(-x), 0) }\nproposal &lt;- function(x) { dnorm(x, mean = 2, sd = 1) }\n\nX &lt;- rnorm(1000, mean = 2, sd = 1)\naccept &lt;- runif(1000) &lt; target(X) / (1.5 * proposal(X))\n\nhist(X[accept], main=\"Accepted Samples from Target Distribution\", col=\"lightcoral\")\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#visualizing-results",
     "href": "slides/Chapter3.html#visualizing-results",
     "title": "Computational Statistics",
     "section": "Visualizing Results",
-    "text": "Visualizing Results\n\nCompare the target and proposal distributions\n\n```{r}\n# Overlay target and proposal distributions\ncurve(target(x), from = 0, to = 5, col = \"blue\", lwd = 2, main = \"Target vs Proposal Distributions\")\ncurve(proposal(x), add = TRUE, col = \"red\", lwd = 2, lty = 2)\nlegend(\"topright\", legend=c(\"Target\", \"Proposal\"), col=c(\"blue\", \"red\"), lwd=2, lty=c(1, 2))\n```"
+    "text": "Visualizing Results\n\nCompare the target and proposal distributions\n\n```{r}\n# Overlay target and proposal distributions\ncurve(target(x), from = 0, to = 5, col = \"blue\", lwd = 2, main = \"Target vs Proposal Distributions\")\ncurve(proposal(x), add = TRUE, col = \"red\", lwd = 2, lty = 2)\nlegend(\"topright\", legend=c(\"Target\", \"Proposal\"), col=c(\"blue\", \"red\"), lwd=2, lty=c(1, 2))\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#transformation-of-random-variables",
     "href": "slides/Chapter3.html#transformation-of-random-variables",
     "title": "Computational Statistics",
     "section": "Transformation of Random Variables",
-    "text": "Transformation of Random Variables\n\nIntroduction to transformation methods\nExample: Box-Muller transform for generating normal random variables\n\n```{r}\n# Box-Muller transform\nn &lt;- 1000\nU1 &lt;- runif(n)\nU2 &lt;- runif(n)\nZ1 &lt;- sqrt(-2 * log(U1)) * cos(2 * pi * U2)\nZ2 &lt;- sqrt(-2 * log(U1)) * sin(2 * pi * U2)\nhist(Z1, main=\"Normal Distribution via Box-Muller\", col=\"lightblue\")\n```"
+    "text": "Transformation of Random Variables\n\nIntroduction to transformation methods\nExample: Box-Muller transform for generating normal random variables\n\n```{r}\n# Box-Muller transform\nn &lt;- 1000\nU1 &lt;- runif(n)\nU2 &lt;- runif(n)\nZ1 &lt;- sqrt(-2 * log(U1)) * cos(2 * pi * U2)\nZ2 &lt;- sqrt(-2 * log(U1)) * sin(2 * pi * U2)\nhist(Z1, main=\"Normal Distribution via Box-Muller\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter3.html#sums-and-mixtures",
     "href": "slides/Chapter3.html#sums-and-mixtures",
     "title": "Computational Statistics",
     "section": "Sums and Mixtures",
-    "text": "Sums and Mixtures\n\nExplanation of sums and mixtures of random variables\nExample: Mixture of normals\n\n```{r}\n# Mixture of normals\nlibrary(MASS)\nmu1 &lt;- 0; mu2 &lt;- 3; sigma1 &lt;- 1; sigma2 &lt;- 2\np &lt;- 0.3\nX &lt;- ifelse(runif(n) &lt; p, rnorm(n, mu1, sigma1), rnorm(n, mu2, sigma2))\nhist(X, main=\"Mixture of Normal Distributions\", col=\"lightgreen\")\n```"
+    "text": "Sums and Mixtures\n\nExplanation of sums and mixtures of random variables\nExample: Mixture of normals\n\n```{r}\n# Mixture of normals\nlibrary(MASS)\nmu1 &lt;- 0; mu2 &lt;- 3; sigma1 &lt;- 1; sigma2 &lt;- 2\np &lt;- 0.3\nX &lt;- ifelse(runif(n) &lt; p, rnorm(n, mu1, sigma1), rnorm(n, mu2, sigma2))\nhist(X, main=\"Mixture of Normal Distributions\", col=\"lightgreen\")\n```",
+    "crumbs": [
+      "Slides",
+      "Generating RVs"
+    ]
   },
   {
     "objectID": "slides/Chapter13.html#numerical-precision-and-floating-point-arithmetic",
     "href": "slides/Chapter13.html#numerical-precision-and-floating-point-arithmetic",
     "title": "Computational Statistics",
     "section": "Numerical Precision and Floating-Point Arithmetic",
-    "text": "Numerical Precision and Floating-Point Arithmetic\n\nIntroduction to floating-point arithmetic in R\nBrain teasers: TRUE or FALSE?\n\n```{r}\n# Examples of floating-point precision\n1==1\n3-2==1\n0.3-0.2==0.1\n0.4-0.2==0.2\n```"
+    "text": "Numerical Precision and Floating-Point Arithmetic\n\nIntroduction to floating-point arithmetic in R\nBrain teasers: TRUE or FALSE?\n\n```{r}\n# Examples of floating-point precision\n1==1\n3-2==1\n0.3-0.2==0.1\n0.4-0.2==0.2\n```",
+    "crumbs": [
+      "Slides",
+      "Numerical Methods in R"
+    ]
   },
   {
     "objectID": "slides/Chapter13.html#binary-representation",
     "href": "slides/Chapter13.html#binary-representation",
     "title": "Computational Statistics",
     "section": "Binary Representation",
-    "text": "Binary Representation\n\nDiscussion on binary fractions and limitations\nResources:\n\nBinary Fraction Calculator\nFloating Point Problem"
+    "text": "Binary Representation\n\nDiscussion on binary fractions and limitations\nResources:\n\nBinary Fraction Calculator\nFloating Point Problem",
+    "crumbs": [
+      "Slides",
+      "Numerical Methods in R"
+    ]
   },
   {
     "objectID": "slides/Chapter13.html#iterative-methods",
     "href": "slides/Chapter13.html#iterative-methods",
     "title": "Computational Statistics",
     "section": "Iterative Methods",
-    "text": "Iterative Methods\n\nIntroduction to iterative methods in numerical analysis\n\n```{r}\n# Example: Calculating large integers\nas.integer(2^31-1)\nas.integer(2^31)\n```"
+    "text": "Iterative Methods\n\nIntroduction to iterative methods in numerical analysis\n\n```{r}\n# Example: Calculating large integers\nas.integer(2^31-1)\nas.integer(2^31)\n```",
+    "crumbs": [
+      "Slides",
+      "Numerical Methods in R"
+    ]
   },
   {
     "objectID": "slides/Chapter13.html#numerical-integration",
     "href": "slides/Chapter13.html#numerical-integration",
     "title": "Computational Statistics",
     "section": "Numerical Integration",
-    "text": "Numerical Integration\n\nExample of numerical integration using base R functions\n\n```{r}\n# Numerical integration using integrate function\nf &lt;- function(x) sin(x)\nintegrate(f, lower = 0, upper = pi)\n```"
+    "text": "Numerical Integration\n\nExample of numerical integration using base R functions\n\n```{r}\n# Numerical integration using integrate function\nf &lt;- function(x) sin(x)\nintegrate(f, lower = 0, upper = pi)\n```",
+    "crumbs": [
+      "Slides",
+      "Numerical Methods in R"
+    ]
   },
   {
     "objectID": "slides/Chapter13.html#conclusion",
     "href": "slides/Chapter13.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of numerical precision, floating-point arithmetic, and numerical integration methods\nPractice: Apply numerical methods to solve optimization and integration problems\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth"
+    "text": "Conclusion\n\nRecap of numerical precision, floating-point arithmetic, and numerical integration methods\nPractice: Apply numerical methods to solve optimization and integration problems\n\n\n\n\n\n🔗 tinyurl.com/Stat-Meth",
+    "crumbs": [
+      "Slides",
+      "Numerical Methods in R"
+    ]
   },
   {
     "objectID": "hw/HW 7.html",
@@ -721,7 +952,7 @@
     "href": "course-overview.html",
     "title": "Course overview",
     "section": "",
-    "text": "This is the homepage for STA 313 - Advanced Data Visualization taught by Dr. Mine Çetinkaya-Rundel in Spring 2024 at Duke University. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here.",
+    "text": "This is the homepage for MATH 4750 (MSSC 5750) - Computational Statistics by Dr. Mehdi Maadooliat in Spring 2025 at Marquette University. All course materials will be posted on this site.\nYou can find the course syllabus here (course flyer here)and the course schedule here.",
     "crumbs": [
       "Course information",
       "Overview"
@@ -732,18 +963,7 @@
     "href": "course-overview.html#class-meetings",
     "title": "Course overview",
     "section": "Class meetings",
-    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nLSRC D106\nTue & Thur 10:05 - 11:20 pm\n\n\nLab 1\nLink Classroom 5\nWed 1:25 - 2:40 pm\n\n\nLab 2\nLink Classroom 5\nWed 3:05 - 4:20 pm",
-    "crumbs": [
-      "Course information",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "course-overview.html#license",
-    "href": "course-overview.html#license",
-    "title": "Course overview",
-    "section": "License",
-    "text": "License\n\nThis online work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International. Visit here for more information about the license.",
+    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nCU 351\nTue & Thur 2:00 - 3:15 pm\n\n\nOffice Hours\nCU 351\nTue & Thur 12:25 - 1:55 pm",
     "crumbs": [
       "Course information",
       "Overview"
