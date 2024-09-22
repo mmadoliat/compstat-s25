@@ -2,21 +2,15 @@
 title: "Course overview"
 ---
 
-This is the homepage for STA 313 - Advanced Data Visualization taught by [Dr. Mine Çetinkaya-Rundel](http://mine-cr.com/) in Spring 2024 at Duke University. All course materials will be posted on this site.
+This is the homepage for MATH 4750 (MSSC 5750) - Computational Statistics by [Dr. Mehdi Maadooliat](www.mssc.mu.edu/~mehdi) in Spring 2025 at Marquette University. All course materials will be posted on this site.
 
-You can find the course syllabus [here](/syllabus) and the course schedule [here](/).
+You can find the course syllabus [here](/syllabus) (course flyer [here](images/flyer.pdf))and the course schedule [here](/).
 
 ## Class meetings
 
-| Meeting | Location         | Time                        |
-|---------|------------------|-----------------------------|
-| Lecture | LSRC D106        | Tue & Thur 10:05 - 11:20 pm |
-| Lab 1   | Link Classroom 5 | Wed 1:25 - 2:40 pm          |
-| Lab 2   | Link Classroom 5 | Wed 3:05 - 4:20 pm          |
+| Meeting      | Location | Time                       |
+|--------------|----------|----------------------------|
+| Lecture      | CU 351   | Tue & Thur 2:00 - 3:15 pm  |
+| Office Hours | CU 351   | Tue & Thur 12:25 - 1:55 pm |
 
-<br>
-
-## **License**
-
-[![Creative Commons License](https://licensebuttons.net/l/by-sa/4.0/88x31.png){alt="Creative Commons License"}](https://creativecommons.org/licenses/by-sa/4.0/)\
-This online work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). Visit [here](https://github.com/dukestatsciintrods/blob/master/LICENSE.md) for more information about the license.
+![](images/flyer.png)

@@ -41,8 +41,6 @@ website:
             text: Overview
           - href: course-syllabus.qmd
             text: Syllabus
-          - href: course-team.qmd
-            text: Teaching team
           - href: index.qmd
             text: Schedule
           - href: course-links.qmd
@@ -53,12 +51,34 @@ website:
             text: Cheatsheets
       - section: "HW"
         contents:
-          - href: hw/hw-1.qmd
+          - href: hw/HW 1.qmd
             text: HW 1
-      - section: "Student work"
+      - section: "Slides"
         contents:
-          - href: student-work/ugly-plot.qmd
-            text: Ugly plots
+          - href: slides/Chapter1.qmd
+            text: Intro. to Stat. Comp.
+          - href: slides/Chapter2.qmd
+            text: Proba. and Stat. Review
+          - href: slides/Chapter3.qmd
+            text: Generating RVs
+          - href: slides/Chapter5.qmd
+            text: Visualization
+          - href: slides/Chapter6.qmd
+            text: Monte Carlo Integration
+          - href: slides/Chapter7.qmd
+            text: Monte Carlo Methods in Inference
+          - href: slides/Chapter8.qmd
+            text: Bootstrap and Jackknife
+          - href: slides/Chapter9.qmd
+            text: Jackknife-after-Bootstrap
+          - href: slides/Chapter12.qmd
+            text: Density Estimation
+          - href: slides/Chapter13.qmd
+            text: Numerical Methods in R
+          - href: slides/Chapter14.qmd
+            text: Optimization
+          - href: slides/Chapter15.qmd
+            text: Programming Topics
 
   page-footer:
     right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
@@ -68,8 +88,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, style/sta313.scss]
-      dark: [cosmo, style/sta313.scss, style/dark.scss]
+      light: [cosmo, style/mu.scss]
+      dark: [cosmo, style/mu.scss, style/dark.scss]
     linkcolor: "#003366" # Glossy Grape
     toc: true
     code-copy: true

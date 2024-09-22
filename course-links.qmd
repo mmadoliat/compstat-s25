@@ -2,32 +2,38 @@
 title: "Useful links"
 ---
 
-+----------------------------+-----------------------------------------------------------------------------+
-| RStudio containers         | 🔗 on [Duke Container Manager](https://cmgr.oit.duke.edu/containers)        |
-+----------------------------+-----------------------------------------------------------------------------+
-| Course GitHub organization | 🔗 on [GitHub](https://github.com/vizdata-s24)                              |
-+----------------------------+-----------------------------------------------------------------------------+
-| Gradebook                  | 🔗 on [Canvas](https://canvas.duke.edu/courses/27066/gradebook)             |
-+----------------------------+-----------------------------------------------------------------------------+
-| Texbooks                   | 🔗 [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/) |
-|                            |                                                                             |
-|                            | 🔗 [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)    |
-|                            |                                                                             |
-|                            | 🔗 [Data Visualization: A Practical Introduction](https://socviz.co/)       |
-|                            |                                                                             |
-|                            | 🔗 [R for Data Science](https://r4ds.hadley.nz/)                            |
-+----------------------------+-----------------------------------------------------------------------------+
-| Package documentation      | 🔗 ggplot2: [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/)         |
-|                            |                                                                             |
-|                            | 🔗 dplyr: [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)               |
-|                            |                                                                             |
-|                            | 🔗 tidyr: [tidyr.tidyverse.org](https://tidyr.tidyverse.org/)               |
-|                            |                                                                             |
-|                            | 🔗 forcats: [forcats.tidyverse.org](https://forcats.tidyverse.org/)         |
-|                            |                                                                             |
-|                            | 🔗 stringr: [stringr.tidyverse.org](https://stringr.tidyverse.org/)         |
-|                            |                                                                             |
-|                            | 🔗 lubridate: [lubridate.tidyverse.org](https://lubridate.tidyverse.org/)   |
-|                            |                                                                             |
-|                            | 🔗 readr: [readr.tidyverse.org](https://readr.tidyverse.org/)               |
-+----------------------------+-----------------------------------------------------------------------------+
++----------------------------+---------------------------------------------------------------------------------------+
+| Homework                   | 🔗 on [D2L](http://d2l.mu.edu)                                                        |
++----------------------------+---------------------------------------------------------------------------------------+
+| Texbooks                   | 🔗 [Computational Statistics in Python](https://people.duke.edu/~ccc14/sta-663-2020/) |
+|                            |                                                                                       |
+|                            | 🔗 [R Package](https://r-pkgs.org/)                                                   |
+|                            |                                                                                       |
+|                            | 🔗 [Advanced R by Hadley Wickham](https://adv-r.hadley.nz/)                           |
+|                            |                                                                                       |
+|                            | 🔗 [Quarto](https://quarto.org/)                                                      |
+|                            |                                                                                       |
+|                            | 🔗 [R Markdown](https://bookdown.org/yihui/rmarkdown/)                                |
+|                            |                                                                                       |
+|                            | 🔗 [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)           |
+|                            |                                                                                       |
+|                            | 🔗 [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)              |
+|                            |                                                                                       |
+|                            | 🔗 [Data Visualization: A Practical Introduction](https://socviz.co/)                 |
+|                            |                                                                                       |
+|                            | 🔗 [R for Data Science](https://r4ds.hadley.nz/)                                      |
++----------------------------+---------------------------------------------------------------------------------------+
+| Some Package documentation | 🔗 ggplot2: [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/)                   |
+|                            |                                                                                       |
+|                            | 🔗 dplyr: [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)                         |
+|                            |                                                                                       |
+|                            | 🔗 tidyr: [tidyr.tidyverse.org](https://tidyr.tidyverse.org/)                         |
+|                            |                                                                                       |
+|                            | 🔗 forcats: [forcats.tidyverse.org](https://forcats.tidyverse.org/)                   |
+|                            |                                                                                       |
+|                            | 🔗 stringr: [stringr.tidyverse.org](https://stringr.tidyverse.org/)                   |
+|                            |                                                                                       |
+|                            | 🔗 lubridate: [lubridate.tidyverse.org](https://lubridate.tidyverse.org/)             |
+|                            |                                                                                       |
+|                            | 🔗 readr: [readr.tidyverse.org](https://readr.tidyverse.org/)                         |
++----------------------------+---------------------------------------------------------------------------------------+
