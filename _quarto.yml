@@ -45,14 +45,6 @@ website:
             text: Schedule
           - href: course-links.qmd
             text: Useful links
-      - section: "Computing"
-        contents:
-          - href: computing/computing-cheatsheets.qmd
-            text: Cheatsheets
-      - section: "HW"
-        contents:
-          - href: hw/HW 1.qmd
-            text: HW 1
       - section: "Slides"
         contents:
           - href: slides/Chapter1.qmd
@@ -79,6 +71,14 @@ website:
             text: Optimization
           - href: slides/Chapter15.qmd
             text: Programming Topics
+      - section: "HW"
+        contents:
+          - href: hw/HW 1.qmd
+            text: HW 1
+      - section: "Computing"
+        contents:
+          - href: computing/computing-cheatsheets.qmd
+            text: Cheatsheets
 
   page-footer:
     right: "This page is built with 💛 and [Quarto](https://quarto.org/)."

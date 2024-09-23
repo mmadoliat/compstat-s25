@@ -61,7 +61,11 @@ By the end of the course, students will: - Understand core programming concepts,
 | D     | 45 - 50.99% |
 | F     | \< 44.99%   |
 
-**Note:** No late homework will be accepted, and no make-up work will be allowed unless in the case of an emergency. Submit incomplete work if necessary, but ensure scanned PDFs are legible before submission.
+**Notes:**
+
+-   For students in MSSC 5750, there will be extra questions in Homework.
+
+-   No late homework will be accepted, and no make-up work will be allowed unless in the case of an emergency. Submit incomplete work if necessary, but ensure scanned PDFs are legible before submission.
 
 ## Make-up Policy
 
