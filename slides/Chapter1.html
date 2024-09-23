@@ -400,7 +400,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="../vizdata-bg.png" data-background-size="stretch" data-slide-number="none" class="quarto-title-block center">
+<section id="title-slide" data-background-image="mu-bg.png" data-background-size="stretch" data-slide-number="none" class="quarto-title-block center">
   <h1 class="title">Computational Statistics</h1>
   <p class="subtitle">Chapter 1 - Introduction</p>
 
@@ -445,19 +445,13 @@ Dr.&nbsp;Mehdi Maadooliat
 <section id="r-help-system-and-distributions" class="title-slide slide level1 center">
 <h1>R Help System and Distributions</h1>
 <ul>
-<li>How to use the R help system</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in">?dnorm</span></span>
-<span id="cb2-3"><a></a><span class="in">example(dnorm)</span></span>
-<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
+<li>How to use the R help system 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATwBBAEEAdwBBAEQAawBBAAoAcAByAGUAZgBpAHgAOgAKAHMAbwB1AHIAYwBlADoAWQBBAEIAZwBBAEcAQQBBAGUAdwBCADcAQQBIAEkAQQBmAFEAQgA5AEEAQQBvAEEAUAB3AEIAawBBAEcANABBAGIAdwBCAHkAQQBHADAAQQBDAGcAQgBsAEEASABnAEEAWQBRAEIAdABBAEgAQQBBAGIAQQBCAGwAQQBDAGcAQQBaAEEAQgB1AEEARwA4AEEAYwBnAEIAdABBAEMAawBBAEMAZwBCAGcAQQBHAEEAQQBZAEEAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</li>
 <li>Generating random variables and performing statistical tests in R</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in">rnorm(100)</span></span>
-<span id="cb3-3"><a></a><span class="in">t.test(rnorm(10), rnorm(10))</span></span>
-<span id="cb3-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a></a><span class="in">rnorm(100)</span></span>
+<span id="cb2-3"><a></a><span class="in">t.test(rnorm(10), rnorm(10))</span></span>
+<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="functions-in-r" class="title-slide slide level1 center">
@@ -466,20 +460,16 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Creating custom functions in R</li>
 <li>Example: Rolling dice</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in">sumdice &lt;- function(n) {{</span></span>
-<span id="cb4-3"><a></a><span class="in">    k &lt;- sample(1:6, size=n, replace=TRUE)</span></span>
-<span id="cb4-4"><a></a><span class="in">    return(sum(k))</span></span>
-<span id="cb4-5"><a></a><span class="in">}}</span></span>
-<span id="cb4-6"><a></a><span class="in">sumdice(2)</span></span>
-<span id="cb4-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb3-2"><a></a><span class="in">sumdice &lt;- function(n) {{</span></span>
+<span id="cb3-3"><a></a><span class="in">    k &lt;- sample(1:6, size=n, replace=TRUE)</span></span>
+<span id="cb3-4"><a></a><span class="in">    return(sum(k))</span></span>
+<span id="cb3-5"><a></a><span class="in">}}</span></span>
+<span id="cb3-6"><a></a><span class="in">sumdice(2)</span></span>
+<span id="cb3-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Expectation from rolling 100 dice</li>
+<li>Expectation from rolling 100 dice 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAeABBAEQAawBBAE4AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBZAEEAQgBnAEEARwBBAEEAZQB3AEIANwBBAEgASQBBAGYAUQBCADkAQQBBAG8AQQBZAFEAQQBnAEEARAB3AEEATABRAEEAZwBBAEgATQBBAGQAUQBCAHQAQQBHAFEAQQBhAFEAQgBqAEEARwBVAEEASwBBAEEAeABBAEQAQQBBAE0AQQBBAHAAQQBBAG8AQQBZAFEAQQBnAEEAQwA4AEEASQBBAEEAeABBAEQAQQBBAE0AQQBBAEsAQQBHAEEAQQBZAEEAQgBnAEEAQQA9AD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb5-2"><a></a><span class="in">a &lt;- sumdice(100)</span></span>
-<span id="cb5-3"><a></a><span class="in">a / 100</span></span>
-<span id="cb5-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="data-structures-arrays-data-frames-and-lists" class="title-slide slide level1 center">
@@ -487,19 +477,15 @@ Dr.&nbsp;Mehdi Maadooliat
 <ul>
 <li>Introduction to vectors, matrices, and lists</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb6-2"><a></a><span class="in"># Creating vectors and matrices</span></span>
-<span id="cb6-3"><a></a><span class="in">x &lt;- c(1, 2, 3, 4)</span></span>
-<span id="cb6-4"><a></a><span class="in">matrix_x &lt;- matrix(x, nrow=2, ncol=2)</span></span>
-<span id="cb6-5"><a></a><span class="in">print(matrix_x)</span></span>
-<span id="cb6-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb4-2"><a></a><span class="in"># Creating vectors and matrices</span></span>
+<span id="cb4-3"><a></a><span class="in">x &lt;- c(1, 2, 3, 4)</span></span>
+<span id="cb4-4"><a></a><span class="in">matrix_x &lt;- matrix(x, nrow=2, ncol=2)</span></span>
+<span id="cb4-5"><a></a><span class="in">print(matrix_x)</span></span>
+<span id="cb4-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Data frames using the <code>iris</code> dataset</li>
+<li>Data frames using the <code>iris</code> dataset 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAMABBAEQAawBBAE0AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBZAEEAQgBnAEEARwBBAEEAZQB3AEIANwBBAEgASQBBAGYAUQBCADkAQQBBAG8AQQBaAEEAQgBoAEEASABRAEEAWQBRAEEAbwBBAEcAawBBAGMAZwBCAHAAQQBIAE0AQQBLAFEAQQBLAEEASABNAEEAZABRAEIAdABBAEcAMABBAFkAUQBCAHkAQQBIAGsAQQBLAEEAQgBwAEEASABJAEEAYQBRAEIAegBBAEMAawBBAEMAZwBCAGcAQQBHAEEAQQBZAEEAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb7-2"><a></a><span class="in">data(iris)</span></span>
-<span id="cb7-3"><a></a><span class="in">summary(iris)</span></span>
-<span id="cb7-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="table-comparison-of-data-structures" class="title-slide slide level1 center">
@@ -509,9 +495,9 @@ table { font-size: 0.75em; }
 </style>
 <table>
 <colgroup>
-<col style="width: 14%">
-<col style="width: 51%">
-<col style="width: 33%">
+<col style="width: 17%">
+<col style="width: 48%">
+<col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -550,35 +536,20 @@ table { font-size: 0.75em; }
 <ul>
 <li>Basic plotting functions</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb8-2"><a></a><span class="in">plot(iris$Sepal.Length, iris$Petal.Length)</span></span>
-<span id="cb8-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb5-2"><a></a><span class="in">plot(iris$Sepal.Length, iris$Petal.Length)</span></span>
+<span id="cb5-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Visualization with histograms</li>
+<li>Visualization with histograms 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBnAEEAeQBBAEQAWQBBAE8AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBZAEEAQgBnAEEARwBBAEEAZQB3AEIANwBBAEgASQBBAGYAUQBCADkAQQBBAG8AQQBhAEEAQgBwAEEASABNAEEAZABBAEEAbwBBAEcAawBBAGMAZwBCAHAAQQBIAE0AQQBKAEEAQgBUAEEARwBVAEEAYwBBAEIAaABBAEcAdwBBAEwAZwBCAE0AQQBHAFUAQQBiAGcAQgBuAEEASABRAEEAYQBBAEEAcwBBAEMAQQBBAGIAUQBCAGgAQQBHAGsAQQBiAGcAQQA5AEEAQwBJAEEAUwBBAEIAcABBAEgATQBBAGQAQQBCAHYAQQBHAGMAQQBjAGcAQgBoAEEARwAwAEEASQBBAEIAdgBBAEcAWQBBAEkAQQBCAFQAQQBHAFUAQQBjAEEAQgBoAEEARwB3AEEASQBBAEIATQBBAEcAVQBBAGIAZwBCAG4AQQBIAFEAQQBhAEEAQQBpAEEAQwB3AEEASQBBAEIANABBAEcAdwBBAFkAUQBCAGkAQQBEADAAQQBJAGcAQgBUAEEARwBVAEEAYwBBAEIAaABBAEcAdwBBAEkAQQBCAE0AQQBHAFUAQQBiAGcAQgBuAEEASABRAEEAYQBBAEEAaQBBAEMAdwBBAEkAQQBCAGoAQQBHADgAQQBiAEEAQQA5AEEAQwBJAEEAYgBBAEIAcABBAEcAYwBBAGEAQQBCADAAQQBHAEkAQQBiAEEAQgAxAEEARwBVAEEASQBnAEEAcwBBAEMAQQBBAFkAZwBCAHYAQQBIAEkAQQBaAEEAQgBsAEEASABJAEEAUABRAEEAaQBBAEcASQBBAGIAQQBCAGgAQQBHAE0AQQBhAHcAQQBpAEEAQwBrAEEAQwBnAEIAZwBBAEcAQQBBAFkAQQBBAD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb9-2"><a></a><span class="in">hist(iris$Sepal.Length, main="Histogram of Sepal Length", xlab="Sepal Length", col="lightblue", border="black")</span></span>
-<span id="cb9-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="advanced-visualizations" class="title-slide slide level1 center">
 <h1>Advanced Visualizations</h1>
 <ul>
-<li>Scatter plot with regression line</li>
+<li><p>Scatter plot with regression line 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBnAEEAMABBAEQAVQBBAE8AQQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBZAEEAQgBnAEEARwBBAEEAZQB3AEIANwBBAEgASQBBAGYAUQBCADkAQQBBAG8AQQBJAHcAQgA4AEEAQwBBAEEAYgBBAEIAaABBAEcASQBBAFoAUQBCAHMAQQBEAG8AQQBJAEEAQgB6AEEARwBVAEEAZABBAEIAMQBBAEgAQQBBAEMAZwBBAGoAQQBIAHcAQQBJAEEAQgB0AEEARwBVAEEAYwB3AEIAegBBAEcARQBBAFoAdwBCAGwAQQBEAG8AQQBJAEEAQgBtAEEARwBFAEEAYgBBAEIAegBBAEcAVQBBAEMAZwBBAGoAQQBIAHcAQQBJAEEAQgBqAEEARwA4AEEAWgBBAEIAbABBAEMAMABBAGIAQQBCAHAAQQBHADQAQQBaAFEAQQB0AEEARwA0AEEAZABRAEIAdABBAEcASQBBAFoAUQBCAHkAQQBIAE0AQQBPAGcAQQBnAEEAQwBJAEEAZgBBAEEAeABBAEgAdwBBAE0AZwBBAGkAQQBBAG8AQQBjAEEAQgBzAEEARwA4AEEAZABBAEEAbwBBAEcAawBBAGMAZwBCAHAAQQBIAE0AQQBKAEEAQgBUAEEARwBVAEEAYwBBAEIAaABBAEcAdwBBAEwAZwBCAE0AQQBHAFUAQQBiAGcAQgBuAEEASABRAEEAYQBBAEEAcwBBAEMAQQBBAGEAUQBCAHkAQQBHAGsAQQBjAHcAQQBrAEEARgBBAEEAWgBRAEIAMABBAEcARQBBAGIAQQBBAHUAQQBFAHcAQQBaAFEAQgB1AEEARwBjAEEAZABBAEIAbwBBAEMAawBBAEMAZwBCAGgAQQBHAEkAQQBiAEEAQgBwAEEARwA0AEEAWgBRAEEAbwBBAEcAdwBBAGIAUQBBAG8AQQBGAEEAQQBaAFEAQgAwAEEARwBFAEEAYgBBAEEAdQBBAEUAdwBBAFoAUQBCAHUAQQBHAGMAQQBkAEEAQgBvAEEAQwBBAEEAZgBnAEEAZwBBAEYATQBBAFoAUQBCAHcAQQBHAEUAQQBiAEEAQQB1AEEARQB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAHcAQQBJAEEAQgBrAEEARwBFAEEAZABBAEIAaABBAEQAMABBAGEAUQBCAHkAQQBHAGsAQQBjAHcAQQBwAEEAQwB3AEEASQBBAEIAagBBAEcAOABBAGIAQQBBADkAQQBDAEkAQQBjAGcAQgBsAEEARwBRAEEASQBnAEEAcABBAEEAbwBBAFkAQQBCAGcAQQBHAEEAQQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p></li>
+<li><p>Boxplot for data visualization 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBnAEEAMgBBAEQAYwBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBZAEEAQgBnAEEARwBBAEEAZQB3AEIANwBBAEgASQBBAGYAUQBCADkAQQBBAG8AQQBZAGcAQgB2AEEASABnAEEAYwBBAEIAcwBBAEcAOABBAGQAQQBBAG8AQQBHAGsAQQBjAGcAQgBwAEEASABNAEEASgBBAEIAVABBAEcAVQBBAGMAQQBCAGgAQQBHAHcAQQBMAGcAQgBNAEEARwBVAEEAYgBnAEIAbgBBAEgAUQBBAGEAQQBBAGcAQQBIADQAQQBJAEEAQgBwAEEASABJAEEAYQBRAEIAegBBAEMAUQBBAFUAdwBCAHcAQQBHAFUAQQBZAHcAQgBwAEEARwBVAEEAYwB3AEEAcwBBAEMAQQBBAGIAUQBCAGgAQQBHAGsAQQBiAGcAQQA5AEEAQwBJAEEAVQB3AEIAbABBAEgAQQBBAFkAUQBCAHMAQQBDAEEAQQBUAEEAQgBsAEEARwA0AEEAWgB3AEIAMABBAEcAZwBBAEkAQQBCAGkAQQBIAGsAQQBJAEEAQgBUAEEASABBAEEAWgBRAEIAagBBAEcAawBBAFoAUQBCAHoAQQBDAEkAQQBMAEEAQQBnAEEASABnAEEAYgBBAEIAaABBAEcASQBBAFAAUQBBAGkAQQBGAE0AQQBjAEEAQgBsAEEARwBNAEEAYQBRAEIAbABBAEgATQBBAEkAZwBBAHMAQQBDAEEAQQBlAFEAQgBzAEEARwBFAEEAWQBnAEEAOQBBAEMASQBBAFUAdwBCAGwAQQBIAEEAQQBZAFEAQgBzAEEAQwBBAEEAVABBAEIAbABBAEcANABBAFoAdwBCADAAQQBHAGcAQQBJAGcAQQBzAEEAQwBBAEEAWQB3AEIAdgBBAEcAdwBBAFAAUQBBAGkAQQBHAHcAQQBhAFEAQgBuAEEARwBnAEEAZABBAEIAbgBBAEgASQBBAFoAUQBCAGwAQQBHADQAQQBJAGcAQQBwAEEAQQBvAEEAWQBBAEIAZwBBAEcAQQBBAAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p></li>
 </ul>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb10-2"><a></a><span class="in">#| label: setup</span></span>
-<span id="cb10-3"><a></a><span class="in">#| message: false</span></span>
-<span id="cb10-4"><a></a><span class="in">#| code-line-numbers: "|1|2"</span></span>
-<span id="cb10-5"><a></a><span class="in">plot(iris$Sepal.Length, iris$Petal.Length)</span></span>
-<span id="cb10-6"><a></a><span class="in">abline(lm(Petal.Length ~ Sepal.Length, data=iris), col="red")</span></span>
-<span id="cb10-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Boxplot for data visualization</li>
-</ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb11-2"><a></a><span class="in">boxplot(iris$Sepal.Length ~ iris$Species, main="Sepal Length by Species", xlab="Species", ylab="Sepal Length", col="lightgreen")</span></span>
-<span id="cb11-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="introduction-to-ggplot2" class="title-slide slide level1 center">
@@ -590,17 +561,25 @@ table { font-size: 0.75em; }
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Code</a></li><li><a href="#tabset-1-2">Plot</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb12-2"><a></a><span class="in">library(ggplot2)</span></span>
-<span id="cb12-3"><a></a><span class="in">ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + </span></span>
-<span id="cb12-4"><a></a><span class="in">  geom_point() + </span></span>
-<span id="cb12-5"><a></a><span class="in">  geom_smooth(method="lm", se=FALSE, color="blue") + </span></span>
-<span id="cb12-6"><a></a><span class="in">  theme_minimal() + </span></span>
-<span id="cb12-7"><a></a><span class="in">  labs(title="Sepal vs Petal Length in Iris Dataset", x="Sepal Length", y="Petal Length")</span></span>
-<span id="cb12-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="|1|2|3-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-2"><a></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span> </span>
+<span id="cb6-3"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb6-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span> </span>
+<span id="cb6-5"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb6-6"><a></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Sepal vs Petal Length in Iris Dataset"</span>, <span class="at">x=</span><span class="st">"Sepal Length"</span>, <span class="at">y=</span><span class="st">"Petal Length"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div id="tabset-1-2">
-
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -614,9 +593,9 @@ table { font-size: 0.75em; }
 </ul>
 
 <div class="quarto-auto-generated-content">
-<p><img src="../logo.png" class="slide-logo"></p>
+<p><img src="logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="https://tinyurl.com/Comp-Stat">🔗 tinyurl.com/Stat-Meth</a></p>
+<p><a href="https://tinyurl.com/Comp-Stat">🔗 tinyurl.com/Comp-Stat</a></p>
 </div>
 </div>
 </section>
