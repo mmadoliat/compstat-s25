@@ -24,10 +24,10 @@ d |>
   #filter(!is.na(session)) |>
   select(-dow, -session) |>
   mutate(date = as.Date(date)) |>
-  relocate(due, .after = materials) |>
+  relocate(due, .after = code) |>
   gt() |>
   fmt_date(date, date_style = 31) |>
-  sub_missing(columns = c(week, prepare, topic, materials, due), missing_text = "") |>
+  sub_missing(columns = c(week, topic, materials, code, due), missing_text = "") |>
   cols_align(
     align = "center", 
     columns = c(week)
@@ -38,7 +38,7 @@ d |>
   ) |>
   cols_align(
     align = "left", 
-    columns = c(topic, prepare, materials, due)
+    columns = c(topic, materials, code, due)
   ) |>
   tab_style(
     style = cell_borders(
@@ -47,18 +47,18 @@ d |>
       style = "solid"
     ),
     locations = cells_body(
-      columns = c(date, topic, prepare, materials)
+      columns = c(date, topic, materials, code)
     )
   ) |>
   fmt_markdown(
-    columns = c(topic, prepare, materials, due)
+    columns = c(topic, materials, code, due)
   ) |>
   cols_width(
     week ~ px(45),
     date ~ px(100), 
-    prepare ~ px(100),
     topic ~ px(300),
     materials ~ px(150),
+    code ~ px(40),
     due ~ px(300)
   ) |>
   cols_label_with(fn = function(x) {

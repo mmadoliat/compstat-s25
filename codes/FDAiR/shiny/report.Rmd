@@ -1,0 +1,49 @@
+---
+title: "FDA"
+author: "Mehdi Maadooliat"
+date: "February 7, 2017"
+output: html_document
+runtime: shiny
+---
+
+# Side Bar Panel
+Contains the inputs that will be used in different `sub-panels`. The following inputs will be used in sub-panels **Basis Functions** (to generate the basis functions), **FDA** and **FPCA** (run and report the `FPCA` algorithm):
+
+* [Degree](https://en.wikipedia.org/wiki/Degree_of_a_polynomial) of B-spline Basis:  
+* [Deg. of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom) of B-spline Basis:  
+* Two Dimension:
+* \# of Common bivatiate Basis (\# of Clusters for Clustering):
+* 3D Visualition: 
+    + [Contour Plot](https://en.wikipedia.org/wiki/Contour_line) in [R](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/filled.contour.html)
+    + [Heat Map](https://en.wikipedia.org/wiki/Heat_map) in [R](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/contour.html)
+    + [Perspective](https://en.wikipedia.org/wiki/Three-dimensional_graph) in [R](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/persp.html)
+        + [Azimuthal Angle](https://en.wikipedia.org/wiki/Spherical_coordinate_system)
+        + [Polar Angle](https://en.wikipedia.org/wiki/Spherical_coordinate_system)
+
+
+The first two inputs are mostly to describe the *basis functions*. The fourth input is to specify the number common basis in *FPCA* algorithm, and number of clusters to produce the outputs. The fifth input specify the type of plots produced in sub-panels **Basis Functions**, **FDA** and **FPCA** (for 2D cases).
+
+# Main Panel
+## Data
+One can either use the files posted in Server
+
+* TS-m=xx-n=yyy
+
+or upload a different file to be analyzed.
+
+or simulate functions.
+
+## Basis Functions
+* Using some visualization techniques, we illustrate the B-spline basis that is used in the algorithm.
+
+## Data Description (FDA Summary)
+The [Scree plot](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/screeplot.html) is the last output of *Data Description (FDA Summary)* panel. It can be used as a visualizing tool to obtain the required number of `common basis` based on the initial estimate (obtained by [mapping](https://en.wikipedia.org/wiki/Transformation_matrix) the observed functions(https://en.wikipedia.org/wiki/Periodogram) to the [column space](https://en.wikipedia.org/wiki/Row_and_column_spaces#Column_space) of the [basis expansion](https://en.wikipedia.org/wiki/Basis_function)).  
+
+* The remaining _Data Description_ choices are used to summarize and visualize the _FDA_ input data:
+
+## FPCA
+* The _FPCA_ algorithm is implemented in this sub-panel
+* Also the results and graphs is provided here.
+
+## Manual
+The sub-panel that contains this _instruction manual_.
