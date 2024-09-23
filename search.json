@@ -88,58 +88,540 @@
     "text": "Questions 8.2, 8.10, 8.11, 9.1, 9.4 from the Textbook, and “Course Evaluation”.\n\n4 out of 6 Questions (for Undergraduate students)\n5 out of 6 Questions (for Graduate students)"
   },
   {
-    "objectID": "slides/Chapter13.html#numerical-precision-and-floating-point-arithmetic",
-    "href": "slides/Chapter13.html#numerical-precision-and-floating-point-arithmetic",
+    "objectID": "codes/FDAiR/shiny/report.html",
+    "href": "codes/FDAiR/shiny/report.html",
+    "title": "FDA",
+    "section": "",
+    "text": "Contains the inputs that will be used in different sub-panels. The following inputs will be used in sub-panels Basis Functions (to generate the basis functions), FDA and FPCA (run and report the FPCA algorithm):\n\nDegree of B-spline Basis:\n\nDeg. of freedom of B-spline Basis:\n\nTwo Dimension:\n# of Common bivatiate Basis (# of Clusters for Clustering):\n3D Visualition:\n\nContour Plot in R\nHeat Map in R\nPerspective in R\n\nAzimuthal Angle\nPolar Angle\n\n\n\nThe first two inputs are mostly to describe the basis functions. The fourth input is to specify the number common basis in FPCA algorithm, and number of clusters to produce the outputs. The fifth input specify the type of plots produced in sub-panels Basis Functions, FDA and FPCA (for 2D cases)."
+  },
+  {
+    "objectID": "codes/FDAiR/shiny/report.html#data",
+    "href": "codes/FDAiR/shiny/report.html#data",
+    "title": "FDA",
+    "section": "Data",
+    "text": "Data\nOne can either use the files posted in Server\n\nTS-m=xx-n=yyy\n\nor upload a different file to be analyzed.\nor simulate functions."
+  },
+  {
+    "objectID": "codes/FDAiR/shiny/report.html#basis-functions",
+    "href": "codes/FDAiR/shiny/report.html#basis-functions",
+    "title": "FDA",
+    "section": "Basis Functions",
+    "text": "Basis Functions\n\nUsing some visualization techniques, we illustrate the B-spline basis that is used in the algorithm."
+  },
+  {
+    "objectID": "codes/FDAiR/shiny/report.html#data-description-fda-summary",
+    "href": "codes/FDAiR/shiny/report.html#data-description-fda-summary",
+    "title": "FDA",
+    "section": "Data Description (FDA Summary)",
+    "text": "Data Description (FDA Summary)\nThe Scree plot is the last output of Data Description (FDA Summary) panel. It can be used as a visualizing tool to obtain the required number of common basis based on the initial estimate (obtained by mapping the observed functions(https://en.wikipedia.org/wiki/Periodogram) to the column space of the basis expansion).\n\nThe remaining Data Description choices are used to summarize and visualize the FDA input data:"
+  },
+  {
+    "objectID": "codes/FDAiR/shiny/report.html#fpca",
+    "href": "codes/FDAiR/shiny/report.html#fpca",
+    "title": "FDA",
+    "section": "FPCA",
+    "text": "FPCA\n\nThe FPCA algorithm is implemented in this sub-panel\nAlso the results and graphs is provided here."
+  },
+  {
+    "objectID": "codes/FDAiR/shiny/report.html#manual",
+    "href": "codes/FDAiR/shiny/report.html#manual",
+    "title": "FDA",
+    "section": "Manual",
+    "text": "Manual\nThe sub-panel that contains this instruction manual."
+  },
+  {
+    "objectID": "slides/Chapter5.html#customizing-scatterplot-matrices",
+    "href": "slides/Chapter5.html#customizing-scatterplot-matrices",
     "title": "Computational Statistics",
-    "section": "Numerical Precision and Floating-Point Arithmetic",
-    "text": "Numerical Precision and Floating-Point Arithmetic\n\nIntroduction to floating-point arithmetic in R\nBrain teasers: TRUE or FALSE?\n\n```{r}\n# Examples of floating-point precision\n1==1\n3-2==1\n0.3-0.2==0.1\n0.4-0.2==0.2\n```",
+    "section": "Customizing Scatterplot Matrices",
+    "text": "Customizing Scatterplot Matrices\n\nCustomizing scatterplot matrices with density plots\n\n```{r}\n# Adding density plots to scatterplot matrix\npanel.d &lt;- function(x, ...) {\n    usr &lt;- par(\"usr\")\n    on.exit(par(usr))\n    par(usr = c(usr[1:2], 0, .5))\n    lines(density(x), col=\"red\")\n}\npairs(iris[101:150, 1:4], panel = panel.d, main=\"Customized Scatterplot Matrix\")\n```",
     "crumbs": [
       "Slides",
-      "Numerical Methods in R"
+      "Visualization"
     ]
   },
   {
-    "objectID": "slides/Chapter13.html#binary-representation",
-    "href": "slides/Chapter13.html#binary-representation",
+    "objectID": "slides/Chapter9.html#introduction-to-jackknife-after-bootstrap",
+    "href": "slides/Chapter9.html#introduction-to-jackknife-after-bootstrap",
     "title": "Computational Statistics",
-    "section": "Binary Representation",
-    "text": "Binary Representation\n\nDiscussion on binary fractions and limitations\nResources:\n\nBinary Fraction Calculator\nFloating Point Problem",
+    "section": "Introduction to Jackknife-after-Bootstrap",
+    "text": "Introduction to Jackknife-after-Bootstrap\n\nExplanation of the jackknife-after-bootstrap method\nUsed to estimate bias and standard errors after bootstrap\n\n```{r}\nlibrary(boot)\nlibrary(bootstrap)\nset.seed(1111)\n\n# Function to compute the patch ratio statistic\ntheta.boot &lt;- function(patch, i) {\n  y &lt;- patch[i, \"y\"]\n  z &lt;- patch[i, \"z\"]\n  mean(y) / mean(z)\n}\n\n# Bootstrap the patch dataset\nboot.out &lt;- boot(bootstrap::patch, statistic = theta.boot, R=2000)\nboot.out\n```",
     "crumbs": [
       "Slides",
-      "Numerical Methods in R"
+      "Jackknife-after-Bootstrap"
     ]
   },
   {
-    "objectID": "slides/Chapter13.html#iterative-methods",
-    "href": "slides/Chapter13.html#iterative-methods",
+    "objectID": "slides/Chapter9.html#applying-jackknife-after-bootstrap",
+    "href": "slides/Chapter9.html#applying-jackknife-after-bootstrap",
     "title": "Computational Statistics",
-    "section": "Iterative Methods",
-    "text": "Iterative Methods\n\nIntroduction to iterative methods in numerical analysis\n\n```{r}\n# Example: Calculating large integers\nas.integer(2^31-1)\nas.integer(2^31)\n```",
+    "section": "Applying Jackknife-after-Bootstrap",
+    "text": "Applying Jackknife-after-Bootstrap\n\nExample: Using the jackknife-after-bootstrap method\nChecking the bootstrap array\n\n```{r}\n# Check the bootstrap array\nA &lt;- boot.array(boot.out)\nhead(A, 3)\n\n# Proportion of cases that are not resampled\nmean(A[, 1] == 0)\n```",
     "crumbs": [
       "Slides",
-      "Numerical Methods in R"
+      "Jackknife-after-Bootstrap"
     ]
   },
   {
-    "objectID": "slides/Chapter13.html#numerical-integration",
-    "href": "slides/Chapter13.html#numerical-integration",
+    "objectID": "slides/Chapter9.html#visualizing-results",
+    "href": "slides/Chapter9.html#visualizing-results",
     "title": "Computational Statistics",
-    "section": "Numerical Integration",
-    "text": "Numerical Integration\n\nExample of numerical integration using base R functions\n\n```{r}\n# Numerical integration using integrate function\nf &lt;- function(x) sin(x)\nintegrate(f, lower = 0, upper = pi)\n```",
+    "section": "Visualizing Results",
+    "text": "Visualizing Results\n```{r}\n# Plotting the bootstrap results\nplot(boot.out, index=1)\n```",
     "crumbs": [
       "Slides",
-      "Numerical Methods in R"
+      "Jackknife-after-Bootstrap"
     ]
   },
   {
-    "objectID": "slides/Chapter13.html#conclusion",
-    "href": "slides/Chapter13.html#conclusion",
+    "objectID": "slides/Chapter9.html#conclusion",
+    "href": "slides/Chapter9.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of numerical precision, floating-point arithmetic, and numerical integration methods\nPractice: Apply numerical methods to solve optimization and integration problems\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
+    "text": "Conclusion\n\nRecap of jackknife-after-bootstrap technique\nImportance of combining jackknife and bootstrap for robust estimates\nPractice: Apply jackknife-after-bootstrap to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
     "crumbs": [
       "Slides",
-      "Numerical Methods in R"
+      "Jackknife-after-Bootstrap"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter7.html#basic-monte-carlo-estimation",
+    "href": "slides/Chapter7.html#basic-monte-carlo-estimation",
+    "title": "Computational Statistics",
+    "section": "Basic Monte Carlo Estimation",
+    "text": "Basic Monte Carlo Estimation\n\nIntroduction to Monte Carlo estimation\nExample: Estimating the expected difference of two normal variables\n\n```{r}\nm &lt;- 1000\ng &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(2)\n    g[i] &lt;- abs(x[1] - x[2])\n}\nest &lt;- mean(g)\nest\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter7.html#visualizing-monte-carlo-simulations",
+    "href": "slides/Chapter7.html#visualizing-monte-carlo-simulations",
+    "title": "Computational Statistics",
+    "section": "Visualizing Monte Carlo Simulations",
+    "text": "Visualizing Monte Carlo Simulations\n```{r}\n# Histogram of the simulated differences\nhist(g, main=\"Histogram of Differences (Monte Carlo)\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter7.html#estimating-the-mean-squared-error-mse",
+    "href": "slides/Chapter7.html#estimating-the-mean-squared-error-mse",
+    "title": "Computational Statistics",
+    "section": "Estimating the Mean Squared Error (MSE)",
+    "text": "Estimating the Mean Squared Error (MSE)\n\nMonte Carlo estimation of MSE for trimmed means\n\n```{r}\nn &lt;- 20\nm &lt;- 1000\nmean_trim &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    mean_trim[i] &lt;- mean(x, trim = 0.1)\n}\nmse &lt;- mean((mean_trim - 0)^2)\nmse\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter7.html#visualizing-mse-simulations",
+    "href": "slides/Chapter7.html#visualizing-mse-simulations",
+    "title": "Computational Statistics",
+    "section": "Visualizing MSE Simulations",
+    "text": "Visualizing MSE Simulations\n```{r}\n# Histogram of the trimmed means\nhist(mean_trim, main=\"Trimmed Means (Monte Carlo MSE)\", col=\"lightgreen\")\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter7.html#additional-monte-carlo-techniques",
+    "href": "slides/Chapter7.html#additional-monte-carlo-techniques",
+    "title": "Computational Statistics",
+    "section": "Additional Monte Carlo Techniques",
+    "text": "Additional Monte Carlo Techniques\n\nExploring advanced Monte Carlo techniques for inference\nExample: Hypothesis testing with Monte Carlo methods\n\n```{r}\n# Monte Carlo test example: Hypothesis testing\nn &lt;- 50\nm &lt;- 1000\ntest_stat &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    test_stat[i] &lt;- mean(x)\n}\np_value &lt;- mean(test_stat &gt;= 1.96)\np_value\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter7.html#conclusion",
+    "href": "slides/Chapter7.html#conclusion",
+    "title": "Computational Statistics",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nRecap of Monte Carlo methods in inference, MSE estimation, and hypothesis testing\nPractice: Apply these methods to other inferential problems\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Methods in Inference"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter8.html#bootstrap-resampling-method",
+    "href": "slides/Chapter8.html#bootstrap-resampling-method",
+    "title": "Computational Statistics",
+    "section": "Bootstrap Resampling Method",
+    "text": "Bootstrap Resampling Method\n\nIntroduction to the bootstrap method\nExample: Bootstrap estimate of standard error\n\n```{r}\n# Bootstrap example: Estimate correlation between LSAT and GPA\nlibrary(bootstrap)    #for the law data\nprint(cor(law$LSAT, law$GPA))\nprint(cor(law82$LSAT, law82$GPA))\n# Set up the bootstrap\nB &lt;- 200            # number of replicates\nn &lt;- nrow(law)      # sample size\nR &lt;- numeric(B)     # storage for replicates\n# Bootstrap estimate of correlation\nfor (i in 1:B) {\n  idx &lt;- sample(1:n, size=n, replace=TRUE)\n  law_boot &lt;- law[idx, ]\n  R[i] &lt;- cor(law_boot$LSAT, law_boot$GPA)\n}\nmean(R)\nsd(R)  # Bootstrap standard error\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter8.html#visualizing-bootstrap-resamples",
+    "href": "slides/Chapter8.html#visualizing-bootstrap-resamples",
+    "title": "Computational Statistics",
+    "section": "Visualizing Bootstrap Resamples",
+    "text": "Visualizing Bootstrap Resamples\n```{r}\n# Plotting the bootstrap distribution\nhist(R, main=\"Bootstrap Distribution of Correlation\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter8.html#introduction-to-the-jackknife-method",
+    "href": "slides/Chapter8.html#introduction-to-the-jackknife-method",
+    "title": "Computational Statistics",
+    "section": "Introduction to the Jackknife Method",
+    "text": "Introduction to the Jackknife Method\n\nThe jackknife method for bias reduction\nExample: Jackknife estimate of the mean\n\n```{r}\n# Jackknife estimate of mean\nn &lt;- nrow(law)\ntheta_hat &lt;- mean(law$LSAT)\ntheta_jack &lt;- numeric(n)\n\n# Leave-one-out jackknife\nfor (i in 1:n) {\n  theta_jack[i] &lt;- mean(law$LSAT[-i])\n}\n\n# Jackknife estimate of bias\nbias_jack &lt;- (n - 1) * (mean(theta_jack) - theta_hat)\nbias_jack\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter8.html#bootstrap-confidence-intervals",
+    "href": "slides/Chapter8.html#bootstrap-confidence-intervals",
+    "title": "Computational Statistics",
+    "section": "Bootstrap Confidence Intervals",
+    "text": "Bootstrap Confidence Intervals\n\nIntroduction to bootstrap confidence intervals\nExample: Bootstrap percentile confidence interval\n\n```{r}\n# Bootstrap confidence intervals\nalpha &lt;- 0.05\nci &lt;- quantile(R, probs = c(alpha/2, 1 - alpha/2))\nci  # Bootstrap confidence interval\n```",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter8.html#comparison-of-bootstrap-and-jackknife",
+    "href": "slides/Chapter8.html#comparison-of-bootstrap-and-jackknife",
+    "title": "Computational Statistics",
+    "section": "Comparison of Bootstrap and Jackknife",
+    "text": "Comparison of Bootstrap and Jackknife\n\nDiscuss the differences and use cases of bootstrap and jackknife\nRecap of methods and their benefits in reducing bias and estimating uncertainty",
+    "crumbs": [
+      "Slides",
+      "Bootstrap and Jackknife"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter12.html#histogram-density-estimates",
+    "href": "slides/Chapter12.html#histogram-density-estimates",
+    "title": "Computational Statistics",
+    "section": "Histogram Density Estimates",
+    "text": "Histogram Density Estimates\n\nIntroduction to density estimation using histograms\nExample: Histogram density estimates using Sturges’ Rule\n\n```{r}\nset.seed(12345)\nn &lt;- 25\nx &lt;- rnorm(n)\n\n# Calculate breaks according to Sturges' Rule\nnclass &lt;- ceiling(1 + log2(n))\ncwidth &lt;- diff(range(x) / nclass)\nbreaks &lt;- min(x) + cwidth * 0:nclass\n\n# Default histogram\nh.default &lt;- hist(x, freq = FALSE, xlab = \"default\", main = \"Histogram: Default\")\n```",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter12.html#kernel-density-estimation",
+    "href": "slides/Chapter12.html#kernel-density-estimation",
+    "title": "Computational Statistics",
+    "section": "Kernel Density Estimation",
+    "text": "Kernel Density Estimation\n\nIntroduction to kernel density estimation (KDE)\nExample: Applying KDE to data\n\n```{r}\n# Kernel density estimate\ndens &lt;- density(x)\nplot(dens, main = \"Kernel Density Estimate\", col = \"blue\", lwd = 2)\n```",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter12.html#visualizing-kernel-density",
+    "href": "slides/Chapter12.html#visualizing-kernel-density",
+    "title": "Computational Statistics",
+    "section": "Visualizing Kernel Density",
+    "text": "Visualizing Kernel Density\n```{r}\n# Overlay histogram and KDE\nhist(x, freq = FALSE, col = \"lightgray\", border = \"white\", main = \"Histogram with KDE\")\nlines(dens, col = \"red\", lwd = 2)\n```",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter12.html#conclusion",
+    "href": "slides/Chapter12.html#conclusion",
+    "title": "Computational Statistics",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nRecap of histogram density estimation and kernel density estimation\nPractice: Apply density estimation techniques to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
+    "crumbs": [
+      "Slides",
+      "Density Estimation"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter15.html#benchmarking-methods",
+    "href": "slides/Chapter15.html#benchmarking-methods",
+    "title": "Computational Statistics",
+    "section": "Benchmarking Methods",
+    "text": "Benchmarking Methods\n\nOverview of benchmarking in R\nExample: Benchmarking methods to generate a sequence\n\n```{r}\ns1 &lt;- 1:10\ns2 &lt;- seq(1, 10, 1)\ns3 &lt;- seq.int(1, 10, 1)\n\n# Benchmarking\nlibrary(microbenchmark)\nlibrary(ggplot2)\n\nn &lt;- 1000\nmb &lt;- microbenchmark(\n  seq(1, n, 1),\n  1:n,\n  times = 100\n)\nmb\nautoplot(mb)\n```",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter15.html#profiling-code-for-performance",
+    "href": "slides/Chapter15.html#profiling-code-for-performance",
+    "title": "Computational Statistics",
+    "section": "Profiling Code for Performance",
+    "text": "Profiling Code for Performance\n\nIntroduction to profiling in R\nExample: Profiling a function using profvis\n\n```{r}\n# Install profvis for profiling\nlibrary(profvis)\n\n# Example: Profile a sorting function\nprofvis({\n  x &lt;- rnorm(1e4)\n  y &lt;- sort(x)\n})\n```",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter15.html#visualizing-profiling-results",
+    "href": "slides/Chapter15.html#visualizing-profiling-results",
+    "title": "Computational Statistics",
+    "section": "Visualizing Profiling Results",
+    "text": "Visualizing Profiling Results\n```{r}\n# profvis visual interface will show the profiling output\n```",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter15.html#conclusion",
+    "href": "slides/Chapter15.html#conclusion",
+    "title": "Computational Statistics",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nRecap of benchmarking and profiling in R\nPractice: Apply these techniques to optimize code in R\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
+    "crumbs": [
+      "Slides",
+      "Programming Topics"
+    ]
+  },
+  {
+    "objectID": "computing/computing-cheatsheets.html",
+    "href": "computing/computing-cheatsheets.html",
+    "title": "R cheatsheets",
+    "section": "",
+    "text": "The following cheatsheets come from https://posit.co/resources/cheatsheets. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.",
+    "crumbs": [
+      "Computing",
+      "Cheatsheets"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MATH 4750: Computational Statistics",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nCODE\nDUE\n\n\n\n\n1\nTue, Jan 14\nIntroduction to Statistical Computing\n📚Chapt 1-A\nR👩‍💻\n\n\n\n\n\n\nThu, Jan 16\nProbability and Statistics Review\n📚Chapt 2-A\nR👩‍💻\n\n\n\n\n2\nTue, Jan 21\nMethod of Estimations\n📚💻Chapt 2-B\n\n\n\n\n\n\n\n\nThu, Jan 23\nRegularization in Regression\n💻Ridge and Lasso\n\n\n\n\n\n\n3\nTue, Jan 28\nFunctional Data Analysis and Smoothing\n💻FDA-A\nR👩‍💻\n\n\n\n\n\n\nThu, Jan 30\nMore on FDA and Basics of PCA\n💻FDA-B\n\n\n\n\n\n\n\n\nFri, Jan 31\n\n\n\n\n\n\n📝 HW 1 at 11:50 pm\n\n\n4\nTue, Feb 4\nMethods for Generating Random Variables\n📚Chapt 3-A\nR👩‍💻\n\n\n\n\n\n\nThu, Feb 6\nMore on Generating RV’s\n📚Chapt 3-B\n\n\n\n\n\n\n5\nTue, Feb 11\nK-means Clustering\n💻Clustering-A\nR👩‍💻\n\n\n\n\n\n\nThu, Feb 13\nHirarchical Clustering\n💻Clustering-B\n\n\n\n\n\n\n\n\nFri, Feb 14\n\n\n\n\n\n\n📝 [HW 2] at 11:50 pm\n\n\n6\nTue, Feb 18\nVizualization\nChapt 5\nR👩‍💻\n\n\n\n\n\n\nThu, Feb 20\nMonte Carlo Integration\nChapt 6-A\nR👩‍💻\n\n\n\n\n7\nTue, Feb 25\nImportance Sampling and Variance Reduction\nChapt 6-B\n\n\n\n\n\n\n\n\nThu, Feb 27\nObject Oriented Programming in R\n📖OOP\nR👩‍💻\n\n\n\n\n\n\nFri, Feb 28\n\n\n\n\n\n\n📝 [HW 3] at 11:50 pm\n\n\n8\nTue, Mar 4\nDeveloping an Interactive Shiny App\n📖Shiny\nR👩‍💻\n\n\n\n\n\n\nThu, Mar 6\nDeveloping an R package\n📖R package\n\n\n\n\n\n\n\n\nFri, Mar 7\n\n\n\n\n\n\n📝 [HW 4] at 11:50 pm\n\n\n\n\nTue, Mar 11\n🌴 Spring Break\n\n\n\n\n\n\n\n\n\n\nThu, Mar 13\n🌴 Spring Break\n\n\n\n\n\n\n\n\n9\nTue, Mar 18\nMonte Carlo Integration\n📚Chapt 7-A\nR👩‍💻\n\n\n\n\n\n\nThu, Mar 20\nMore on Monte Carlo Methods\n📚Chapt 7-B  📚💻Chapt 7-C\n\n\n\n\n\n\n10\nTue, Mar 25\nBootstrap\n📚Chapt 8-A\nR👩‍💻\n\n\n\n\n\n\nThu, Mar 27\nMore on Bootstran and Jackknife\n📑Chapt 8-B  🖥️Chapt 8-C  📚Chapt 9\nR👩‍💻\n\n\n\n\n\n\nFri, Mar 28\n\n\n\n\n\n\n📝 [HW 5] at 11:50 pm\n\n\n11\nTue, Apr 1\nDensity Estimation\n📚Chapt 12\nR👩‍💻\n\n\n\n\n\n\nThu, Apr 3\nNumerical Methods in R\n📚Chapt 13\nR👩‍💻\n\n\n\n\n\n\nFri, Apr 4\n\n\n\n\n\n\n📝 [HW 6] at 11:50 pm\n\n\n12\nTue, Apr 8\nOptimization in R\n📚Chapt 14-A\nR👩‍💻\n\n\n\n\n\n\nThu, Apr 10\nMore on Optimization\n📚Chapt 14-B\n\n\n\n\n\n\n\n\nFri, Apr 11\n\n\n\n\n\n\n📝 [HW 7] at 11:50 pm\n\n\n13\nTue, Apr 15\nExpectation-Maximization (EM)-Algorithm\n📑Chapt 14-C\nR👩‍💻\n\n\n\n\n\n\nThu, Apr 17\n🌴 Easter Break\n\n\n\n\n\n\n\n\n14\nTue, Apr 22\nProgramming Topics\n📚Chapt 15\nR👩‍💻\n\n\n\n\n\n\nThu, Apr 24\nDeep Learning in R\n💻DLiR-A\nR👩‍💻\n\n\n\n\n15\nTue, Apr 29\nFully Connected Networks (FCN)\n💻DLiR-B\n\n\n\n\n\n\n\n\nThu, May 1\nConvolutional Nueral Networks (CNN)\n💻DLiR-C\n\n\n\n\n\n\n16\nTue, May 6\n\n\n\n\n\n\n🖥️ ppt📚Quarto🖥️ PDF slide 📑pdf doc📃project 📝HWR👩‍💻Code📖 Online Book🎤✅❌🌴🎥🎞️",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
+    "href": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
+    "title": "Computational Statistics",
+    "section": "Introduction to Monte Carlo Integration",
+    "text": "Introduction to Monte Carlo Integration\n\nBasic concepts of Monte Carlo integration\nExample: Integrating using uniform distribution\n\n```{r}\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x))\ntheta.hat\n1 - exp(-1)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#example-monte-carlo-integration-with-bounded-intervals",
+    "href": "slides/Chapter6.html#example-monte-carlo-integration-with-bounded-intervals",
+    "title": "Computational Statistics",
+    "section": "Example: Monte Carlo integration with bounded intervals",
+    "text": "Example: Monte Carlo integration with bounded intervals\n```{r}\nm &lt;- 10000\nx &lt;- runif(m, min=2, max=4)\ntheta.hat &lt;- mean(exp(-x)) * 2\ntheta.hat\nexp(-2) - exp(-4)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#unbounded-intervals",
+    "href": "slides/Chapter6.html#unbounded-intervals",
+    "title": "Computational Statistics",
+    "section": "Unbounded Intervals",
+    "text": "Unbounded Intervals\n\nHandling unbounded intervals in Monte Carlo integration\n\n```{r}\n# Plotting a function over an unbounded interval\nx &lt;- seq(.1, 2.5, length.out = 100)\ny &lt;- exp(-x^2 / 2)\nplot(x, y, type=\"l\", main=\"Function Plot for Unbounded Interval\", col=\"blue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#introduction-to-importance-sampling",
+    "href": "slides/Chapter6.html#introduction-to-importance-sampling",
+    "title": "Computational Statistics",
+    "section": "Introduction to Importance Sampling",
+    "text": "Introduction to Importance Sampling\n\nImportance sampling and its applications\nExample: Applying importance sampling\n\n```{r}\n# Example of importance sampling\ng &lt;- function(x) exp(-x^2 / 2)\nf &lt;- function(x) dnorm(x, mean = 1)\nx &lt;- rnorm(10000, mean = 1)\ntheta.hat &lt;- mean(g(x) / f(x))\ntheta.hat\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#visualizing-importance-sampling",
+    "href": "slides/Chapter6.html#visualizing-importance-sampling",
+    "title": "Computational Statistics",
+    "section": "Visualizing Importance Sampling",
+    "text": "Visualizing Importance Sampling\n```{r}\n# Compare the original function with the importance sampling function\ncurve(g, from = -3, to = 3, col = \"blue\", lwd = 2, main=\"Importance Sampling: g(x) vs f(x)\")\ncurve(f, add = TRUE, col = \"red\", lty = 2, lwd = 2)\nlegend(\"topright\", legend=c(\"g(x)\", \"f(x)\"), col=c(\"blue\", \"red\"), lty=c(1, 2), lwd=2)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#control-variates",
+    "href": "slides/Chapter6.html#control-variates",
+    "title": "Computational Statistics",
+    "section": "Control Variates",
+    "text": "Control Variates\n\nExplanation of control variates and how they reduce variance\nExample: Using control variates in Monte Carlo integration\n\n```{r}\n# Control variates example\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x)) - (mean(x) - 0.5)\ntheta.hat\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter6.html#antithetic-variables",
+    "href": "slides/Chapter6.html#antithetic-variables",
+    "title": "Computational Statistics",
+    "section": "Antithetic Variables",
+    "text": "Antithetic Variables\n\nExplanation of antithetic variables and how they reduce variance\nExample: Applying antithetic variables\n\n```{r}\n# Antithetic variables example\nu &lt;- runif(5000)\ntheta.hat &lt;- mean((exp(-u) + exp(-(1 - u))) / 2)\ntheta.hat\n1 - exp(-1)\n```",
+    "crumbs": [
+      "Slides",
+      "Monte Carlo Integration"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#random-variables-and-distributions",
+    "href": "slides/Chapter2.html#random-variables-and-distributions",
+    "title": "Computational Statistics",
+    "section": "Random Variables and Distributions",
+    "text": "Random Variables and Distributions\n\nOverview of random variables\nDiscrete vs Continuous random variables\nImportant distributions (Binomial, Normal, Chi-Square)\n\n```{r}\n# Simulating random variables\nN &lt;- 100; mu &lt;- 5; sig &lt;- 2\nY &lt;- rnorm(N, mean = mu, sd = sig)\nhist(Y, main=\"Histogram of Normal Distribution\", xlab=\"Y values\", col=\"lightblue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#example-central-limit-theorem",
+    "href": "slides/Chapter2.html#example-central-limit-theorem",
+    "title": "Computational Statistics",
+    "section": "Example: Central Limit Theorem",
+    "text": "Example: Central Limit Theorem\n\nDiscuss the CLT and its importance in statistics\nSimulating the CLT with normal distributions\n\n```{r}\n# Central Limit Theorem simulation\nmeans &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))\nhist(means, main=\"Central Limit Theorem\", col=\"lightgreen\", border=\"black\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#common-distributions-in-statistical-computing",
+    "href": "slides/Chapter2.html#common-distributions-in-statistical-computing",
+    "title": "Computational Statistics",
+    "section": "Common Distributions in Statistical Computing",
+    "text": "Common Distributions in Statistical Computing\n\nBinomial Distribution\nPoisson Distribution\nNormal Distribution and its properties\n\n```{r}\n# Simulating binomial and Poisson distributions\nx_binom &lt;- rbinom(100, size = 10, prob = 0.5)\nx_pois &lt;- rpois(100, lambda = 3)\n\npar(mfrow=c(1, 2))  # Two plots side by side\nhist(x_binom, main=\"Binomial Distribution\", col=\"orange\")\nhist(x_pois, main=\"Poisson Distribution\", col=\"lightcoral\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#joint-and-conditional-distributions",
+    "href": "slides/Chapter2.html#joint-and-conditional-distributions",
+    "title": "Computational Statistics",
+    "section": "Joint and Conditional Distributions",
+    "text": "Joint and Conditional Distributions\n\nJoint distributions and their importance\nConditional distributions with examples\n\n```{r}\n# Simulating joint distributions\nmu &lt;- c(5, 10); sigma &lt;- matrix(c(1, 0.5, 0.5, 2), 2, 2)\nlibrary(MASS)\nX &lt;- mvrnorm(1000, mu = mu, Sigma = sigma)\n\nplot(X[,1], X[,2], main=\"Scatter plot of Joint Distribution\", xlab=\"X1\", ylab=\"X2\", col=\"blue\")\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#estimators-and-their-properties",
+    "href": "slides/Chapter2.html#estimators-and-their-properties",
+    "title": "Computational Statistics",
+    "section": "Estimators and Their Properties",
+    "text": "Estimators and Their Properties\n\nDiscuss point estimators: Mean, Variance, etc.\nReview bias, consistency, and efficiency\n\n```{r}\n# Example of calculating mean and variance from samples\nset.seed(123)\nsample_data &lt;- rnorm(100, mean = 5, sd = 2)\nmean(sample_data)\nvar(sample_data)\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#hypothesis-testing",
+    "href": "slides/Chapter2.html#hypothesis-testing",
+    "title": "Computational Statistics",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nHypothesis testing steps\nType I and II errors, significance level, and power\n\n```{r}\n# Example of hypothesis testing\nt_test_result &lt;- t.test(rnorm(100, mean = 5, sd = 2), mu=5)\nt_test_result\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#confidence-intervals",
+    "href": "slides/Chapter2.html#confidence-intervals",
+    "title": "Computational Statistics",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nConstructing confidence intervals for population mean\nExample with real data\n\n```{r}\n# Example: Confidence interval for normal data\nconf_interval &lt;- t.test(rnorm(100, mean = 5, sd = 2))$conf.int\nconf_interval\n```",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter14.html#introduction-to-optimization",
+    "href": "slides/Chapter14.html#introduction-to-optimization",
+    "title": "Computational Statistics",
+    "section": "Introduction to Optimization",
+    "text": "Introduction to Optimization\n\nOverview of optimization methods\nExample: One-dimensional optimization using optimize\n\n```{r}\nf &lt;- function(x) log(x + log(x)) / log(1 + x)\n\n# Plotting the function\ncurve(f(x), from = 2, to = 15, ylab = \"f(x)\")\n\n# Finding the maximum\nres &lt;- optimize(f, lower = 4, upper = 8, maximum = TRUE)\nabline(v=res$maximum)\nres$maximum\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter14.html#visualizing-optimization-results",
+    "href": "slides/Chapter14.html#visualizing-optimization-results",
+    "title": "Computational Statistics",
+    "section": "Visualizing Optimization Results",
+    "text": "Visualizing Optimization Results\n```{r}\n# Add a line indicating the maximum\nabline(v=res$maximum, col = \"red\", lwd = 2)\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter14.html#introduction-to-mle",
+    "href": "slides/Chapter14.html#introduction-to-mle",
+    "title": "Computational Statistics",
+    "section": "Introduction to MLE",
+    "text": "Introduction to MLE\n\nIntroduction to Maximum Likelihood Estimation (MLE)\nExample: MLE for Gamma distribution\n\n```{r}\n# MLE for Gamma distribution\nm &lt;- 20000\nest &lt;- matrix(0, m, 2)\nn &lt;- 2000\nr &lt;- 5\nlambda &lt;- 2\n\nobj &lt;- function(lambda, xbar, logx.bar) {\n  r &lt;- length(xbar)\n  log(lambda) - lambda * mean(xbar) + logx.bar\n}\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter14.html#optimizing-mle",
+    "href": "slides/Chapter14.html#optimizing-mle",
+    "title": "Computational Statistics",
+    "section": "Optimizing MLE",
+    "text": "Optimizing MLE\n```{r}\n# Optimizing the MLE\nxbar &lt;- rnorm(n, mean = r/lambda, sd = 1)\nlogx.bar &lt;- mean(log(xbar))\nresult &lt;- optimize(obj, lower = 1, upper = 10, xbar = xbar, logx.bar = logx.bar, maximum = TRUE)\nresult\n```",
+    "crumbs": [
+      "Slides",
+      "Optimization"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter14.html#conclusion",
+    "href": "slides/Chapter14.html#conclusion",
+    "title": "Computational Statistics",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nRecap of one-dimensional optimization and MLE techniques\nPractice: Apply optimization to other statistical problems and models\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
+    "crumbs": [
+      "Slides",
+      "Optimization"
     ]
   },
   {
@@ -231,498 +713,58 @@
     ]
   },
   {
-    "objectID": "slides/Chapter14.html#introduction-to-optimization",
-    "href": "slides/Chapter14.html#introduction-to-optimization",
+    "objectID": "slides/Chapter13.html#numerical-precision-and-floating-point-arithmetic",
+    "href": "slides/Chapter13.html#numerical-precision-and-floating-point-arithmetic",
     "title": "Computational Statistics",
-    "section": "Introduction to Optimization",
-    "text": "Introduction to Optimization\n\nOverview of optimization methods\nExample: One-dimensional optimization using optimize\n\n```{r}\nf &lt;- function(x) log(x + log(x)) / log(1 + x)\n\n# Plotting the function\ncurve(f(x), from = 2, to = 15, ylab = \"f(x)\")\n\n# Finding the maximum\nres &lt;- optimize(f, lower = 4, upper = 8, maximum = TRUE)\nabline(v=res$maximum)\nres$maximum\n```",
+    "section": "Numerical Precision and Floating-Point Arithmetic",
+    "text": "Numerical Precision and Floating-Point Arithmetic\n\nIntroduction to floating-point arithmetic in R\nBrain teasers: TRUE or FALSE?\n\n```{r}\n# Examples of floating-point precision\n1==1\n3-2==1\n0.3-0.2==0.1\n0.4-0.2==0.2\n```",
     "crumbs": [
       "Slides",
-      "Optimization"
+      "Numerical Methods in R"
     ]
   },
   {
-    "objectID": "slides/Chapter14.html#visualizing-optimization-results",
-    "href": "slides/Chapter14.html#visualizing-optimization-results",
+    "objectID": "slides/Chapter13.html#binary-representation",
+    "href": "slides/Chapter13.html#binary-representation",
     "title": "Computational Statistics",
-    "section": "Visualizing Optimization Results",
-    "text": "Visualizing Optimization Results\n```{r}\n# Add a line indicating the maximum\nabline(v=res$maximum, col = \"red\", lwd = 2)\n```",
+    "section": "Binary Representation",
+    "text": "Binary Representation\n\nDiscussion on binary fractions and limitations\nResources:\n\nBinary Fraction Calculator\nFloating Point Problem",
     "crumbs": [
       "Slides",
-      "Optimization"
+      "Numerical Methods in R"
     ]
   },
   {
-    "objectID": "slides/Chapter14.html#introduction-to-mle",
-    "href": "slides/Chapter14.html#introduction-to-mle",
+    "objectID": "slides/Chapter13.html#iterative-methods",
+    "href": "slides/Chapter13.html#iterative-methods",
     "title": "Computational Statistics",
-    "section": "Introduction to MLE",
-    "text": "Introduction to MLE\n\nIntroduction to Maximum Likelihood Estimation (MLE)\nExample: MLE for Gamma distribution\n\n```{r}\n# MLE for Gamma distribution\nm &lt;- 20000\nest &lt;- matrix(0, m, 2)\nn &lt;- 2000\nr &lt;- 5\nlambda &lt;- 2\n\nobj &lt;- function(lambda, xbar, logx.bar) {\n  r &lt;- length(xbar)\n  log(lambda) - lambda * mean(xbar) + logx.bar\n}\n```",
+    "section": "Iterative Methods",
+    "text": "Iterative Methods\n\nIntroduction to iterative methods in numerical analysis\n\n```{r}\n# Example: Calculating large integers\nas.integer(2^31-1)\nas.integer(2^31)\n```",
     "crumbs": [
       "Slides",
-      "Optimization"
+      "Numerical Methods in R"
     ]
   },
   {
-    "objectID": "slides/Chapter14.html#optimizing-mle",
-    "href": "slides/Chapter14.html#optimizing-mle",
+    "objectID": "slides/Chapter13.html#numerical-integration",
+    "href": "slides/Chapter13.html#numerical-integration",
     "title": "Computational Statistics",
-    "section": "Optimizing MLE",
-    "text": "Optimizing MLE\n```{r}\n# Optimizing the MLE\nxbar &lt;- rnorm(n, mean = r/lambda, sd = 1)\nlogx.bar &lt;- mean(log(xbar))\nresult &lt;- optimize(obj, lower = 1, upper = 10, xbar = xbar, logx.bar = logx.bar, maximum = TRUE)\nresult\n```",
+    "section": "Numerical Integration",
+    "text": "Numerical Integration\n\nExample of numerical integration using base R functions\n\n```{r}\n# Numerical integration using integrate function\nf &lt;- function(x) sin(x)\nintegrate(f, lower = 0, upper = pi)\n```",
     "crumbs": [
       "Slides",
-      "Optimization"
+      "Numerical Methods in R"
     ]
   },
   {
-    "objectID": "slides/Chapter14.html#conclusion",
-    "href": "slides/Chapter14.html#conclusion",
-    "title": "Computational Statistics",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of one-dimensional optimization and MLE techniques\nPractice: Apply optimization to other statistical problems and models\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
-    "crumbs": [
-      "Slides",
-      "Optimization"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#random-variables-and-distributions",
-    "href": "slides/Chapter2.html#random-variables-and-distributions",
-    "title": "Computational Statistics",
-    "section": "Random Variables and Distributions",
-    "text": "Random Variables and Distributions\n\nOverview of random variables\nDiscrete vs Continuous random variables\nImportant distributions (Binomial, Normal, Chi-Square)\n\n```{r}\n# Simulating random variables\nN &lt;- 100; mu &lt;- 5; sig &lt;- 2\nY &lt;- rnorm(N, mean = mu, sd = sig)\nhist(Y, main=\"Histogram of Normal Distribution\", xlab=\"Y values\", col=\"lightblue\")\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#example-central-limit-theorem",
-    "href": "slides/Chapter2.html#example-central-limit-theorem",
-    "title": "Computational Statistics",
-    "section": "Example: Central Limit Theorem",
-    "text": "Example: Central Limit Theorem\n\nDiscuss the CLT and its importance in statistics\nSimulating the CLT with normal distributions\n\n```{r}\n# Central Limit Theorem simulation\nmeans &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))\nhist(means, main=\"Central Limit Theorem\", col=\"lightgreen\", border=\"black\")\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#common-distributions-in-statistical-computing",
-    "href": "slides/Chapter2.html#common-distributions-in-statistical-computing",
-    "title": "Computational Statistics",
-    "section": "Common Distributions in Statistical Computing",
-    "text": "Common Distributions in Statistical Computing\n\nBinomial Distribution\nPoisson Distribution\nNormal Distribution and its properties\n\n```{r}\n# Simulating binomial and Poisson distributions\nx_binom &lt;- rbinom(100, size = 10, prob = 0.5)\nx_pois &lt;- rpois(100, lambda = 3)\n\npar(mfrow=c(1, 2))  # Two plots side by side\nhist(x_binom, main=\"Binomial Distribution\", col=\"orange\")\nhist(x_pois, main=\"Poisson Distribution\", col=\"lightcoral\")\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#joint-and-conditional-distributions",
-    "href": "slides/Chapter2.html#joint-and-conditional-distributions",
-    "title": "Computational Statistics",
-    "section": "Joint and Conditional Distributions",
-    "text": "Joint and Conditional Distributions\n\nJoint distributions and their importance\nConditional distributions with examples\n\n```{r}\n# Simulating joint distributions\nmu &lt;- c(5, 10); sigma &lt;- matrix(c(1, 0.5, 0.5, 2), 2, 2)\nlibrary(MASS)\nX &lt;- mvrnorm(1000, mu = mu, Sigma = sigma)\n\nplot(X[,1], X[,2], main=\"Scatter plot of Joint Distribution\", xlab=\"X1\", ylab=\"X2\", col=\"blue\")\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#estimators-and-their-properties",
-    "href": "slides/Chapter2.html#estimators-and-their-properties",
-    "title": "Computational Statistics",
-    "section": "Estimators and Their Properties",
-    "text": "Estimators and Their Properties\n\nDiscuss point estimators: Mean, Variance, etc.\nReview bias, consistency, and efficiency\n\n```{r}\n# Example of calculating mean and variance from samples\nset.seed(123)\nsample_data &lt;- rnorm(100, mean = 5, sd = 2)\nmean(sample_data)\nvar(sample_data)\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#hypothesis-testing",
-    "href": "slides/Chapter2.html#hypothesis-testing",
-    "title": "Computational Statistics",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nHypothesis testing steps\nType I and II errors, significance level, and power\n\n```{r}\n# Example of hypothesis testing\nt_test_result &lt;- t.test(rnorm(100, mean = 5, sd = 2), mu=5)\nt_test_result\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter2.html#confidence-intervals",
-    "href": "slides/Chapter2.html#confidence-intervals",
-    "title": "Computational Statistics",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nConstructing confidence intervals for population mean\nExample with real data\n\n```{r}\n# Example: Confidence interval for normal data\nconf_interval &lt;- t.test(rnorm(100, mean = 5, sd = 2))$conf.int\nconf_interval\n```",
-    "crumbs": [
-      "Slides",
-      "Proba. and Stat. Review"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
-    "href": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
-    "title": "Computational Statistics",
-    "section": "Introduction to Monte Carlo Integration",
-    "text": "Introduction to Monte Carlo Integration\n\nBasic concepts of Monte Carlo integration\nExample: Integrating using uniform distribution\n\n```{r}\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x))\ntheta.hat\n1 - exp(-1)\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#example-monte-carlo-integration-with-bounded-intervals",
-    "href": "slides/Chapter6.html#example-monte-carlo-integration-with-bounded-intervals",
-    "title": "Computational Statistics",
-    "section": "Example: Monte Carlo integration with bounded intervals",
-    "text": "Example: Monte Carlo integration with bounded intervals\n```{r}\nm &lt;- 10000\nx &lt;- runif(m, min=2, max=4)\ntheta.hat &lt;- mean(exp(-x)) * 2\ntheta.hat\nexp(-2) - exp(-4)\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#unbounded-intervals",
-    "href": "slides/Chapter6.html#unbounded-intervals",
-    "title": "Computational Statistics",
-    "section": "Unbounded Intervals",
-    "text": "Unbounded Intervals\n\nHandling unbounded intervals in Monte Carlo integration\n\n```{r}\n# Plotting a function over an unbounded interval\nx &lt;- seq(.1, 2.5, length.out = 100)\ny &lt;- exp(-x^2 / 2)\nplot(x, y, type=\"l\", main=\"Function Plot for Unbounded Interval\", col=\"blue\")\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#introduction-to-importance-sampling",
-    "href": "slides/Chapter6.html#introduction-to-importance-sampling",
-    "title": "Computational Statistics",
-    "section": "Introduction to Importance Sampling",
-    "text": "Introduction to Importance Sampling\n\nImportance sampling and its applications\nExample: Applying importance sampling\n\n```{r}\n# Example of importance sampling\ng &lt;- function(x) exp(-x^2 / 2)\nf &lt;- function(x) dnorm(x, mean = 1)\nx &lt;- rnorm(10000, mean = 1)\ntheta.hat &lt;- mean(g(x) / f(x))\ntheta.hat\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#visualizing-importance-sampling",
-    "href": "slides/Chapter6.html#visualizing-importance-sampling",
-    "title": "Computational Statistics",
-    "section": "Visualizing Importance Sampling",
-    "text": "Visualizing Importance Sampling\n```{r}\n# Compare the original function with the importance sampling function\ncurve(g, from = -3, to = 3, col = \"blue\", lwd = 2, main=\"Importance Sampling: g(x) vs f(x)\")\ncurve(f, add = TRUE, col = \"red\", lty = 2, lwd = 2)\nlegend(\"topright\", legend=c(\"g(x)\", \"f(x)\"), col=c(\"blue\", \"red\"), lty=c(1, 2), lwd=2)\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#control-variates",
-    "href": "slides/Chapter6.html#control-variates",
-    "title": "Computational Statistics",
-    "section": "Control Variates",
-    "text": "Control Variates\n\nExplanation of control variates and how they reduce variance\nExample: Using control variates in Monte Carlo integration\n\n```{r}\n# Control variates example\nm &lt;- 10000\nx &lt;- runif(m)\ntheta.hat &lt;- mean(exp(-x)) - (mean(x) - 0.5)\ntheta.hat\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter6.html#antithetic-variables",
-    "href": "slides/Chapter6.html#antithetic-variables",
-    "title": "Computational Statistics",
-    "section": "Antithetic Variables",
-    "text": "Antithetic Variables\n\nExplanation of antithetic variables and how they reduce variance\nExample: Applying antithetic variables\n\n```{r}\n# Antithetic variables example\nu &lt;- runif(5000)\ntheta.hat &lt;- mean((exp(-u) + exp(-(1 - u))) / 2)\ntheta.hat\n1 - exp(-1)\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Integration"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "MATH 4750: Computational Statistics",
-    "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n\n1\nTue, Jan 14\nR👩‍💻\nIntroduction to Statistical Computing\n📚Chapt 1-A\n\n\n\n\n\n\nThu, Jan 16\nR👩‍💻\nProbability and Statistics Review\n📚Chapt 2-A\n\n\n\n\n2\nTue, Jan 21\n\n\nMethod of Estimations\n📚💻Chapt 2-B\n\n\n\n\n\n\nThu, Jan 23\n\n\nRegularization in Regression\n💻Ridge and Lasso\n\n\n\n\n3\nTue, Jan 28\n\n\nFunctional Data Analysis and Smoothing\n💻FDA-A\n\n\n\n\n\n\nThu, Jan 30\n\n\nMore on FDA and Basics of PCA\n💻FDA-B\n\n\n\n\n\n\nFri, Jan 31\n\n\n\n\n\n\n📝 HW 1 at 11:50 pm\n\n\n4\nTue, Feb 4\nR👩‍💻\nMethods for Generating Random Variables\n📚Chapt 3-A\n\n\n\n\n\n\nThu, Feb 6\n\n\nMore on Generating RV’s\n📚Chapt 3-B\n\n\n\n\n5\nTue, Feb 11\n\n\nK-means Clustering\n💻Clustering-A\n\n\n\n\n\n\nThu, Feb 13\n\n\nHirarchical Clustering\n💻Clustering-B\n\n\n\n\n\n\nFri, Feb 14\n\n\n\n\n\n\n📝 [HW 2] at 11:50 pm\n\n\n6\nTue, Feb 18\nR👩‍💻\nVizualization\nChapt 5\n\n\n\n\n\n\nThu, Feb 20\nR👩‍💻\nMonte Carlo Integration\nChapt 6-A\n\n\n\n\n7\nTue, Feb 25\n\n\nImportance Sampling and Variance Reduction\nChapt 6-B\n\n\n\n\n\n\nThu, Feb 27\n\n\nObject Oriented Programming in R\n📖OOP\n\n\n\n\n\n\nFri, Feb 28\n\n\n\n\n\n\n📝 [HW 3] at 11:50 pm\n\n\n8\nTue, Mar 4\n\n\nDeveloping an Interactive Shiny App\n📖Shiny\n\n\n\n\n\n\nThu, Mar 6\n\n\nDeveloping an R package\n📖R package\n\n\n\n\n\n\nFri, Mar 7\n\n\n\n\n\n\n📝 [HW 4] at 11:50 pm\n\n\n\n\nTue, Mar 11\n\n\n🌴 Spring Break\n\n\n\n\n\n\n\n\nThu, Mar 13\n\n\n🌴 Spring Break\n\n\n\n\n\n\n9\nTue, Mar 18\nR👩‍💻\nMonte Carlo Integration\n📚Chapt 7-A\n\n\n\n\n\n\nThu, Mar 20\n\n\nMore on Monte Carlo Methods\n📚Chapt 7-B  📚💻Chapt 7-C\n\n\n\n\n10\nTue, Mar 25\nR👩‍💻\nBootstrap\n📚Chapt 8-A\n\n\n\n\n\n\nThu, Mar 27\nR👩‍💻\nMore on Bootstran and Jackknife\n📑Chapt 8-B  🖥️Chapt 8-C  📚Chapt 9\n\n\n\n\n\n\nFri, Mar 28\n\n\n\n\n\n\n📝 [HW 5] at 11:50 pm\n\n\n11\nTue, Apr 1\nR👩‍💻\nDensity Estimation\n📚Chapt 12\n\n\n\n\n\n\nThu, Apr 3\nR👩‍💻\nNumerical Methods in R\n📚Chapt 13\n\n\n\n\n\n\nFri, Apr 4\n\n\n\n\n\n\n📝 [HW 6] at 11:50 pm\n\n\n12\nTue, Apr 8\nR👩‍💻\nOptimization in R\n📚Chapt 14-A\n\n\n\n\n\n\nThu, Apr 10\n\n\nMore on Optimization\n📚Chapt 14-B\n\n\n\n\n\n\nFri, Apr 11\n\n\n\n\n\n\n📝 [HW 7] at 11:50 pm\n\n\n13\nTue, Apr 15\nR👩‍💻\nExpectation-Maximization (EM)-Algorithm\n📑Chapt 14-C\n\n\n\n\n\n\nThu, Apr 17\n\n\n🌴 Easter Break\n\n\n\n\n\n\n14\nTue, Apr 22\nR\nProgramming Topics\n📚Chapt 15\n\n\n\n\n\n\nThu, Apr 24\n\n\nDeep Learning in R\n💻DLiR-A\n\n\n\n\n\n\nFri, Apr 25\n\n\n\n\n\n\n\n\n\n\n15\nTue, Apr 29\n\n\nFully Connected Networks (FCN)\n💻DLiR-B\n\n\n\n\n\n\nThu, May 1\n\n\nConvolutional Nueral Networks (CNN)\n💻DLiR-C\n\n\n\n\n16\nMon, May 6\n🖥️ ppt📚Quarto🖥️ PDF slide 📑pdf doc📃project 📝HW🔢Code📖 Online Book🎤✅❌🌴🎥🎞️",
-    "crumbs": [
-      "Course information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "computing/computing-cheatsheets.html",
-    "href": "computing/computing-cheatsheets.html",
-    "title": "R cheatsheets",
-    "section": "",
-    "text": "The following cheatsheets come from https://posit.co/resources/cheatsheets. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.",
-    "crumbs": [
-      "Computing",
-      "Cheatsheets"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter15.html#benchmarking-methods",
-    "href": "slides/Chapter15.html#benchmarking-methods",
-    "title": "Computational Statistics",
-    "section": "Benchmarking Methods",
-    "text": "Benchmarking Methods\n\nOverview of benchmarking in R\nExample: Benchmarking methods to generate a sequence\n\n```{r}\ns1 &lt;- 1:10\ns2 &lt;- seq(1, 10, 1)\ns3 &lt;- seq.int(1, 10, 1)\n\n# Benchmarking\nlibrary(microbenchmark)\nlibrary(ggplot2)\n\nn &lt;- 1000\nmb &lt;- microbenchmark(\n  seq(1, n, 1),\n  1:n,\n  times = 100\n)\nmb\nautoplot(mb)\n```",
-    "crumbs": [
-      "Slides",
-      "Programming Topics"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter15.html#profiling-code-for-performance",
-    "href": "slides/Chapter15.html#profiling-code-for-performance",
-    "title": "Computational Statistics",
-    "section": "Profiling Code for Performance",
-    "text": "Profiling Code for Performance\n\nIntroduction to profiling in R\nExample: Profiling a function using profvis\n\n```{r}\n# Install profvis for profiling\nlibrary(profvis)\n\n# Example: Profile a sorting function\nprofvis({\n  x &lt;- rnorm(1e4)\n  y &lt;- sort(x)\n})\n```",
-    "crumbs": [
-      "Slides",
-      "Programming Topics"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter15.html#visualizing-profiling-results",
-    "href": "slides/Chapter15.html#visualizing-profiling-results",
-    "title": "Computational Statistics",
-    "section": "Visualizing Profiling Results",
-    "text": "Visualizing Profiling Results\n```{r}\n# profvis visual interface will show the profiling output\n```",
-    "crumbs": [
-      "Slides",
-      "Programming Topics"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter15.html#conclusion",
-    "href": "slides/Chapter15.html#conclusion",
+    "objectID": "slides/Chapter13.html#conclusion",
+    "href": "slides/Chapter13.html#conclusion",
     "title": "Computational Statistics",
     "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of benchmarking and profiling in R\nPractice: Apply these techniques to optimize code in R\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
+    "text": "Conclusion\n\nRecap of numerical precision, floating-point arithmetic, and numerical integration methods\nPractice: Apply numerical methods to solve optimization and integration problems\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
     "crumbs": [
       "Slides",
-      "Programming Topics"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter12.html#histogram-density-estimates",
-    "href": "slides/Chapter12.html#histogram-density-estimates",
-    "title": "Computational Statistics",
-    "section": "Histogram Density Estimates",
-    "text": "Histogram Density Estimates\n\nIntroduction to density estimation using histograms\nExample: Histogram density estimates using Sturges’ Rule\n\n```{r}\nset.seed(12345)\nn &lt;- 25\nx &lt;- rnorm(n)\n\n# Calculate breaks according to Sturges' Rule\nnclass &lt;- ceiling(1 + log2(n))\ncwidth &lt;- diff(range(x) / nclass)\nbreaks &lt;- min(x) + cwidth * 0:nclass\n\n# Default histogram\nh.default &lt;- hist(x, freq = FALSE, xlab = \"default\", main = \"Histogram: Default\")\n```",
-    "crumbs": [
-      "Slides",
-      "Density Estimation"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter12.html#kernel-density-estimation",
-    "href": "slides/Chapter12.html#kernel-density-estimation",
-    "title": "Computational Statistics",
-    "section": "Kernel Density Estimation",
-    "text": "Kernel Density Estimation\n\nIntroduction to kernel density estimation (KDE)\nExample: Applying KDE to data\n\n```{r}\n# Kernel density estimate\ndens &lt;- density(x)\nplot(dens, main = \"Kernel Density Estimate\", col = \"blue\", lwd = 2)\n```",
-    "crumbs": [
-      "Slides",
-      "Density Estimation"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter12.html#visualizing-kernel-density",
-    "href": "slides/Chapter12.html#visualizing-kernel-density",
-    "title": "Computational Statistics",
-    "section": "Visualizing Kernel Density",
-    "text": "Visualizing Kernel Density\n```{r}\n# Overlay histogram and KDE\nhist(x, freq = FALSE, col = \"lightgray\", border = \"white\", main = \"Histogram with KDE\")\nlines(dens, col = \"red\", lwd = 2)\n```",
-    "crumbs": [
-      "Slides",
-      "Density Estimation"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter12.html#conclusion",
-    "href": "slides/Chapter12.html#conclusion",
-    "title": "Computational Statistics",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of histogram density estimation and kernel density estimation\nPractice: Apply density estimation techniques to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
-    "crumbs": [
-      "Slides",
-      "Density Estimation"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter8.html#bootstrap-resampling-method",
-    "href": "slides/Chapter8.html#bootstrap-resampling-method",
-    "title": "Computational Statistics",
-    "section": "Bootstrap Resampling Method",
-    "text": "Bootstrap Resampling Method\n\nIntroduction to the bootstrap method\nExample: Bootstrap estimate of standard error\n\n```{r}\n# Bootstrap example: Estimate correlation between LSAT and GPA\nlibrary(bootstrap)    #for the law data\nprint(cor(law$LSAT, law$GPA))\nprint(cor(law82$LSAT, law82$GPA))\n# Set up the bootstrap\nB &lt;- 200            # number of replicates\nn &lt;- nrow(law)      # sample size\nR &lt;- numeric(B)     # storage for replicates\n# Bootstrap estimate of correlation\nfor (i in 1:B) {\n  idx &lt;- sample(1:n, size=n, replace=TRUE)\n  law_boot &lt;- law[idx, ]\n  R[i] &lt;- cor(law_boot$LSAT, law_boot$GPA)\n}\nmean(R)\nsd(R)  # Bootstrap standard error\n```",
-    "crumbs": [
-      "Slides",
-      "Bootstrap and Jackknife"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter8.html#visualizing-bootstrap-resamples",
-    "href": "slides/Chapter8.html#visualizing-bootstrap-resamples",
-    "title": "Computational Statistics",
-    "section": "Visualizing Bootstrap Resamples",
-    "text": "Visualizing Bootstrap Resamples\n```{r}\n# Plotting the bootstrap distribution\nhist(R, main=\"Bootstrap Distribution of Correlation\", col=\"lightblue\")\n```",
-    "crumbs": [
-      "Slides",
-      "Bootstrap and Jackknife"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter8.html#introduction-to-the-jackknife-method",
-    "href": "slides/Chapter8.html#introduction-to-the-jackknife-method",
-    "title": "Computational Statistics",
-    "section": "Introduction to the Jackknife Method",
-    "text": "Introduction to the Jackknife Method\n\nThe jackknife method for bias reduction\nExample: Jackknife estimate of the mean\n\n```{r}\n# Jackknife estimate of mean\nn &lt;- nrow(law)\ntheta_hat &lt;- mean(law$LSAT)\ntheta_jack &lt;- numeric(n)\n\n# Leave-one-out jackknife\nfor (i in 1:n) {\n  theta_jack[i] &lt;- mean(law$LSAT[-i])\n}\n\n# Jackknife estimate of bias\nbias_jack &lt;- (n - 1) * (mean(theta_jack) - theta_hat)\nbias_jack\n```",
-    "crumbs": [
-      "Slides",
-      "Bootstrap and Jackknife"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter8.html#bootstrap-confidence-intervals",
-    "href": "slides/Chapter8.html#bootstrap-confidence-intervals",
-    "title": "Computational Statistics",
-    "section": "Bootstrap Confidence Intervals",
-    "text": "Bootstrap Confidence Intervals\n\nIntroduction to bootstrap confidence intervals\nExample: Bootstrap percentile confidence interval\n\n```{r}\n# Bootstrap confidence intervals\nalpha &lt;- 0.05\nci &lt;- quantile(R, probs = c(alpha/2, 1 - alpha/2))\nci  # Bootstrap confidence interval\n```",
-    "crumbs": [
-      "Slides",
-      "Bootstrap and Jackknife"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter8.html#comparison-of-bootstrap-and-jackknife",
-    "href": "slides/Chapter8.html#comparison-of-bootstrap-and-jackknife",
-    "title": "Computational Statistics",
-    "section": "Comparison of Bootstrap and Jackknife",
-    "text": "Comparison of Bootstrap and Jackknife\n\nDiscuss the differences and use cases of bootstrap and jackknife\nRecap of methods and their benefits in reducing bias and estimating uncertainty",
-    "crumbs": [
-      "Slides",
-      "Bootstrap and Jackknife"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter7.html#basic-monte-carlo-estimation",
-    "href": "slides/Chapter7.html#basic-monte-carlo-estimation",
-    "title": "Computational Statistics",
-    "section": "Basic Monte Carlo Estimation",
-    "text": "Basic Monte Carlo Estimation\n\nIntroduction to Monte Carlo estimation\nExample: Estimating the expected difference of two normal variables\n\n```{r}\nm &lt;- 1000\ng &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(2)\n    g[i] &lt;- abs(x[1] - x[2])\n}\nest &lt;- mean(g)\nest\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Methods in Inference"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter7.html#visualizing-monte-carlo-simulations",
-    "href": "slides/Chapter7.html#visualizing-monte-carlo-simulations",
-    "title": "Computational Statistics",
-    "section": "Visualizing Monte Carlo Simulations",
-    "text": "Visualizing Monte Carlo Simulations\n```{r}\n# Histogram of the simulated differences\nhist(g, main=\"Histogram of Differences (Monte Carlo)\", col=\"lightblue\")\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Methods in Inference"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter7.html#estimating-the-mean-squared-error-mse",
-    "href": "slides/Chapter7.html#estimating-the-mean-squared-error-mse",
-    "title": "Computational Statistics",
-    "section": "Estimating the Mean Squared Error (MSE)",
-    "text": "Estimating the Mean Squared Error (MSE)\n\nMonte Carlo estimation of MSE for trimmed means\n\n```{r}\nn &lt;- 20\nm &lt;- 1000\nmean_trim &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    mean_trim[i] &lt;- mean(x, trim = 0.1)\n}\nmse &lt;- mean((mean_trim - 0)^2)\nmse\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Methods in Inference"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter7.html#visualizing-mse-simulations",
-    "href": "slides/Chapter7.html#visualizing-mse-simulations",
-    "title": "Computational Statistics",
-    "section": "Visualizing MSE Simulations",
-    "text": "Visualizing MSE Simulations\n```{r}\n# Histogram of the trimmed means\nhist(mean_trim, main=\"Trimmed Means (Monte Carlo MSE)\", col=\"lightgreen\")\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Methods in Inference"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter7.html#additional-monte-carlo-techniques",
-    "href": "slides/Chapter7.html#additional-monte-carlo-techniques",
-    "title": "Computational Statistics",
-    "section": "Additional Monte Carlo Techniques",
-    "text": "Additional Monte Carlo Techniques\n\nExploring advanced Monte Carlo techniques for inference\nExample: Hypothesis testing with Monte Carlo methods\n\n```{r}\n# Monte Carlo test example: Hypothesis testing\nn &lt;- 50\nm &lt;- 1000\ntest_stat &lt;- numeric(m)\nfor (i in 1:m) {\n    x &lt;- rnorm(n)\n    test_stat[i] &lt;- mean(x)\n}\np_value &lt;- mean(test_stat &gt;= 1.96)\np_value\n```",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Methods in Inference"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter7.html#conclusion",
-    "href": "slides/Chapter7.html#conclusion",
-    "title": "Computational Statistics",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of Monte Carlo methods in inference, MSE estimation, and hypothesis testing\nPractice: Apply these methods to other inferential problems\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
-    "crumbs": [
-      "Slides",
-      "Monte Carlo Methods in Inference"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter9.html#introduction-to-jackknife-after-bootstrap",
-    "href": "slides/Chapter9.html#introduction-to-jackknife-after-bootstrap",
-    "title": "Computational Statistics",
-    "section": "Introduction to Jackknife-after-Bootstrap",
-    "text": "Introduction to Jackknife-after-Bootstrap\n\nExplanation of the jackknife-after-bootstrap method\nUsed to estimate bias and standard errors after bootstrap\n\n```{r}\nlibrary(boot)\nlibrary(bootstrap)\nset.seed(1111)\n\n# Function to compute the patch ratio statistic\ntheta.boot &lt;- function(patch, i) {\n  y &lt;- patch[i, \"y\"]\n  z &lt;- patch[i, \"z\"]\n  mean(y) / mean(z)\n}\n\n# Bootstrap the patch dataset\nboot.out &lt;- boot(bootstrap::patch, statistic = theta.boot, R=2000)\nboot.out\n```",
-    "crumbs": [
-      "Slides",
-      "Jackknife-after-Bootstrap"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter9.html#applying-jackknife-after-bootstrap",
-    "href": "slides/Chapter9.html#applying-jackknife-after-bootstrap",
-    "title": "Computational Statistics",
-    "section": "Applying Jackknife-after-Bootstrap",
-    "text": "Applying Jackknife-after-Bootstrap\n\nExample: Using the jackknife-after-bootstrap method\nChecking the bootstrap array\n\n```{r}\n# Check the bootstrap array\nA &lt;- boot.array(boot.out)\nhead(A, 3)\n\n# Proportion of cases that are not resampled\nmean(A[, 1] == 0)\n```",
-    "crumbs": [
-      "Slides",
-      "Jackknife-after-Bootstrap"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter9.html#visualizing-results",
-    "href": "slides/Chapter9.html#visualizing-results",
-    "title": "Computational Statistics",
-    "section": "Visualizing Results",
-    "text": "Visualizing Results\n```{r}\n# Plotting the bootstrap results\nplot(boot.out, index=1)\n```",
-    "crumbs": [
-      "Slides",
-      "Jackknife-after-Bootstrap"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter9.html#conclusion",
-    "href": "slides/Chapter9.html#conclusion",
-    "title": "Computational Statistics",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nRecap of jackknife-after-bootstrap technique\nImportance of combining jackknife and bootstrap for robust estimates\nPractice: Apply jackknife-after-bootstrap to other datasets\n\n\n\n\n\n🔗 tinyurl.com/Comp-Stat",
-    "crumbs": [
-      "Slides",
-      "Jackknife-after-Bootstrap"
-    ]
-  },
-  {
-    "objectID": "slides/Chapter5.html#customizing-scatterplot-matrices",
-    "href": "slides/Chapter5.html#customizing-scatterplot-matrices",
-    "title": "Computational Statistics",
-    "section": "Customizing Scatterplot Matrices",
-    "text": "Customizing Scatterplot Matrices\n\nCustomizing scatterplot matrices with density plots\n\n```{r}\n# Adding density plots to scatterplot matrix\npanel.d &lt;- function(x, ...) {\n    usr &lt;- par(\"usr\")\n    on.exit(par(usr))\n    par(usr = c(usr[1:2], 0, .5))\n    lines(density(x), col=\"red\")\n}\npairs(iris[101:150, 1:4], panel = panel.d, main=\"Customized Scatterplot Matrix\")\n```",
-    "crumbs": [
-      "Slides",
-      "Visualization"
+      "Numerical Methods in R"
     ]
   },
   {
