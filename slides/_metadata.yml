@@ -1,7 +1,7 @@
 institute: "Marquette University <br> MATH 4750 - Spring 2025"
 author: "Dr. Mehdi Maadooliat"
-footer: "[🔗 tinyurl.com/Stat-Meth](https://tinyurl.com/Comp-Stat)"
-logo: "../logo.png"
+footer: "[🔗 tinyurl.com/Comp-Stat](https://tinyurl.com/Comp-Stat)"
+logo: "logo.png"
 format:
   revealjs:
     theme: slides.scss
@@ -13,7 +13,7 @@ editor: visual
 execute:
   freeze: auto
   echo: true
-  warning: true
+  warning: false
 engine: knitr
 knitr:
   opts_chunk: 

@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 5 - Visualization of Multivariate Data"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -11,8 +10,8 @@ format: revealjs
 
 # Scatterplot Matrices
 
-- Introduction to scatterplot matrices for multivariate data
-- Example using the `iris` dataset
+-   Introduction to scatterplot matrices for multivariate data
+-   Example using the `iris` dataset
 
 ```{{r}}
 data(iris)
@@ -23,7 +22,7 @@ pairs(iris[101:150, 1:4], main="Scatterplot Matrix for Virginica", col="blue")
 
 ## Customizing Scatterplot Matrices
 
-- Customizing scatterplot matrices with density plots
+-   Customizing scatterplot matrices with density plots
 
 ```{{r}}
 # Adding density plots to scatterplot matrix
@@ -38,8 +37,8 @@ pairs(iris[101:150, 1:4], panel = panel.d, main="Customized Scatterplot Matrix")
 
 # Correlation Plots
 
-- Visualizing correlations between variables
-- Example: Correlation plot with `corrplot` package
+-   Visualizing correlations between variables
+-   Example: Correlation plot with `corrplot` package
 
 ```{{r}}
 # Correlation plot for iris dataset
@@ -50,8 +49,8 @@ corrplot(cor_iris, method="circle", main="Correlation Plot for Iris Dataset")
 
 # 3D Scatter Plots
 
-- Visualizing 3D relationships between variables
-- Example: 3D scatter plot using the `scatterplot3d` package
+-   Visualizing 3D relationships between variables
+-   Example: 3D scatter plot using the `scatterplot3d` package
 
 ```{{r}}
 # 3D scatter plot for iris dataset
@@ -61,8 +60,8 @@ scatterplot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, color="dar
 
 # Principal Component Analysis (PCA)
 
-- Introduction to PCA for dimensionality reduction
-- Example: PCA visualization using `ggplot2`
+-   Introduction to PCA for dimensionality reduction
+-   Example: PCA visualization using `ggplot2`
 
 ```{{r}}
 # PCA for iris dataset
@@ -79,5 +78,5 @@ ggplot(pca_df, aes(PC1, PC2, color=Species)) +
 
 # Conclusion
 
-- Recap of visualization techniques for multivariate data
-- Practice: Generate visualizations for other datasets and explore 3D plots
+-   Recap of visualization techniques for multivariate data
+-   Practice: Generate visualizations for other datasets and explore 3D plots

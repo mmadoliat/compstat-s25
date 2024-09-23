@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 7 - Monte Carlo Methods in Inference"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Basic Monte Carlo Estimation
 
-- Introduction to Monte Carlo estimation
-- Example: Estimating the expected difference of two normal variables
+-   Introduction to Monte Carlo estimation
+-   Example: Estimating the expected difference of two normal variables
 
 ```{{r}}
 m <- 1000
@@ -38,7 +37,7 @@ hist(g, main="Histogram of Differences (Monte Carlo)", col="lightblue")
 
 ## Estimating the Mean Squared Error (MSE)
 
-- Monte Carlo estimation of MSE for trimmed means
+-   Monte Carlo estimation of MSE for trimmed means
 
 ```{{r}}
 n <- 20
@@ -63,8 +62,8 @@ hist(mean_trim, main="Trimmed Means (Monte Carlo MSE)", col="lightgreen")
 
 ## Additional Monte Carlo Techniques
 
-- Exploring advanced Monte Carlo techniques for inference
-- Example: Hypothesis testing with Monte Carlo methods
+-   Exploring advanced Monte Carlo techniques for inference
+-   Example: Hypothesis testing with Monte Carlo methods
 
 ```{{r}}
 # Monte Carlo test example: Hypothesis testing
@@ -81,5 +80,5 @@ p_value
 
 ## Conclusion
 
-- Recap of Monte Carlo methods in inference, MSE estimation, and hypothesis testing
-- Practice: Apply these methods to other inferential problems
+-   Recap of Monte Carlo methods in inference, MSE estimation, and hypothesis testing
+-   Practice: Apply these methods to other inferential problems

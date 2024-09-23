@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 13 - Introduction to Numerical Methods in R"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Numerical Precision and Floating-Point Arithmetic
 
-- Introduction to floating-point arithmetic in R
-- Brain teasers: TRUE or FALSE?
+-   Introduction to floating-point arithmetic in R
+-   Brain teasers: TRUE or FALSE?
 
 ```{{r}}
 # Examples of floating-point precision
@@ -26,14 +25,14 @@ format: revealjs
 
 ## Binary Representation
 
-- Discussion on binary fractions and limitations
-- Resources:
-  - [Binary Fraction Calculator](https://www.omnicalculator.com/math/binary-fraction)
-  - [Floating Point Problem](https://www.truenorthfloatingpoint.com/problem)
+-   Discussion on binary fractions and limitations
+-   Resources:
+    -   [Binary Fraction Calculator](https://www.omnicalculator.com/math/binary-fraction)
+    -   [Floating Point Problem](https://www.truenorthfloatingpoint.com/problem)
 
 ## Iterative Methods
 
-- Introduction to iterative methods in numerical analysis
+-   Introduction to iterative methods in numerical analysis
 
 ```{{r}}
 # Example: Calculating large integers
@@ -43,7 +42,7 @@ as.integer(2^31)
 
 ## Numerical Integration
 
-- Example of numerical integration using base R functions
+-   Example of numerical integration using base R functions
 
 ```{{r}}
 # Numerical integration using integrate function
@@ -53,5 +52,5 @@ integrate(f, lower = 0, upper = pi)
 
 ## Conclusion
 
-- Recap of numerical precision, floating-point arithmetic, and numerical integration methods
-- Practice: Apply numerical methods to solve optimization and integration problems
+-   Recap of numerical precision, floating-point arithmetic, and numerical integration methods
+-   Practice: Apply numerical methods to solve optimization and integration problems

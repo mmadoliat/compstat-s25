@@ -1,5 +1,0 @@
----
-title: "Ugly plots"
----
-
-To be posted.

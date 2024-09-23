@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 2 - Probability and Statistics Review"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,9 +12,9 @@ format: revealjs
 
 ## Random Variables and Distributions
 
-- Overview of random variables
-- Discrete vs Continuous random variables
-- Important distributions (Binomial, Normal, Chi-Square)
+-   Overview of random variables
+-   Discrete vs Continuous random variables
+-   Important distributions (Binomial, Normal, Chi-Square)
 
 ```{{r}}
 # Simulating random variables
@@ -26,8 +25,8 @@ hist(Y, main="Histogram of Normal Distribution", xlab="Y values", col="lightblue
 
 ## Example: Central Limit Theorem
 
-- Discuss the CLT and its importance in statistics
-- Simulating the CLT with normal distributions
+-   Discuss the CLT and its importance in statistics
+-   Simulating the CLT with normal distributions
 
 ```{{r}}
 # Central Limit Theorem simulation
@@ -39,9 +38,9 @@ hist(means, main="Central Limit Theorem", col="lightgreen", border="black")
 
 ## Common Distributions in Statistical Computing
 
-- Binomial Distribution
-- Poisson Distribution
-- Normal Distribution and its properties
+-   Binomial Distribution
+-   Poisson Distribution
+-   Normal Distribution and its properties
 
 ```{{r}}
 # Simulating binomial and Poisson distributions
@@ -55,8 +54,8 @@ hist(x_pois, main="Poisson Distribution", col="lightcoral")
 
 ## Joint and Conditional Distributions
 
-- Joint distributions and their importance
-- Conditional distributions with examples
+-   Joint distributions and their importance
+-   Conditional distributions with examples
 
 ```{{r}}
 # Simulating joint distributions
@@ -71,8 +70,8 @@ plot(X[,1], X[,2], main="Scatter plot of Joint Distribution", xlab="X1", ylab="X
 
 ## Estimators and Their Properties
 
-- Discuss point estimators: Mean, Variance, etc.
-- Review bias, consistency, and efficiency
+-   Discuss point estimators: Mean, Variance, etc.
+-   Review bias, consistency, and efficiency
 
 ```{{r}}
 # Example of calculating mean and variance from samples
@@ -84,8 +83,8 @@ var(sample_data)
 
 ## Hypothesis Testing
 
-- Hypothesis testing steps
-- Type I and II errors, significance level, and power
+-   Hypothesis testing steps
+-   Type I and II errors, significance level, and power
 
 ```{{r}}
 # Example of hypothesis testing
@@ -95,8 +94,8 @@ t_test_result
 
 ## Confidence Intervals
 
-- Constructing confidence intervals for population mean
-- Example with real data
+-   Constructing confidence intervals for population mean
+-   Example with real data
 
 ```{{r}}
 # Example: Confidence interval for normal data
@@ -106,5 +105,5 @@ conf_interval
 
 # Conclusion
 
-- Recap of probability concepts, distributions, and hypothesis testing
-- Review key formulas and concepts for exam preparation
+-   Recap of probability concepts, distributions, and hypothesis testing
+-   Review key formulas and concepts for exam preparation

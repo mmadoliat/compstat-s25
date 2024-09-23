@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 8 - Bootstrap and Jackknife"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Bootstrap Resampling Method
 
-- Introduction to the bootstrap method
-- Example: Bootstrap estimate of standard error
+-   Introduction to the bootstrap method
+-   Example: Bootstrap estimate of standard error
 
 ```{{r}}
 # Bootstrap example: Estimate correlation between LSAT and GPA
@@ -46,8 +45,8 @@ hist(R, main="Bootstrap Distribution of Correlation", col="lightblue")
 
 ## Introduction to the Jackknife Method
 
-- The jackknife method for bias reduction
-- Example: Jackknife estimate of the mean
+-   The jackknife method for bias reduction
+-   Example: Jackknife estimate of the mean
 
 ```{{r}}
 # Jackknife estimate of mean
@@ -69,8 +68,8 @@ bias_jack
 
 ## Bootstrap Confidence Intervals
 
-- Introduction to bootstrap confidence intervals
-- Example: Bootstrap percentile confidence interval
+-   Introduction to bootstrap confidence intervals
+-   Example: Bootstrap percentile confidence interval
 
 ```{{r}}
 # Bootstrap confidence intervals
@@ -81,10 +80,10 @@ ci  # Bootstrap confidence interval
 
 ## Comparison of Bootstrap and Jackknife
 
-- Discuss the differences and use cases of bootstrap and jackknife
-- Recap of methods and their benefits in reducing bias and estimating uncertainty
+-   Discuss the differences and use cases of bootstrap and jackknife
+-   Recap of methods and their benefits in reducing bias and estimating uncertainty
 
 # Conclusion
 
-- Recap of bootstrap and jackknife methods, confidence intervals, and bias estimation
-- Practice: Apply bootstrap to other datasets and explore jackknife bias estimation
+-   Recap of bootstrap and jackknife methods, confidence intervals, and bias estimation
+-   Practice: Apply bootstrap to other datasets and explore jackknife bias estimation

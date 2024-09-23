@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 14 - Optimization"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Introduction to Optimization
 
-- Overview of optimization methods
-- Example: One-dimensional optimization using `optimize`
+-   Overview of optimization methods
+-   Example: One-dimensional optimization using `optimize`
 
 ```{{r}}
 f <- function(x) log(x + log(x)) / log(1 + x)
@@ -39,8 +38,8 @@ abline(v=res$maximum, col = "red", lwd = 2)
 
 ## Introduction to MLE
 
-- Introduction to Maximum Likelihood Estimation (MLE)
-- Example: MLE for Gamma distribution
+-   Introduction to Maximum Likelihood Estimation (MLE)
+-   Example: MLE for Gamma distribution
 
 ```{{r}}
 # MLE for Gamma distribution
@@ -68,5 +67,5 @@ result
 
 ## Conclusion
 
-- Recap of one-dimensional optimization and MLE techniques
-- Practice: Apply optimization to other statistical problems and models
+-   Recap of one-dimensional optimization and MLE techniques
+-   Practice: Apply optimization to other statistical problems and models

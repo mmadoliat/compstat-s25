@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 9 - Jackknife-after-Bootstrap"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Introduction to Jackknife-after-Bootstrap
 
-- Explanation of the jackknife-after-bootstrap method
-- Used to estimate bias and standard errors after bootstrap
+-   Explanation of the jackknife-after-bootstrap method
+-   Used to estimate bias and standard errors after bootstrap
 
 ```{{r}}
 library(boot)
@@ -35,8 +34,8 @@ boot.out
 
 ## Applying Jackknife-after-Bootstrap
 
-- Example: Using the jackknife-after-bootstrap method
-- Checking the bootstrap array
+-   Example: Using the jackknife-after-bootstrap method
+-   Checking the bootstrap array
 
 ```{{r}}
 # Check the bootstrap array
@@ -56,6 +55,6 @@ plot(boot.out, index=1)
 
 ## Conclusion
 
-- Recap of jackknife-after-bootstrap technique
-- Importance of combining jackknife and bootstrap for robust estimates
-- Practice: Apply jackknife-after-bootstrap to other datasets
+-   Recap of jackknife-after-bootstrap technique
+-   Importance of combining jackknife and bootstrap for robust estimates
+-   Practice: Apply jackknife-after-bootstrap to other datasets

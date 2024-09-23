@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 6 - Monte Carlo Integration and Variance Reduction"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Introduction to Monte Carlo Integration
 
-- Basic concepts of Monte Carlo integration
-- Example: Integrating using uniform distribution
+-   Basic concepts of Monte Carlo integration
+-   Example: Integrating using uniform distribution
 
 ```{{r}}
 m <- 10000
@@ -38,7 +37,7 @@ exp(-2) - exp(-4)
 
 ## Unbounded Intervals
 
-- Handling unbounded intervals in Monte Carlo integration
+-   Handling unbounded intervals in Monte Carlo integration
 
 ```{{r}}
 # Plotting a function over an unbounded interval
@@ -51,8 +50,8 @@ plot(x, y, type="l", main="Function Plot for Unbounded Interval", col="blue")
 
 ## Introduction to Importance Sampling
 
-- Importance sampling and its applications
-- Example: Applying importance sampling
+-   Importance sampling and its applications
+-   Example: Applying importance sampling
 
 ```{{r}}
 # Example of importance sampling
@@ -76,8 +75,8 @@ legend("topright", legend=c("g(x)", "f(x)"), col=c("blue", "red"), lty=c(1, 2), 
 
 ## Control Variates
 
-- Explanation of control variates and how they reduce variance
-- Example: Using control variates in Monte Carlo integration
+-   Explanation of control variates and how they reduce variance
+-   Example: Using control variates in Monte Carlo integration
 
 ```{{r}}
 # Control variates example
@@ -89,8 +88,8 @@ theta.hat
 
 ## Antithetic Variables
 
-- Explanation of antithetic variables and how they reduce variance
-- Example: Applying antithetic variables
+-   Explanation of antithetic variables and how they reduce variance
+-   Example: Applying antithetic variables
 
 ```{{r}}
 # Antithetic variables example
@@ -102,5 +101,5 @@ theta.hat
 
 # Conclusion
 
-- Recap of Monte Carlo integration methods, importance sampling, and variance reduction techniques
-- Practice: Try implementing Monte Carlo integration with other functions
+-   Recap of Monte Carlo integration methods, importance sampling, and variance reduction techniques
+-   Practice: Try implementing Monte Carlo integration with other functions

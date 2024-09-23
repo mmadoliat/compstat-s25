@@ -1,9 +1,8 @@
-
 ---
 title: "Computational Statistics"
 subtitle: "Chapter 15 - Programming Topics"
 title-slide-attributes:
-  data-background-image: ../vizdata-bg.png
+  data-background-image: mu-bg.png
   data-background-size: stretch
   data-slide-number: none
 format: revealjs
@@ -13,8 +12,8 @@ format: revealjs
 
 ## Benchmarking Methods
 
-- Overview of benchmarking in R
-- Example: Benchmarking methods to generate a sequence
+-   Overview of benchmarking in R
+-   Example: Benchmarking methods to generate a sequence
 
 ```{{r}}
 s1 <- 1:10
@@ -37,8 +36,8 @@ autoplot(mb)
 
 ## Profiling Code for Performance
 
-- Introduction to profiling in R
-- Example: Profiling a function using `profvis`
+-   Introduction to profiling in R
+-   Example: Profiling a function using `profvis`
 
 ```{{r}}
 # Install profvis for profiling
@@ -59,5 +58,5 @@ profvis({
 
 ## Conclusion
 
-- Recap of benchmarking and profiling in R
-- Practice: Apply these techniques to optimize code in R
+-   Recap of benchmarking and profiling in R
+-   Practice: Apply these techniques to optimize code in R
