@@ -416,6 +416,94 @@
     ]
   },
   {
+    "objectID": "slides/Chapter1.html#probability-distributions",
+    "href": "slides/Chapter1.html#probability-distributions",
+    "title": "Computational Statistics",
+    "section": "Probability Distributions",
+    "text": "Probability Distributions\n\ndnorm(), pnorm(), qnorm()\nExploring statistical tests in R",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#statistical-tests",
+    "href": "slides/Chapter1.html#statistical-tests",
+    "title": "Computational Statistics",
+    "section": "Statistical Tests",
+    "text": "Statistical Tests\n\nt.test(), chisq.test()",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#defining-functions",
+    "href": "slides/Chapter1.html#defining-functions",
+    "title": "Computational Statistics",
+    "section": "Defining Functions",
+    "text": "Defining Functions\n\nfunction(arglist) expr\nReturn values and default arguments\n\nsumdice &lt;- function(n) {\n  k &lt;- sample(1:6, size=n, replace=TRUE)\n  return(sum(k))\n}\nsumdice(2)",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#data-structures-in-r",
+    "href": "slides/Chapter1.html#data-structures-in-r",
+    "title": "Computational Statistics",
+    "section": "Data Structures in R",
+    "text": "Data Structures in R\n\nArrays, matrices, and data frames\n\n```{r}\n# Creating vectors and matrices\nx &lt;- c(1, 2, 3, 4)\nmatrix_x &lt;- matrix(x, nrow=2, ncol=2)\nprint(matrix_x)\n```\n\nExample: Iris data set\n\ndata(iris)\nsummary(iris)",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#basic-plots",
+    "href": "slides/Chapter1.html#basic-plots",
+    "title": "Computational Statistics",
+    "section": "Basic Plots",
+    "text": "Basic Plots\n\nplot(), hist(), boxplot()\n\n\nCodePlot\n\n\n\nplot(iris);\n# boxplot(iris);\n# hist(iris[,1])",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#introduction-to-ggplot2",
+    "href": "slides/Chapter1.html#introduction-to-ggplot2",
+    "title": "Computational Statistics",
+    "section": "Introduction to ggplot2",
+    "text": "Introduction to ggplot2\n\nVisualizing using ggplot2\n\n\nCodePlot\n\n\n\nlibrary(ggplot2)\nggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) + \n  geom_point() + \n  geom_smooth(method=\"lm\", se=FALSE, color=\"blue\") + \n  theme_minimal() + \n  labs(title=\"Sepal vs Petal Length in Iris Dataset\", x=\"Sepal Length\", y=\"Petal Length\")",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#managing-files",
+    "href": "slides/Chapter1.html#managing-files",
+    "title": "Computational Statistics",
+    "section": "Managing Files",
+    "text": "Managing Files\n\nWorking directories and file input/output\nUsing scripts and automation",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
+    "objectID": "slides/Chapter1.html#dynamic-documents",
+    "href": "slides/Chapter1.html#dynamic-documents",
+    "title": "Computational Statistics",
+    "section": "Dynamic Documents",
+    "text": "Dynamic Documents\n\nCreating reports with R Markdown\nIntroduction to knitr package",
+    "crumbs": [
+      "Slides",
+      "Intro. to Stat. Comp."
+    ]
+  },
+  {
     "objectID": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
     "href": "slides/Chapter6.html#introduction-to-monte-carlo-integration",
     "title": "Computational Statistics",
@@ -504,66 +592,77 @@
     ]
   },
   {
-    "objectID": "slides/Chapter2.html#example-central-limit-theorem",
-    "href": "slides/Chapter2.html#example-central-limit-theorem",
+    "objectID": "slides/Chapter2.html#binomial-distribution",
+    "href": "slides/Chapter2.html#binomial-distribution",
     "title": "Computational Statistics",
-    "section": "Example: Central Limit Theorem",
-    "text": "Example: Central Limit Theorem\n\nDiscuss the CLT and its importance in statistics\nSimulating the CLT with normal distributions\n\n```{r}\n# Central Limit Theorem simulation\nmeans &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))\nhist(means, main=\"Central Limit Theorem\", col=\"lightgreen\", border=\"black\")\n```",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\n\nrbinom(), dbinom(), pbinom()\nExample: Generating binomial random variables\n\nrbinom(10, size=10, prob=0.5)",
     "crumbs": [
       "Slides",
       "Proba. and Stat. Review"
     ]
   },
   {
-    "objectID": "slides/Chapter2.html#common-distributions-in-statistical-computing",
-    "href": "slides/Chapter2.html#common-distributions-in-statistical-computing",
+    "objectID": "slides/Chapter2.html#poisson-distribution",
+    "href": "slides/Chapter2.html#poisson-distribution",
     "title": "Computational Statistics",
-    "section": "Common Distributions in Statistical Computing",
-    "text": "Common Distributions in Statistical Computing\n\nBinomial Distribution\nPoisson Distribution\nNormal Distribution and its properties\n\n```{r}\n# Simulating binomial and Poisson distributions\nx_binom &lt;- rbinom(100, size = 10, prob = 0.5)\nx_pois &lt;- rpois(100, lambda = 3)\n\npar(mfrow=c(1, 2))  # Two plots side by side\nhist(x_binom, main=\"Binomial Distribution\", col=\"orange\")\nhist(x_pois, main=\"Poisson Distribution\", col=\"lightcoral\")\n```",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\n\nrpois(), dpois(), ppois()\nExample: Simulating Poisson-distributed data\n\nrpois(10, lambda=2)",
     "crumbs": [
       "Slides",
       "Proba. and Stat. Review"
     ]
   },
   {
-    "objectID": "slides/Chapter2.html#joint-and-conditional-distributions",
-    "href": "slides/Chapter2.html#joint-and-conditional-distributions",
+    "objectID": "slides/Chapter2.html#normal-distribution",
+    "href": "slides/Chapter2.html#normal-distribution",
     "title": "Computational Statistics",
-    "section": "Joint and Conditional Distributions",
-    "text": "Joint and Conditional Distributions\n\nJoint distributions and their importance\nConditional distributions with examples\n\n```{r}\n# Simulating joint distributions\nmu &lt;- c(5, 10); sigma &lt;- matrix(c(1, 0.5, 0.5, 2), 2, 2)\nlibrary(MASS)\nX &lt;- mvrnorm(1000, mu = mu, Sigma = sigma)\n\nplot(X[,1], X[,2], main=\"Scatter plot of Joint Distribution\", xlab=\"X1\", ylab=\"X2\", col=\"blue\")\n```",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\n\nrnorm(), dnorm(), pnorm()\nExample: Generating normal random variables\n\nrnorm(10, mean=0, sd=1)",
     "crumbs": [
       "Slides",
       "Proba. and Stat. Review"
     ]
   },
   {
-    "objectID": "slides/Chapter2.html#estimators-and-their-properties",
-    "href": "slides/Chapter2.html#estimators-and-their-properties",
+    "objectID": "slides/Chapter2.html#exponential-distribution",
+    "href": "slides/Chapter2.html#exponential-distribution",
     "title": "Computational Statistics",
-    "section": "Estimators and Their Properties",
-    "text": "Estimators and Their Properties\n\nDiscuss point estimators: Mean, Variance, etc.\nReview bias, consistency, and efficiency\n\n```{r}\n# Example of calculating mean and variance from samples\nset.seed(123)\nsample_data &lt;- rnorm(100, mean = 5, sd = 2)\nmean(sample_data)\nvar(sample_data)\n```",
+    "section": "Exponential Distribution",
+    "text": "Exponential Distribution\n\nrexp(), dexp(), pexp()\nSimulating exponential data in R",
     "crumbs": [
       "Slides",
       "Proba. and Stat. Review"
     ]
   },
   {
-    "objectID": "slides/Chapter2.html#hypothesis-testing",
-    "href": "slides/Chapter2.html#hypothesis-testing",
+    "objectID": "slides/Chapter2.html#properties",
+    "href": "slides/Chapter2.html#properties",
     "title": "Computational Statistics",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nHypothesis testing steps\nType I and II errors, significance level, and power\n\n```{r}\n# Example of hypothesis testing\nt_test_result &lt;- t.test(rnorm(100, mean = 5, sd = 2), mu=5)\nt_test_result\n```",
+    "section": "Properties",
+    "text": "Properties\n\nMean vector, covariance matrix\nMultivariate normal density\n\nlibrary(MASS)\nmvrnorm(n=10, mu=c(0,0), Sigma=matrix(c(1,0.5,0.5,1),2,2))",
     "crumbs": [
       "Slides",
       "Proba. and Stat. Review"
     ]
   },
   {
-    "objectID": "slides/Chapter2.html#confidence-intervals",
-    "href": "slides/Chapter2.html#confidence-intervals",
+    "objectID": "slides/Chapter2.html#law-of-large-numbers",
+    "href": "slides/Chapter2.html#law-of-large-numbers",
     "title": "Computational Statistics",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nConstructing confidence intervals for population mean\nExample with real data\n\n```{r}\n# Example: Confidence interval for normal data\nconf_interval &lt;- t.test(rnorm(100, mean = 5, sd = 2))$conf.int\nconf_interval\n```",
+    "section": "Law of Large Numbers",
+    "text": "Law of Large Numbers\n\nStatement of the law\nDemonstration using R\n\nn &lt;- 1000\nx &lt;- rnorm(n)\ncumsum(x) / 1:n",
+    "crumbs": [
+      "Slides",
+      "Proba. and Stat. Review"
+    ]
+  },
+  {
+    "objectID": "slides/Chapter2.html#central-limit-theorem",
+    "href": "slides/Chapter2.html#central-limit-theorem",
+    "title": "Computational Statistics",
+    "section": "Central Limit Theorem",
+    "text": "Central Limit Theorem\n\nDiscuss the CLT and its importance in statistics\nSimulating the CLT with normal distributions\n\n```{r}\n# Central Limit Theorem simulation\nmeans &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))\nhist(means, main=\"Central Limit Theorem\", col=\"lightgreen\", border=\"black\")\n```",
     "crumbs": [
       "Slides",
       "Proba. and Stat. Review"
