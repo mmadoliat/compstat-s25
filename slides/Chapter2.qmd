@@ -8,7 +8,7 @@ title-slide-attributes:
 format: revealjs
 ---
 
-# Lecture 1: Probability Concepts (Part 1)
+# Probability Concepts
 
 ## Random Variables and Distributions
 
@@ -23,7 +23,66 @@ Y <- rnorm(N, mean = mu, sd = sig)
 hist(Y, main="Histogram of Normal Distribution", xlab="Y values", col="lightblue")
 ```
 
-## Example: Central Limit Theorem
+# Some Discrete Distributions
+
+## Binomial Distribution
+
+-   `rbinom()`, `dbinom()`, `pbinom()`
+-   Example: Generating binomial random variables
+
+``` r
+rbinom(10, size=10, prob=0.5)
+```
+
+## Poisson Distribution
+
+-   `rpois()`, `dpois()`, `ppois()`
+-   Example: Simulating Poisson-distributed data
+
+``` r
+rpois(10, lambda=2)
+```
+# Some Continuous Distributions
+
+## Normal Distribution
+
+-   `rnorm()`, `dnorm()`, `pnorm()`
+-   Example: Generating normal random variables
+
+``` r
+rnorm(10, mean=0, sd=1)
+```
+
+## Exponential Distribution
+
+-   `rexp()`, `dexp()`, `pexp()`
+-   Simulating exponential data in R
+
+# Multivariate Normal Distribution
+
+## Properties
+
+-   Mean vector, covariance matrix
+-   Multivariate normal density
+
+``` r
+library(MASS)
+mvrnorm(n=10, mu=c(0,0), Sigma=matrix(c(1,0.5,0.5,1),2,2))
+```
+
+# Limit Theorems
+
+## Law of Large Numbers
+
+-   Statement of the law
+-   Demonstration using R
+
+``` r
+n <- 1000
+x <- rnorm(n)
+cumsum(x) / 1:n
+```
+## Central Limit Theorem
 
 -   Discuss the CLT and its importance in statistics
 -   Simulating the CLT with normal distributions
@@ -34,25 +93,7 @@ means <- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))
 hist(means, main="Central Limit Theorem", col="lightgreen", border="black")
 ```
 
-# Lecture 2: Discrete and Continuous Distributions (Part 2)
-
-## Common Distributions in Statistical Computing
-
--   Binomial Distribution
--   Poisson Distribution
--   Normal Distribution and its properties
-
-```{{r}}
-# Simulating binomial and Poisson distributions
-x_binom <- rbinom(100, size = 10, prob = 0.5)
-x_pois <- rpois(100, lambda = 3)
-
-par(mfrow=c(1, 2))  # Two plots side by side
-hist(x_binom, main="Binomial Distribution", col="orange")
-hist(x_pois, main="Poisson Distribution", col="lightcoral")
-```
-
-## Joint and Conditional Distributions
+# Joint and Conditional Distributions
 
 -   Joint distributions and their importance
 -   Conditional distributions with examples
@@ -66,9 +107,7 @@ X <- mvrnorm(1000, mu = mu, Sigma = sigma)
 plot(X[,1], X[,2], main="Scatter plot of Joint Distribution", xlab="X1", ylab="X2", col="blue")
 ```
 
-# Lecture 3: Statistics Review (Part 3)
-
-## Estimators and Their Properties
+# Estimators and Their Properties
 
 -   Discuss point estimators: Mean, Variance, etc.
 -   Review bias, consistency, and efficiency
@@ -79,28 +118,6 @@ set.seed(123)
 sample_data <- rnorm(100, mean = 5, sd = 2)
 mean(sample_data)
 var(sample_data)
-```
-
-## Hypothesis Testing
-
--   Hypothesis testing steps
--   Type I and II errors, significance level, and power
-
-```{{r}}
-# Example of hypothesis testing
-t_test_result <- t.test(rnorm(100, mean = 5, sd = 2), mu=5)
-t_test_result
-```
-
-## Confidence Intervals
-
--   Constructing confidence intervals for population mean
--   Example with real data
-
-```{{r}}
-# Example: Confidence interval for normal data
-conf_interval <- t.test(rnorm(100, mean = 5, sd = 2))$conf.int
-conf_interval
 ```
 
 # Conclusion
