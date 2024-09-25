@@ -432,10 +432,8 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Basic syntax in R</li>
 <li>Common operations: Assignment, sequences, and arithmetic</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">x &lt;- sqrt(2 * pi)</span></span>
-<span id="cb1-3"><a></a><span class="in">print(x)</span></span>
-<span id="cb1-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> pi)</span>
+<span id="cb1-2"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Assignment operator <code>&lt;-</code> vs <code>=</code></li>
 <li>Console vs script execution in RStudio</li>
@@ -449,10 +447,8 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Searching for help topics and datasets</li>
 <li>Generating random variables and performing statistical tests in R</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in">rnorm(100)</span></span>
-<span id="cb2-3"><a></a><span class="in">t.test(rnorm(10), rnorm(10))</span></span>
-<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb2-2"><a></a><span class="fu">t.test</span>(<span class="fu">rnorm</span>(<span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section>
@@ -500,12 +496,10 @@ Dr.&nbsp;Mehdi Maadooliat
 <ul>
 <li>Arrays, matrices, and data frames</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in"># Creating vectors and matrices</span></span>
-<span id="cb4-3"><a></a><span class="in">x &lt;- c(1, 2, 3, 4)</span></span>
-<span id="cb4-4"><a></a><span class="in">matrix_x &lt;- matrix(x, nrow=2, ncol=2)</span></span>
-<span id="cb4-5"><a></a><span class="in">print(matrix_x)</span></span>
-<span id="cb4-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Creating vectors and matrices</span></span>
+<span id="cb4-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb4-3"><a></a>matrix_x <span class="ot">&lt;-</span> <span class="fu">matrix</span>(x, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span>
+<span id="cb4-4"><a></a><span class="fu">print</span>(matrix_x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Example: Iris data set</li>
 </ul>
@@ -569,22 +563,18 @@ table { font-size: 0.75em; }
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Code</a></li><li><a href="#tabset-1-2">Plot</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">plot</span>(iris);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># boxplot(iris);</span></span>
-<span id="cb7-2"><a></a><span class="co"># hist(iris[,1])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co">#| label: basic</span></span>
+<span id="cb6-2"><a></a><span class="co">#| fig-show: hide</span></span>
+<span id="cb6-3"><a></a><span class="co">#| message: false</span></span>
+<span id="cb6-4"><a></a></span>
+<span id="cb6-5"><a></a><span class="fu">plot</span>(iris);</span>
+<span id="cb6-6"><a></a><span class="co"># boxplot(iris);</span></span>
+<span id="cb6-7"><a></a><span class="co"># hist(iris[,1])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-2">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co">#| ref.label: basic</span></span>
+<span id="cb7-2"><a></a><span class="co">#| echo: false</span></span>
+<span id="cb7-3"><a></a><span class="co">#| fig-asp: 0.3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -598,25 +588,22 @@ table { font-size: 0.75em; }
 <ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Code</a></li><li><a href="#tabset-2-2">Plot</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|1|2|3-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb8-2"><a></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span> </span>
-<span id="cb8-3"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb8-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span> </span>
-<span id="cb8-5"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
-<span id="cb8-6"><a></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Sepal vs Petal Length in Iris Dataset"</span>, <span class="at">x=</span><span class="st">"Sepal Length"</span>, <span class="at">y=</span><span class="st">"Petal Length"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co">#| label: setup</span></span>
+<span id="cb8-2"><a></a><span class="co">#| fig-show: hide</span></span>
+<span id="cb8-3"><a></a><span class="co">#| message: false</span></span>
+<span id="cb8-4"><a></a><span class="co">#| code-line-numbers: "|1|2|3-6"</span></span>
+<span id="cb8-5"><a></a></span>
+<span id="cb8-6"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-7"><a></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span> </span>
+<span id="cb8-8"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb8-9"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span> </span>
+<span id="cb8-10"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb8-11"><a></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Sepal vs Petal Length in Iris Dataset"</span>, <span class="at">x=</span><span class="st">"Sepal Length"</span>, <span class="at">y=</span><span class="st">"Petal Length"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-2-2">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co">#| ref.label: setup</span></span>
+<span id="cb9-2"><a></a><span class="co">#| echo: false</span></span>
+<span id="cb9-3"><a></a><span class="co">#| fig-asp: 0.3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -866,44 +853,6 @@ table { font-size: 0.75em; }
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
