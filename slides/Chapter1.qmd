@@ -20,7 +20,7 @@ format: revealjs
 -   Basic syntax in R
 -   Common operations: Assignment, sequences, and arithmetic
 
-```{{r}}
+``` r
 x <- sqrt(2 * pi)
 print(x)
 ```
@@ -34,7 +34,7 @@ print(x)
 -   Searching for help topics and datasets
 -   Generating random variables and performing statistical tests in R
 
-```{{r}}
+``` r
 rnorm(100)
 t.test(rnorm(10), rnorm(10))
 ```
@@ -70,7 +70,8 @@ sumdice(2)
 ## Data Structures in R
 
 -   Arrays, matrices, and data frames
-```{{r}}
+
+``` r
 # Creating vectors and matrices
 x <- c(1, 2, 3, 4)
 matrix_x <- matrix(x, nrow=2, ncol=2)
@@ -78,10 +79,12 @@ print(matrix_x)
 ```
 
 -   Example: Iris data set
+
 ``` r
 data(iris)
 summary(iris)
 ```
+
 # Table: Comparison of Data Structures
 
 ```{=html}
@@ -105,7 +108,7 @@ table { font-size: 0.75em; }
 ::: panel-tabset
 ## Code
 
-```{r}
+``` r
 #| label: basic
 #| fig-show: hide
 #| message: false
@@ -117,7 +120,7 @@ plot(iris);
 
 ## Plot
 
-```{r}
+``` r
 #| ref.label: basic
 #| echo: false
 #| fig-asp: 0.3
@@ -131,7 +134,7 @@ plot(iris);
 ::: panel-tabset
 ## Code
 
-```{r}
+``` r
 #| label: setup
 #| fig-show: hide
 #| message: false
@@ -147,7 +150,7 @@ ggplot(iris, aes(x=Sepal.Length, y=Petal.Length)) +
 
 ## Plot
 
-```{r}
+``` r
 #| ref.label: setup
 #| echo: false
 #| fig-asp: 0.3
