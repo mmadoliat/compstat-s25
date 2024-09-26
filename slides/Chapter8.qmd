@@ -15,7 +15,7 @@ format: revealjs
 -   Introduction to the bootstrap method
 -   Example: Bootstrap estimate of standard error
 
-```{{r}}
+```{r}
 # Bootstrap example: Estimate correlation between LSAT and GPA
 library(bootstrap)    #for the law data
 print(cor(law$LSAT, law$GPA))
@@ -36,7 +36,7 @@ sd(R)  # Bootstrap standard error
 
 ## Visualizing Bootstrap Resamples
 
-```{{r}}
+```{r}
 # Plotting the bootstrap distribution
 hist(R, main="Bootstrap Distribution of Correlation", col="lightblue")
 ```
@@ -48,7 +48,7 @@ hist(R, main="Bootstrap Distribution of Correlation", col="lightblue")
 -   The jackknife method for bias reduction
 -   Example: Jackknife estimate of the mean
 
-```{{r}}
+```{r}
 # Jackknife estimate of mean
 n <- nrow(law)
 theta_hat <- mean(law$LSAT)
@@ -71,7 +71,7 @@ bias_jack
 -   Introduction to bootstrap confidence intervals
 -   Example: Bootstrap percentile confidence interval
 
-```{{r}}
+```{r}
 # Bootstrap confidence intervals
 alpha <- 0.05
 ci <- quantile(R, probs = c(alpha/2, 1 - alpha/2))

@@ -16,7 +16,7 @@ format: revealjs
 -   Discrete vs Continuous random variables
 -   Important distributions (Binomial, Normal, Chi-Square)
 
-```{{r}}
+```{r}
 # Simulating random variables
 N <- 100; mu <- 5; sig <- 2
 Y <- rnorm(N, mean = mu, sd = sig)
@@ -42,6 +42,7 @@ rbinom(10, size=10, prob=0.5)
 ``` r
 rpois(10, lambda=2)
 ```
+
 # Some Continuous Distributions
 
 ## Normal Distribution
@@ -82,12 +83,13 @@ n <- 1000
 x <- rnorm(n)
 cumsum(x) / 1:n
 ```
+
 ## Central Limit Theorem
 
 -   Discuss the CLT and its importance in statistics
 -   Simulating the CLT with normal distributions
 
-```{{r}}
+```{r}
 # Central Limit Theorem simulation
 means <- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))
 hist(means, main="Central Limit Theorem", col="lightgreen", border="black")
@@ -98,7 +100,7 @@ hist(means, main="Central Limit Theorem", col="lightgreen", border="black")
 -   Joint distributions and their importance
 -   Conditional distributions with examples
 
-```{{r}}
+```{r}
 # Simulating joint distributions
 mu <- c(5, 10); sigma <- matrix(c(1, 0.5, 0.5, 2), 2, 2)
 library(MASS)
@@ -112,7 +114,7 @@ plot(X[,1], X[,2], main="Scatter plot of Joint Distribution", xlab="X1", ylab="X
 -   Discuss point estimators: Mean, Variance, etc.
 -   Review bias, consistency, and efficiency
 
-```{{r}}
+```{r}
 # Example of calculating mean and variance from samples
 set.seed(123)
 sample_data <- rnorm(100, mean = 5, sd = 2)

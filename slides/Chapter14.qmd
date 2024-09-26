@@ -15,7 +15,7 @@ format: revealjs
 -   Overview of optimization methods
 -   Example: One-dimensional optimization using `optimize`
 
-```{{r}}
+```{r}
 f <- function(x) log(x + log(x)) / log(1 + x)
 
 # Plotting the function
@@ -29,7 +29,7 @@ res$maximum
 
 ## Visualizing Optimization Results
 
-```{{r}}
+```{r}
 # Add a line indicating the maximum
 abline(v=res$maximum, col = "red", lwd = 2)
 ```
@@ -41,7 +41,7 @@ abline(v=res$maximum, col = "red", lwd = 2)
 -   Introduction to Maximum Likelihood Estimation (MLE)
 -   Example: MLE for Gamma distribution
 
-```{{r}}
+```{r}
 # MLE for Gamma distribution
 m <- 20000
 est <- matrix(0, m, 2)
@@ -57,7 +57,7 @@ obj <- function(lambda, xbar, logx.bar) {
 
 ## Optimizing MLE
 
-```{{r}}
+```{r}
 # Optimizing the MLE
 xbar <- rnorm(n, mean = r/lambda, sd = 1)
 logx.bar <- mean(log(xbar))

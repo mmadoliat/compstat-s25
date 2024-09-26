@@ -15,7 +15,7 @@ format: revealjs
 -   Basic concepts of Monte Carlo integration
 -   Example: Integrating using uniform distribution
 
-```{{r}}
+```{r}
 m <- 10000
 x <- runif(m)
 theta.hat <- mean(exp(-x))
@@ -25,7 +25,7 @@ theta.hat
 
 ## Example: Monte Carlo integration with bounded intervals
 
-```{{r}}
+```{r}
 m <- 10000
 x <- runif(m, min=2, max=4)
 theta.hat <- mean(exp(-x)) * 2
@@ -39,7 +39,7 @@ exp(-2) - exp(-4)
 
 -   Handling unbounded intervals in Monte Carlo integration
 
-```{{r}}
+```{r}
 # Plotting a function over an unbounded interval
 x <- seq(.1, 2.5, length.out = 100)
 y <- exp(-x^2 / 2)
@@ -53,7 +53,7 @@ plot(x, y, type="l", main="Function Plot for Unbounded Interval", col="blue")
 -   Importance sampling and its applications
 -   Example: Applying importance sampling
 
-```{{r}}
+```{r}
 # Example of importance sampling
 g <- function(x) exp(-x^2 / 2)
 f <- function(x) dnorm(x, mean = 1)
@@ -64,7 +64,7 @@ theta.hat
 
 ## Visualizing Importance Sampling
 
-```{{r}}
+```{r}
 # Compare the original function with the importance sampling function
 curve(g, from = -3, to = 3, col = "blue", lwd = 2, main="Importance Sampling: g(x) vs f(x)")
 curve(f, add = TRUE, col = "red", lty = 2, lwd = 2)
@@ -78,7 +78,7 @@ legend("topright", legend=c("g(x)", "f(x)"), col=c("blue", "red"), lty=c(1, 2), 
 -   Explanation of control variates and how they reduce variance
 -   Example: Using control variates in Monte Carlo integration
 
-```{{r}}
+```{r}
 # Control variates example
 m <- 10000
 x <- runif(m)
@@ -91,7 +91,7 @@ theta.hat
 -   Explanation of antithetic variables and how they reduce variance
 -   Example: Applying antithetic variables
 
-```{{r}}
+```{r}
 # Antithetic variables example
 u <- runif(5000)
 theta.hat <- mean((exp(-u) + exp(-(1 - u))) / 2)

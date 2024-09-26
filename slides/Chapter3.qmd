@@ -15,7 +15,7 @@ format: revealjs
 -   Introduction to finite population sampling
 -   Example: Tossing coins, choosing lottery numbers
 
-```{{r}}
+```{r}
 # Sampling examples
 sample(0:1, size = 10, replace = TRUE)  # Tossing coins
 sample(1:100, size = 6, replace = FALSE)  # Choosing lottery numbers
@@ -27,7 +27,7 @@ sample(letters)  # Permutation of letters
 -   Introduction to multinomial distribution
 -   Example: Sampling from a multinomial distribution
 
-```{{r}}
+```{r}
 # Sample from multinomial distribution
 x <- sample(1:3, size = 100, replace = TRUE, prob = c(.2, .3, .5))
 table(x)
@@ -40,7 +40,7 @@ table(x)
 -   Explanation of the inverse transform method for continuous distributions
 -   Example: Simulating exponential random variables
 
-```{{r}}
+```{r}
 # Inverse transform method for exponential distribution
 n <- 1000
 U <- runif(n)
@@ -52,7 +52,7 @@ hist(X, main="Exponential Distribution via Inverse Transform", col="lightblue")
 
 -   Example of applying the inverse transform method to discrete random variables
 
-```{{r}}
+```{r}
 # Inverse transform method for geometric distribution
 p <- 0.5
 X_geom <- ceiling(log(1 - runif(n)) / log(1 - p))
@@ -66,7 +66,7 @@ hist(X_geom, main="Geometric Distribution via Inverse Transform", col="lightgree
 -   Explanation of the acceptance-rejection method
 -   Example: Sampling from a target distribution
 
-```{{r}}
+```{r}
 # Acceptance-rejection method example
 target <- function(x) { ifelse(x > 0, exp(-x), 0) }
 proposal <- function(x) { dnorm(x, mean = 2, sd = 1) }
@@ -88,7 +88,7 @@ hist(X[accept], main="Accepted Samples from Target Distribution", col="lightcora
 -   Introduction to transformation methods
 -   Example: Box-Muller transform for generating normal random variables
 
-```{{r}}
+```{r}
 # Box-Muller transform
 n <- 1000
 U1 <- runif(n)
@@ -103,7 +103,7 @@ hist(Z1, main="Normal Distribution via Box-Muller", col="lightblue")
 -   Explanation of sums and mixtures of random variables
 -   Example: Mixture of normals
 
-```{{r}}
+```{r}
 # Mixture of normals
 library(MASS)
 mu1 <- 0; mu2 <- 3; sigma1 <- 1; sigma2 <- 2

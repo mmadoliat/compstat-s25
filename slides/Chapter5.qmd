@@ -13,7 +13,7 @@ format: revealjs
 -   Introduction to scatterplot matrices for multivariate data
 -   Example using the `iris` dataset
 
-```{{r}}
+```{r}
 data(iris)
 
 # Scatterplot matrix for virginica species
@@ -24,7 +24,7 @@ pairs(iris[101:150, 1:4], main="Scatterplot Matrix for Virginica", col="blue")
 
 -   Customizing scatterplot matrices with density plots
 
-```{{r}}
+```{r}
 # Adding density plots to scatterplot matrix
 panel.d <- function(x, ...) {
     usr <- par("usr")
@@ -40,7 +40,7 @@ pairs(iris[101:150, 1:4], panel = panel.d, main="Customized Scatterplot Matrix")
 -   Visualizing correlations between variables
 -   Example: Correlation plot with `corrplot` package
 
-```{{r}}
+```{r}
 # Correlation plot for iris dataset
 library(corrplot)
 cor_iris <- cor(iris[, 1:4])
@@ -52,7 +52,7 @@ corrplot(cor_iris, method="circle", main="Correlation Plot for Iris Dataset")
 -   Visualizing 3D relationships between variables
 -   Example: 3D scatter plot using the `scatterplot3d` package
 
-```{{r}}
+```{r}
 # 3D scatter plot for iris dataset
 library(scatterplot3d)
 scatterplot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, color="darkgreen", pch=16, main="3D Scatter Plot of Iris Data")
@@ -63,7 +63,7 @@ scatterplot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, color="dar
 -   Introduction to PCA for dimensionality reduction
 -   Example: PCA visualization using `ggplot2`
 
-```{{r}}
+```{r}
 # PCA for iris dataset
 library(ggplot2)
 pca <- prcomp(iris[, 1:4], scale=TRUE)

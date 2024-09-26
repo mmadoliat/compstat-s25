@@ -15,7 +15,7 @@ format: revealjs
 -   Introduction to density estimation using histograms
 -   Example: Histogram density estimates using Sturges' Rule
 
-```{{r}}
+```{r}
 set.seed(12345)
 n <- 25
 x <- rnorm(n)
@@ -34,7 +34,7 @@ h.default <- hist(x, freq = FALSE, xlab = "default", main = "Histogram: Default"
 -   Introduction to kernel density estimation (KDE)
 -   Example: Applying KDE to data
 
-```{{r}}
+```{r}
 # Kernel density estimate
 dens <- density(x)
 plot(dens, main = "Kernel Density Estimate", col = "blue", lwd = 2)
@@ -42,7 +42,7 @@ plot(dens, main = "Kernel Density Estimate", col = "blue", lwd = 2)
 
 ## Visualizing Kernel Density
 
-```{{r}}
+```{r}
 # Overlay histogram and KDE
 hist(x, freq = FALSE, col = "lightgray", border = "white", main = "Histogram with KDE")
 lines(dens, col = "red", lwd = 2)

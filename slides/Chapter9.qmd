@@ -15,7 +15,7 @@ format: revealjs
 -   Explanation of the jackknife-after-bootstrap method
 -   Used to estimate bias and standard errors after bootstrap
 
-```{{r}}
+```{r}
 library(boot)
 library(bootstrap)
 set.seed(1111)
@@ -37,7 +37,7 @@ boot.out
 -   Example: Using the jackknife-after-bootstrap method
 -   Checking the bootstrap array
 
-```{{r}}
+```{r}
 # Check the bootstrap array
 A <- boot.array(boot.out)
 head(A, 3)
@@ -48,7 +48,7 @@ mean(A[, 1] == 0)
 
 ## Visualizing Results
 
-```{{r}}
+```{r}
 # Plotting the bootstrap results
 plot(boot.out, index=1)
 ```

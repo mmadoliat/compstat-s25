@@ -15,7 +15,7 @@ format: revealjs
 -   Introduction to Monte Carlo estimation
 -   Example: Estimating the expected difference of two normal variables
 
-```{{r}}
+```{r}
 m <- 1000
 g <- numeric(m)
 for (i in 1:m) {
@@ -28,7 +28,7 @@ est
 
 ## Visualizing Monte Carlo Simulations
 
-```{{r}}
+```{r}
 # Histogram of the simulated differences
 hist(g, main="Histogram of Differences (Monte Carlo)", col="lightblue")
 ```
@@ -39,7 +39,7 @@ hist(g, main="Histogram of Differences (Monte Carlo)", col="lightblue")
 
 -   Monte Carlo estimation of MSE for trimmed means
 
-```{{r}}
+```{r}
 n <- 20
 m <- 1000
 mean_trim <- numeric(m)
@@ -53,7 +53,7 @@ mse
 
 ## Visualizing MSE Simulations
 
-```{{r}}
+```{r}
 # Histogram of the trimmed means
 hist(mean_trim, main="Trimmed Means (Monte Carlo MSE)", col="lightgreen")
 ```
@@ -65,7 +65,7 @@ hist(mean_trim, main="Trimmed Means (Monte Carlo MSE)", col="lightgreen")
 -   Exploring advanced Monte Carlo techniques for inference
 -   Example: Hypothesis testing with Monte Carlo methods
 
-```{{r}}
+```{r}
 # Monte Carlo test example: Hypothesis testing
 n <- 50
 m <- 1000

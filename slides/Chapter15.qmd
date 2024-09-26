@@ -15,7 +15,7 @@ format: revealjs
 -   Overview of benchmarking in R
 -   Example: Benchmarking methods to generate a sequence
 
-```{{r}}
+```{r}
 s1 <- 1:10
 s2 <- seq(1, 10, 1)
 s3 <- seq.int(1, 10, 1)
@@ -39,7 +39,7 @@ autoplot(mb)
 -   Introduction to profiling in R
 -   Example: Profiling a function using `profvis`
 
-```{{r}}
+```{r}
 # Install profvis for profiling
 library(profvis)
 
@@ -52,7 +52,7 @@ profvis({
 
 ## Visualizing Profiling Results
 
-```{{r}}
+```{r}
 # profvis visual interface will show the profiling output
 ```
 
