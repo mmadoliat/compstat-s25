@@ -1,5 +1,5 @@
 ---
-title: "MATH 4750: Computational Statistics"
+title: "Computational Statistics"
 execute: 
   freeze: false
 ---

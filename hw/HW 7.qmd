@@ -1,5 +1,5 @@
 ---
-title: "HW 7 (MATH 4750/5750)"
+title: "Computational Statistics - HW 7"
 format: pdf
 editor: visual
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Syllabus - MATH 4750/MSSC 5750: Computational Statistics"
+title: "Syllabus - Computational Statistics"
 format: 
   html: default
   pdf: default

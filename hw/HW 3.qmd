@@ -1,5 +1,5 @@
 ---
-title: "HW 3 (MATH 4750/5750)"
+title: "Computational Statistics - HW 3"
 format: pdf
 editor: visual
 ---
