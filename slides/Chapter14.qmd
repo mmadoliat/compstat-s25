@@ -23,15 +23,8 @@ curve(f(x), from = 2, to = 15, ylab = "f(x)")
 
 # Finding the maximum
 res <- optimize(f, lower = 4, upper = 8, maximum = TRUE)
-abline(v=res$maximum)
-res$maximum
-```
-
-## Visualizing Optimization Results
-
-```{r}
-# Add a line indicating the maximum
 abline(v=res$maximum, col = "red", lwd = 2)
+res$maximum
 ```
 
 # Lecture 2: Maximum Likelihood Estimation (Part 2)

@@ -30,7 +30,7 @@ hist(Y, main="Histogram of Normal Distribution", xlab="Y values", col="lightblue
 -   `rbinom()`, `dbinom()`, `pbinom()`
 -   Example: Generating binomial random variables
 
-``` r
+```{r}
 rbinom(10, size=10, prob=0.5)
 ```
 
@@ -39,7 +39,7 @@ rbinom(10, size=10, prob=0.5)
 -   `rpois()`, `dpois()`, `ppois()`
 -   Example: Simulating Poisson-distributed data
 
-``` r
+```{r}
 rpois(10, lambda=2)
 ```
 
@@ -50,7 +50,7 @@ rpois(10, lambda=2)
 -   `rnorm()`, `dnorm()`, `pnorm()`
 -   Example: Generating normal random variables
 
-``` r
+```{r}
 rnorm(10, mean=0, sd=1)
 ```
 
@@ -66,7 +66,7 @@ rnorm(10, mean=0, sd=1)
 -   Mean vector, covariance matrix
 -   Multivariate normal density
 
-``` r
+```{r}
 library(MASS)
 mvrnorm(n=10, mu=c(0,0), Sigma=matrix(c(1,0.5,0.5,1),2,2))
 ```
@@ -78,7 +78,7 @@ mvrnorm(n=10, mu=c(0,0), Sigma=matrix(c(1,0.5,0.5,1),2,2))
 -   Statement of the law
 -   Demonstration using R
 
-``` r
+```{r}
 n <- 1000
 x <- rnorm(n)
 cumsum(x) / 1:n
