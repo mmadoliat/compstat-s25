@@ -427,32 +427,45 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to the bootstrap method</li>
 <li>Example: Bootstrap estimate of standard error</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in"># Bootstrap example: Estimate correlation between LSAT and GPA</span></span>
-<span id="cb1-3"><a></a><span class="in">library(bootstrap)    #for the law data</span></span>
-<span id="cb1-4"><a></a><span class="in">print(cor(law$LSAT, law$GPA))</span></span>
-<span id="cb1-5"><a></a><span class="in">print(cor(law82$LSAT, law82$GPA))</span></span>
-<span id="cb1-6"><a></a><span class="in"># Set up the bootstrap</span></span>
-<span id="cb1-7"><a></a><span class="in">B &lt;- 200            # number of replicates</span></span>
-<span id="cb1-8"><a></a><span class="in">n &lt;- nrow(law)      # sample size</span></span>
-<span id="cb1-9"><a></a><span class="in">R &lt;- numeric(B)     # storage for replicates</span></span>
-<span id="cb1-10"><a></a><span class="in"># Bootstrap estimate of correlation</span></span>
-<span id="cb1-11"><a></a><span class="in">for (i in 1:B) {</span></span>
-<span id="cb1-12"><a></a><span class="in">  idx &lt;- sample(1:n, size=n, replace=TRUE)</span></span>
-<span id="cb1-13"><a></a><span class="in">  law_boot &lt;- law[idx, ]</span></span>
-<span id="cb1-14"><a></a><span class="in">  R[i] &lt;- cor(law_boot$LSAT, law_boot$GPA)</span></span>
-<span id="cb1-15"><a></a><span class="in">}</span></span>
-<span id="cb1-16"><a></a><span class="in">mean(R)</span></span>
-<span id="cb1-17"><a></a><span class="in">sd(R)  # Bootstrap standard error</span></span>
-<span id="cb1-18"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Bootstrap example: Estimate correlation between LSAT and GPA</span></span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(bootstrap)    <span class="co">#for the law data</span></span>
+<span id="cb1-3"><a></a><span class="fu">print</span>(<span class="fu">cor</span>(law<span class="sc">$</span>LSAT, law<span class="sc">$</span>GPA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7763745</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">print</span>(<span class="fu">cor</span>(law82<span class="sc">$</span>LSAT, law82<span class="sc">$</span>GPA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7599979</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># Set up the bootstrap</span></span>
+<span id="cb5-2"><a></a>B <span class="ot">&lt;-</span> <span class="dv">200</span>            <span class="co"># number of replicates</span></span>
+<span id="cb5-3"><a></a>n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(law)      <span class="co"># sample size</span></span>
+<span id="cb5-4"><a></a>R <span class="ot">&lt;-</span> <span class="fu">numeric</span>(B)     <span class="co"># storage for replicates</span></span>
+<span id="cb5-5"><a></a><span class="co"># Bootstrap estimate of correlation</span></span>
+<span id="cb5-6"><a></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B) {</span>
+<span id="cb5-7"><a></a>  idx <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>n, <span class="at">size=</span>n, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb5-8"><a></a>  law_boot <span class="ot">&lt;-</span> law[idx, ]</span>
+<span id="cb5-9"><a></a>  R[i] <span class="ot">&lt;-</span> <span class="fu">cor</span>(law_boot<span class="sc">$</span>LSAT, law_boot<span class="sc">$</span>GPA)</span>
+<span id="cb5-10"><a></a>}</span>
+<span id="cb5-11"><a></a><span class="fu">mean</span>(R)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.758955</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">sd</span>(R)  <span class="co"># Bootstrap standard error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1404243</code></pre>
+</div>
+</div>
 </section>
 <section id="visualizing-bootstrap-resamples" class="slide level2">
 <h2>Visualizing Bootstrap Resamples</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Plotting the bootstrap distribution</span></span>
-<span id="cb2-3"><a></a><span class="in">hist(R, main="Bootstrap Distribution of Correlation", col="lightblue")</span></span>
-<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># Plotting the bootstrap distribution</span></span>
+<span id="cb9-2"><a></a><span class="fu">hist</span>(R, <span class="at">main=</span><span class="st">"Bootstrap Distribution of Correlation"</span>, <span class="at">col=</span><span class="st">"lightblue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter8_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="lecture-2-jackknife-method-part-2" class="title-slide slide level1 center">
 <h1>Lecture 2: Jackknife Method (Part 2)</h1>
@@ -464,21 +477,24 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>The jackknife method for bias reduction</li>
 <li>Example: Jackknife estimate of the mean</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># Jackknife estimate of mean</span></span>
-<span id="cb3-3"><a></a><span class="in">n &lt;- nrow(law)</span></span>
-<span id="cb3-4"><a></a><span class="in">theta_hat &lt;- mean(law$LSAT)</span></span>
-<span id="cb3-5"><a></a><span class="in">theta_jack &lt;- numeric(n)</span></span>
-<span id="cb3-6"><a></a></span>
-<span id="cb3-7"><a></a><span class="in"># Leave-one-out jackknife</span></span>
-<span id="cb3-8"><a></a><span class="in">for (i in 1:n) {</span></span>
-<span id="cb3-9"><a></a><span class="in">  theta_jack[i] &lt;- mean(law$LSAT[-i])</span></span>
-<span id="cb3-10"><a></a><span class="in">}</span></span>
-<span id="cb3-11"><a></a></span>
-<span id="cb3-12"><a></a><span class="in"># Jackknife estimate of bias</span></span>
-<span id="cb3-13"><a></a><span class="in">bias_jack &lt;- (n - 1) * (mean(theta_jack) - theta_hat)</span></span>
-<span id="cb3-14"><a></a><span class="in">bias_jack</span></span>
-<span id="cb3-15"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="co"># Jackknife estimate of mean</span></span>
+<span id="cb10-2"><a></a>n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(law)</span>
+<span id="cb10-3"><a></a>theta_hat <span class="ot">&lt;-</span> <span class="fu">mean</span>(law<span class="sc">$</span>LSAT)</span>
+<span id="cb10-4"><a></a>theta_jack <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb10-5"><a></a></span>
+<span id="cb10-6"><a></a><span class="co"># Leave-one-out jackknife</span></span>
+<span id="cb10-7"><a></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) {</span>
+<span id="cb10-8"><a></a>  theta_jack[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(law<span class="sc">$</span>LSAT[<span class="sc">-</span>i])</span>
+<span id="cb10-9"><a></a>}</span>
+<span id="cb10-10"><a></a></span>
+<span id="cb10-11"><a></a><span class="co"># Jackknife estimate of bias</span></span>
+<span id="cb10-12"><a></a>bias_jack <span class="ot">&lt;-</span> (n <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> (<span class="fu">mean</span>(theta_jack) <span class="sc">-</span> theta_hat)</span>
+<span id="cb10-13"><a></a>bias_jack</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
 </section></section>
 <section>
 <section id="lecture-3-advanced-bootstrap-techniques-part-3" class="title-slide slide level1 center">
@@ -491,12 +507,16 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to bootstrap confidence intervals</li>
 <li>Example: Bootstrap percentile confidence interval</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in"># Bootstrap confidence intervals</span></span>
-<span id="cb4-3"><a></a><span class="in">alpha &lt;- 0.05</span></span>
-<span id="cb4-4"><a></a><span class="in">ci &lt;- quantile(R, probs = c(alpha/2, 1 - alpha/2))</span></span>
-<span id="cb4-5"><a></a><span class="in">ci  # Bootstrap confidence interval</span></span>
-<span id="cb4-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="co"># Bootstrap confidence intervals</span></span>
+<span id="cb12-2"><a></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span></span>
+<span id="cb12-3"><a></a>ci <span class="ot">&lt;-</span> <span class="fu">quantile</span>(R, <span class="at">probs =</span> <span class="fu">c</span>(alpha<span class="sc">/</span><span class="dv">2</span>, <span class="dv">1</span> <span class="sc">-</span> alpha<span class="sc">/</span><span class="dv">2</span>))</span>
+<span id="cb12-4"><a></a>ci  <span class="co"># Bootstrap confidence interval</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     2.5%     97.5% 
+0.4523926 0.9525408 </code></pre>
+</div>
+</div>
 </section>
 <section id="comparison-of-bootstrap-and-jackknife" class="slide level2">
 <h2>Comparison of Bootstrap and Jackknife</h2>
@@ -731,6 +751,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

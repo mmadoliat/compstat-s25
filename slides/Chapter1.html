@@ -432,8 +432,13 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Basic syntax in R</li>
 <li>Common operations: Assignment, sequences, and arithmetic</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> pi)</span>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> pi)</span>
 <span id="cb1-2"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.506628</code></pre>
+</div>
+</div>
 <ul>
 <li>Assignment operator <code>&lt;-</code> vs <code>=</code></li>
 <li>Console vs script execution in RStudio</li>
@@ -447,8 +452,45 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Searching for help topics and datasets</li>
 <li>Generating random variables and performing statistical tests in R</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb2-2"><a></a><span class="fu">t.test</span>(<span class="fu">rnorm</span>(<span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">rnorm</span>(<span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] -1.6222319757  2.0513431698 -0.2481940776  1.1299645366  0.7649633360
+  [6]  2.3147423903 -0.9310530536 -0.3583489827 -0.3608069436 -0.8910301528
+ [11] -0.4795205992  0.1999855923 -0.1625325051 -0.3691608241 -0.4218795440
+ [16]  2.3012855805 -2.4332334828 -0.6619479684  0.4634392080  0.3789176567
+ [21] -0.7254839007  0.5553786012 -0.7052522767 -1.0546023432  0.8205601446
+ [26] -1.8424312946 -1.0815727875  0.9091274289  1.0133776613  0.2776451612
+ [31] -1.8577600855  0.0912986471 -1.0687017231  1.3025945649 -0.7164475862
+ [36] -0.7165649979 -0.2447155628  0.6902930637  0.6311594826  0.3673774010
+ [41]  0.7153835817 -0.7250696203 -0.2411957389  0.2865494431 -0.1289111809
+ [46]  0.1826210532 -0.8041191815 -2.1081085052  0.4440804592  0.1792101094
+ [51] -0.6409000135 -0.3897307854 -0.7802357146 -0.4444818488 -0.5870986261
+ [56] -0.7822896064 -0.2075856330  1.7830064676  0.2457624206  0.6756852808
+ [61]  1.6503958012  0.7269040155  1.3474094888  2.1685369151 -0.2608721109
+ [66] -0.6946570493 -0.7811853734  1.3150385521 -0.0263482901 -0.5310250417
+ [71]  0.5122654444 -0.3422764380 -0.5841860964  0.4486535808 -0.6097702377
+ [76] -1.2328017602 -1.0010104396  2.5022541841 -1.0153064644 -0.1645291575
+ [81]  0.1175224514 -1.3499303286  2.1567171113 -0.8139494295 -0.0001272393
+ [86] -0.6629633221  0.8259698702 -0.4915902497 -1.1187981413  1.6362351116
+ [91]  0.0515270640  1.6553712503 -1.6942252522  0.7257245117  0.4371497548
+ [96] -0.2571499670 -0.0756079667 -0.4384977122  0.3711377143 -0.0960360074</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">t.test</span>(<span class="fu">rnorm</span>(<span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  rnorm(10) and rnorm(10)
+t = 0.86711, df = 17.997, p-value = 0.3973
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6494043  1.5621798
+sample estimates:
+  mean of x   mean of y 
+ 0.38399773 -0.07239005 </code></pre>
+</div>
+</div>
 </section>
 
 <section>
@@ -480,11 +522,16 @@ Dr.&nbsp;Mehdi Maadooliat
 <li><code>function(arglist) expr</code></li>
 <li>Return values and default arguments</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>sumdice <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
-<span id="cb3-2"><a></a>  k <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">size=</span>n, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
-<span id="cb3-3"><a></a>  <span class="fu">return</span>(<span class="fu">sum</span>(k))</span>
-<span id="cb3-4"><a></a>}</span>
-<span id="cb3-5"><a></a><span class="fu">sumdice</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>sumdice <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb7-2"><a></a>  k <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">size=</span>n, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb7-3"><a></a>  <span class="fu">return</span>(<span class="fu">sum</span>(k))</span>
+<span id="cb7-4"><a></a>}</span>
+<span id="cb7-5"><a></a><span class="fu">sumdice</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11</code></pre>
+</div>
+</div>
 </section></section>
 <section>
 <section id="data-structures-arrays-data-frames-and-lists" class="title-slide slide level1 center">
@@ -496,15 +543,40 @@ Dr.&nbsp;Mehdi Maadooliat
 <ul>
 <li>Arrays, matrices, and data frames</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Creating vectors and matrices</span></span>
-<span id="cb4-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
-<span id="cb4-3"><a></a>matrix_x <span class="ot">&lt;-</span> <span class="fu">matrix</span>(x, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span>
-<span id="cb4-4"><a></a><span class="fu">print</span>(matrix_x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># Creating vectors and matrices</span></span>
+<span id="cb9-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb9-3"><a></a>matrix_x <span class="ot">&lt;-</span> <span class="fu">matrix</span>(x, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span>
+<span id="cb9-4"><a></a><span class="fu">print</span>(matrix_x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2]
+[1,]    1    3
+[2,]    2    4</code></pre>
+</div>
+</div>
 <ul>
 <li>Example: Iris data set</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">data</span>(iris)</span>
-<span id="cb5-2"><a></a><span class="fu">summary</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">data</span>(iris)</span>
+<span id="cb11-2"><a></a><span class="fu">summary</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
+ Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+ 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+ Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+ Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+ 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+ Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+       Species  
+ setosa    :50  
+ versicolor:50  
+ virginica :50  
+                
+                
+                </code></pre>
+</div>
+</div>
 </section></section>
 <section id="table-comparison-of-data-structures" class="title-slide slide level1 center">
 <h1>Table: Comparison of Data Structures</h1>
@@ -563,18 +635,22 @@ table { font-size: 0.75em; }
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Code</a></li><li><a href="#tabset-1-2">Plot</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co">#| label: basic</span></span>
-<span id="cb6-2"><a></a><span class="co">#| fig-show: hide</span></span>
-<span id="cb6-3"><a></a><span class="co">#| message: false</span></span>
-<span id="cb6-4"><a></a></span>
-<span id="cb6-5"><a></a><span class="fu">plot</span>(iris);</span>
-<span id="cb6-6"><a></a><span class="co"># boxplot(iris);</span></span>
-<span id="cb6-7"><a></a><span class="co"># hist(iris[,1])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">plot</span>(iris);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="co"># boxplot(iris);</span></span>
+<span id="cb14-2"><a></a><span class="co"># hist(iris[,1])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div id="tabset-1-2">
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co">#| ref.label: basic</span></span>
-<span id="cb7-2"><a></a><span class="co">#| echo: false</span></span>
-<span id="cb7-3"><a></a><span class="co">#| fig-asp: 0.3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -588,22 +664,25 @@ table { font-size: 0.75em; }
 <ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Code</a></li><li><a href="#tabset-2-2">Plot</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co">#| label: setup</span></span>
-<span id="cb8-2"><a></a><span class="co">#| fig-show: hide</span></span>
-<span id="cb8-3"><a></a><span class="co">#| message: false</span></span>
-<span id="cb8-4"><a></a><span class="co">#| code-line-numbers: "|1|2|3-6"</span></span>
-<span id="cb8-5"><a></a></span>
-<span id="cb8-6"><a></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb8-7"><a></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span> </span>
-<span id="cb8-8"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb8-9"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span> </span>
-<span id="cb8-10"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
-<span id="cb8-11"><a></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Sepal vs Petal Length in Iris Dataset"</span>, <span class="at">x=</span><span class="st">"Sepal Length"</span>, <span class="at">y=</span><span class="st">"Petal Length"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="|1|2|3-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-2"><a></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span> </span>
+<span id="cb15-3"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb15-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span> </span>
+<span id="cb15-5"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb15-6"><a></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Sepal vs Petal Length in Iris Dataset"</span>, <span class="at">x=</span><span class="st">"Sepal Length"</span>, <span class="at">y=</span><span class="st">"Petal Length"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div id="tabset-2-2">
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co">#| ref.label: setup</span></span>
-<span id="cb9-2"><a></a><span class="co">#| echo: false</span></span>
-<span id="cb9-3"><a></a><span class="co">#| fig-asp: 0.3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -853,6 +932,44 @@ table { font-size: 0.75em; }
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

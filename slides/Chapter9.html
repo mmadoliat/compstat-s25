@@ -427,22 +427,35 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Explanation of the jackknife-after-bootstrap method</li>
 <li>Used to estimate bias and standard errors after bootstrap</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">library(boot)</span></span>
-<span id="cb1-3"><a></a><span class="in">library(bootstrap)</span></span>
-<span id="cb1-4"><a></a><span class="in">set.seed(1111)</span></span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a><span class="in"># Function to compute the patch ratio statistic</span></span>
-<span id="cb1-7"><a></a><span class="in">theta.boot &lt;- function(patch, i) {</span></span>
-<span id="cb1-8"><a></a><span class="in">  y &lt;- patch[i, "y"]</span></span>
-<span id="cb1-9"><a></a><span class="in">  z &lt;- patch[i, "z"]</span></span>
-<span id="cb1-10"><a></a><span class="in">  mean(y) / mean(z)</span></span>
-<span id="cb1-11"><a></a><span class="in">}</span></span>
-<span id="cb1-12"><a></a></span>
-<span id="cb1-13"><a></a><span class="in"># Bootstrap the patch dataset</span></span>
-<span id="cb1-14"><a></a><span class="in">boot.out &lt;- boot(bootstrap::patch, statistic = theta.boot, R=2000)</span></span>
-<span id="cb1-15"><a></a><span class="in">boot.out</span></span>
-<span id="cb1-16"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(boot)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(bootstrap)</span>
+<span id="cb1-3"><a></a><span class="fu">set.seed</span>(<span class="dv">1111</span>)</span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="co"># Function to compute the patch ratio statistic</span></span>
+<span id="cb1-6"><a></a>theta.boot <span class="ot">&lt;-</span> <span class="cf">function</span>(patch, i) {</span>
+<span id="cb1-7"><a></a>  y <span class="ot">&lt;-</span> patch[i, <span class="st">"y"</span>]</span>
+<span id="cb1-8"><a></a>  z <span class="ot">&lt;-</span> patch[i, <span class="st">"z"</span>]</span>
+<span id="cb1-9"><a></a>  <span class="fu">mean</span>(y) <span class="sc">/</span> <span class="fu">mean</span>(z)</span>
+<span id="cb1-10"><a></a>}</span>
+<span id="cb1-11"><a></a></span>
+<span id="cb1-12"><a></a><span class="co"># Bootstrap the patch dataset</span></span>
+<span id="cb1-13"><a></a>boot.out <span class="ot">&lt;-</span> <span class="fu">boot</span>(bootstrap<span class="sc">::</span>patch, <span class="at">statistic =</span> theta.boot, <span class="at">R=</span><span class="dv">2000</span>)</span>
+<span id="cb1-14"><a></a>boot.out</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ORDINARY NONPARAMETRIC BOOTSTRAP
+
+
+Call:
+boot(data = bootstrap::patch, statistic = theta.boot, R = 2000)
+
+
+Bootstrap Statistics :
+      original      bias    std. error
+t1* -0.0713061 0.008458915   0.1009777</code></pre>
+</div>
+</div>
 </section>
 <section id="applying-jackknife-after-bootstrap" class="slide level2">
 <h2>Applying Jackknife-after-Bootstrap</h2>
@@ -450,22 +463,31 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Example: Using the jackknife-after-bootstrap method</li>
 <li>Checking the bootstrap array</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Check the bootstrap array</span></span>
-<span id="cb2-3"><a></a><span class="in">A &lt;- boot.array(boot.out)</span></span>
-<span id="cb2-4"><a></a><span class="in">head(A, 3)</span></span>
-<span id="cb2-5"><a></a></span>
-<span id="cb2-6"><a></a><span class="in"># Proportion of cases that are not resampled</span></span>
-<span id="cb2-7"><a></a><span class="in">mean(A[, 1] == 0)</span></span>
-<span id="cb2-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Check the bootstrap array</span></span>
+<span id="cb3-2"><a></a>A <span class="ot">&lt;-</span> <span class="fu">boot.array</span>(boot.out)</span>
+<span id="cb3-3"><a></a><span class="fu">head</span>(A, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    0    1    2    1    2    0    0    2
+[2,]    0    2    1    0    1    4    0    0
+[3,]    1    1    0    1    0    1    0    4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># Proportion of cases that are not resampled</span></span>
+<span id="cb5-2"><a></a><span class="fu">mean</span>(A[, <span class="dv">1</span>] <span class="sc">==</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3455</code></pre>
+</div>
+</div>
 </section>
 <section id="visualizing-results" class="slide level2">
 <h2>Visualizing Results</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># Plotting the bootstrap results</span></span>
-<span id="cb3-3"><a></a><span class="in">plot(boot.out, index=1)</span></span>
-<span id="cb3-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># Plotting the bootstrap results</span></span>
+<span id="cb7-2"><a></a><span class="fu">plot</span>(boot.out, <span class="at">index=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter9_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
 <ul>
@@ -693,6 +715,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

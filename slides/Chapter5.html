@@ -423,42 +423,45 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to scatterplot matrices for multivariate data</li>
 <li>Example using the <code>iris</code> dataset</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">data(iris)</span></span>
-<span id="cb1-3"><a></a></span>
-<span id="cb1-4"><a></a><span class="in"># Scatterplot matrix for virginica species</span></span>
-<span id="cb1-5"><a></a><span class="in">pairs(iris[101:150, 1:4], main="Scatterplot Matrix for Virginica", col="blue")</span></span>
-<span id="cb1-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">data</span>(iris)</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="co"># Scatterplot matrix for virginica species</span></span>
+<span id="cb1-4"><a></a><span class="fu">pairs</span>(iris[<span class="dv">101</span><span class="sc">:</span><span class="dv">150</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>], <span class="at">main=</span><span class="st">"Scatterplot Matrix for Virginica"</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter5_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="customizing-scatterplot-matrices" class="slide level2">
 <h2>Customizing Scatterplot Matrices</h2>
 <ul>
 <li>Customizing scatterplot matrices with density plots</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Adding density plots to scatterplot matrix</span></span>
-<span id="cb2-3"><a></a><span class="in">panel.d &lt;- function(x, ...) {</span></span>
-<span id="cb2-4"><a></a><span class="in">    usr &lt;- par("usr")</span></span>
-<span id="cb2-5"><a></a><span class="in">    on.exit(par(usr))</span></span>
-<span id="cb2-6"><a></a><span class="in">    par(usr = c(usr[1:2], 0, .5))</span></span>
-<span id="cb2-7"><a></a><span class="in">    lines(density(x), col="red")</span></span>
-<span id="cb2-8"><a></a><span class="in">}</span></span>
-<span id="cb2-9"><a></a><span class="in">pairs(iris[101:150, 1:4], panel = panel.d, main="Customized Scatterplot Matrix")</span></span>
-<span id="cb2-10"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Adding density plots to scatterplot matrix</span></span>
+<span id="cb2-2"><a></a>panel.d <span class="ot">&lt;-</span> <span class="cf">function</span>(x, ...) {</span>
+<span id="cb2-3"><a></a>    usr <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="st">"usr"</span>)</span>
+<span id="cb2-4"><a></a>    <span class="fu">on.exit</span>(<span class="fu">par</span>(usr))</span>
+<span id="cb2-5"><a></a>    <span class="fu">par</span>(<span class="at">usr =</span> <span class="fu">c</span>(usr[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>], <span class="dv">0</span>, .<span class="dv">5</span>))</span>
+<span id="cb2-6"><a></a>    <span class="fu">lines</span>(<span class="fu">density</span>(x), <span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb2-7"><a></a>}</span>
+<span id="cb2-8"><a></a><span class="fu">pairs</span>(iris[<span class="dv">101</span><span class="sc">:</span><span class="dv">150</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>], <span class="at">panel =</span> panel.d, <span class="at">main=</span><span class="st">"Customized Scatterplot Matrix"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter5_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section></section>
 <section id="correlation-plots" class="title-slide slide level1 center">
 <h1>Correlation Plots</h1>
 <ul>
 <li>Visualizing correlations between variables</li>
 <li>Example: Correlation plot with <code>corrplot</code> package</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># Correlation plot for iris dataset</span></span>
-<span id="cb3-3"><a></a><span class="in">library(corrplot)</span></span>
-<span id="cb3-4"><a></a><span class="in">cor_iris &lt;- cor(iris[, 1:4])</span></span>
-<span id="cb3-5"><a></a><span class="in">corrplot(cor_iris, method="circle", main="Correlation Plot for Iris Dataset")</span></span>
-<span id="cb3-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Correlation plot for iris dataset</span></span>
+<span id="cb3-2"><a></a><span class="fu">library</span>(corrplot)</span>
+<span id="cb3-3"><a></a>cor_iris <span class="ot">&lt;-</span> <span class="fu">cor</span>(iris[, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>])</span>
+<span id="cb3-4"><a></a><span class="fu">corrplot</span>(cor_iris, <span class="at">method=</span><span class="st">"circle"</span>, <span class="at">main=</span><span class="st">"Correlation Plot for Iris Dataset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter5_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 
 <section id="d-scatter-plots" class="title-slide slide level1 center">
 <h1>3D Scatter Plots</h1>
@@ -466,12 +469,13 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Visualizing 3D relationships between variables</li>
 <li>Example: 3D scatter plot using the <code>scatterplot3d</code> package</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in"># 3D scatter plot for iris dataset</span></span>
-<span id="cb4-3"><a></a><span class="in">library(scatterplot3d)</span></span>
-<span id="cb4-4"><a></a><span class="in">scatterplot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, color="darkgreen", pch=16, main="3D Scatter Plot of Iris Data")</span></span>
-<span id="cb4-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># 3D scatter plot for iris dataset</span></span>
+<span id="cb4-2"><a></a><span class="fu">library</span>(scatterplot3d)</span>
+<span id="cb4-3"><a></a><span class="fu">scatterplot3d</span>(iris<span class="sc">$</span>Sepal.Length, iris<span class="sc">$</span>Petal.Length, iris<span class="sc">$</span>Sepal.Width, <span class="at">color=</span><span class="st">"darkgreen"</span>, <span class="at">pch=</span><span class="dv">16</span>, <span class="at">main=</span><span class="st">"3D Scatter Plot of Iris Data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter5_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
 
 <section id="principal-component-analysis-pca" class="title-slide slide level1 center">
 <h1>Principal Component Analysis (PCA)</h1>
@@ -479,19 +483,20 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to PCA for dimensionality reduction</li>
 <li>Example: PCA visualization using <code>ggplot2</code></li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb5-2"><a></a><span class="in"># PCA for iris dataset</span></span>
-<span id="cb5-3"><a></a><span class="in">library(ggplot2)</span></span>
-<span id="cb5-4"><a></a><span class="in">pca &lt;- prcomp(iris[, 1:4], scale=TRUE)</span></span>
-<span id="cb5-5"><a></a><span class="in">pca_df &lt;- data.frame(pca$x, Species=iris$Species)</span></span>
-<span id="cb5-6"><a></a></span>
-<span id="cb5-7"><a></a><span class="in"># Visualizing PCA results</span></span>
-<span id="cb5-8"><a></a><span class="in">ggplot(pca_df, aes(PC1, PC2, color=Species)) +</span></span>
-<span id="cb5-9"><a></a><span class="in">  geom_point(size=2) +</span></span>
-<span id="cb5-10"><a></a><span class="in">  labs(title="PCA of Iris Dataset", x="Principal Component 1", y="Principal Component 2") +</span></span>
-<span id="cb5-11"><a></a><span class="in">  theme_minimal()</span></span>
-<span id="cb5-12"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># PCA for iris dataset</span></span>
+<span id="cb5-2"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-3"><a></a>pca <span class="ot">&lt;-</span> <span class="fu">prcomp</span>(iris[, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>], <span class="at">scale=</span><span class="cn">TRUE</span>)</span>
+<span id="cb5-4"><a></a>pca_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(pca<span class="sc">$</span>x, <span class="at">Species=</span>iris<span class="sc">$</span>Species)</span>
+<span id="cb5-5"><a></a></span>
+<span id="cb5-6"><a></a><span class="co"># Visualizing PCA results</span></span>
+<span id="cb5-7"><a></a><span class="fu">ggplot</span>(pca_df, <span class="fu">aes</span>(PC1, PC2, <span class="at">color=</span>Species)) <span class="sc">+</span></span>
+<span id="cb5-8"><a></a>  <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb5-9"><a></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"PCA of Iris Dataset"</span>, <span class="at">x=</span><span class="st">"Principal Component 1"</span>, <span class="at">y=</span><span class="st">"Principal Component 2"</span>) <span class="sc">+</span></span>
+<span id="cb5-10"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter5_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
 
 <section id="conclusion" class="title-slide slide level1 center">
 <h1>Conclusion</h1>
@@ -719,6 +724,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

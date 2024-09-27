@@ -427,25 +427,22 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Overview of optimization methods</li>
 <li>Example: One-dimensional optimization using <code>optimize</code></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">f &lt;- function(x) log(x + log(x)) / log(1 + x)</span></span>
-<span id="cb1-3"><a></a></span>
-<span id="cb1-4"><a></a><span class="in"># Plotting the function</span></span>
-<span id="cb1-5"><a></a><span class="in">curve(f(x), from = 2, to = 15, ylab = "f(x)")</span></span>
-<span id="cb1-6"><a></a></span>
-<span id="cb1-7"><a></a><span class="in"># Finding the maximum</span></span>
-<span id="cb1-8"><a></a><span class="in">res &lt;- optimize(f, lower = 4, upper = 8, maximum = TRUE)</span></span>
-<span id="cb1-9"><a></a><span class="in">abline(v=res$maximum)</span></span>
-<span id="cb1-10"><a></a><span class="in">res$maximum</span></span>
-<span id="cb1-11"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="visualizing-optimization-results" class="slide level2">
-<h2>Visualizing Optimization Results</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Add a line indicating the maximum</span></span>
-<span id="cb2-3"><a></a><span class="in">abline(v=res$maximum, col = "red", lwd = 2)</span></span>
-<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">log</span>(x <span class="sc">+</span> <span class="fu">log</span>(x)) <span class="sc">/</span> <span class="fu">log</span>(<span class="dv">1</span> <span class="sc">+</span> x)</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="co"># Plotting the function</span></span>
+<span id="cb1-4"><a></a><span class="fu">curve</span>(<span class="fu">f</span>(x), <span class="at">from =</span> <span class="dv">2</span>, <span class="at">to =</span> <span class="dv">15</span>, <span class="at">ylab =</span> <span class="st">"f(x)"</span>)</span>
+<span id="cb1-5"><a></a></span>
+<span id="cb1-6"><a></a><span class="co"># Finding the maximum</span></span>
+<span id="cb1-7"><a></a>res <span class="ot">&lt;-</span> <span class="fu">optimize</span>(f, <span class="at">lower =</span> <span class="dv">4</span>, <span class="at">upper =</span> <span class="dv">8</span>, <span class="at">maximum =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-8"><a></a><span class="fu">abline</span>(<span class="at">v=</span>res<span class="sc">$</span>maximum, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>res<span class="sc">$</span>maximum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.792299</code></pre>
+</div>
+</div>
+<img data-src="Chapter14_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="lecture-2-maximum-likelihood-estimation-part-2" class="title-slide slide level1 center">
 <h1>Lecture 2: Maximum Likelihood Estimation (Part 2)</h1>
@@ -457,29 +454,36 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to Maximum Likelihood Estimation (MLE)</li>
 <li>Example: MLE for Gamma distribution</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># MLE for Gamma distribution</span></span>
-<span id="cb3-3"><a></a><span class="in">m &lt;- 20000</span></span>
-<span id="cb3-4"><a></a><span class="in">est &lt;- matrix(0, m, 2)</span></span>
-<span id="cb3-5"><a></a><span class="in">n &lt;- 2000</span></span>
-<span id="cb3-6"><a></a><span class="in">r &lt;- 5</span></span>
-<span id="cb3-7"><a></a><span class="in">lambda &lt;- 2</span></span>
-<span id="cb3-8"><a></a></span>
-<span id="cb3-9"><a></a><span class="in">obj &lt;- function(lambda, xbar, logx.bar) {</span></span>
-<span id="cb3-10"><a></a><span class="in">  r &lt;- length(xbar)</span></span>
-<span id="cb3-11"><a></a><span class="in">  log(lambda) - lambda * mean(xbar) + logx.bar</span></span>
-<span id="cb3-12"><a></a><span class="in">}</span></span>
-<span id="cb3-13"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># MLE for Gamma distribution</span></span>
+<span id="cb4-2"><a></a>m <span class="ot">&lt;-</span> <span class="dv">20000</span></span>
+<span id="cb4-3"><a></a>est <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">0</span>, m, <span class="dv">2</span>)</span>
+<span id="cb4-4"><a></a>n <span class="ot">&lt;-</span> <span class="dv">2000</span></span>
+<span id="cb4-5"><a></a>r <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb4-6"><a></a>lambda <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb4-7"><a></a></span>
+<span id="cb4-8"><a></a>obj <span class="ot">&lt;-</span> <span class="cf">function</span>(lambda, xbar, logx.bar) {</span>
+<span id="cb4-9"><a></a>  r <span class="ot">&lt;-</span> <span class="fu">length</span>(xbar)</span>
+<span id="cb4-10"><a></a>  <span class="fu">log</span>(lambda) <span class="sc">-</span> lambda <span class="sc">*</span> <span class="fu">mean</span>(xbar) <span class="sc">+</span> logx.bar</span>
+<span id="cb4-11"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="optimizing-mle" class="slide level2">
 <h2>Optimizing MLE</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in"># Optimizing the MLE</span></span>
-<span id="cb4-3"><a></a><span class="in">xbar &lt;- rnorm(n, mean = r/lambda, sd = 1)</span></span>
-<span id="cb4-4"><a></a><span class="in">logx.bar &lt;- mean(log(xbar))</span></span>
-<span id="cb4-5"><a></a><span class="in">result &lt;- optimize(obj, lower = 1, upper = 10, xbar = xbar, logx.bar = logx.bar, maximum = TRUE)</span></span>
-<span id="cb4-6"><a></a><span class="in">result</span></span>
-<span id="cb4-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># Optimizing the MLE</span></span>
+<span id="cb5-2"><a></a>xbar <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> r<span class="sc">/</span>lambda, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb5-3"><a></a>logx.bar <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">log</span>(xbar))</span>
+<span id="cb5-4"><a></a>result <span class="ot">&lt;-</span> <span class="fu">optimize</span>(obj, <span class="at">lower =</span> <span class="dv">1</span>, <span class="at">upper =</span> <span class="dv">10</span>, <span class="at">xbar =</span> xbar, <span class="at">logx.bar =</span> logx.bar, <span class="at">maximum =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-5"><a></a>result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$maximum
+[1] 9.999954
+
+$objective
+[1] NaN</code></pre>
+</div>
+</div>
 </section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
@@ -707,6 +711,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

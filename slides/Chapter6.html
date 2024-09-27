@@ -427,23 +427,35 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Basic concepts of Monte Carlo integration</li>
 <li>Example: Integrating using uniform distribution</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">m &lt;- 10000</span></span>
-<span id="cb1-3"><a></a><span class="in">x &lt;- runif(m)</span></span>
-<span id="cb1-4"><a></a><span class="in">theta.hat &lt;- mean(exp(-x))</span></span>
-<span id="cb1-5"><a></a><span class="in">theta.hat</span></span>
-<span id="cb1-6"><a></a><span class="in">1 - exp(-1)</span></span>
-<span id="cb1-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>m <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb1-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(m)</span>
+<span id="cb1-3"><a></a>theta.hat <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">exp</span>(<span class="sc">-</span>x))</span>
+<span id="cb1-4"><a></a>theta.hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6312816</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6321206</code></pre>
+</div>
+</div>
 </section>
 <section id="example-monte-carlo-integration-with-bounded-intervals" class="slide level2">
 <h2>Example: Monte Carlo integration with bounded intervals</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in">m &lt;- 10000</span></span>
-<span id="cb2-3"><a></a><span class="in">x &lt;- runif(m, min=2, max=4)</span></span>
-<span id="cb2-4"><a></a><span class="in">theta.hat &lt;- mean(exp(-x)) * 2</span></span>
-<span id="cb2-5"><a></a><span class="in">theta.hat</span></span>
-<span id="cb2-6"><a></a><span class="in">exp(-2) - exp(-4)</span></span>
-<span id="cb2-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>m <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb5-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(m, <span class="at">min=</span><span class="dv">2</span>, <span class="at">max=</span><span class="dv">4</span>)</span>
+<span id="cb5-3"><a></a>theta.hat <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">exp</span>(<span class="sc">-</span>x)) <span class="sc">*</span> <span class="dv">2</span></span>
+<span id="cb5-4"><a></a>theta.hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1167648</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">exp</span>(<span class="sc">-</span><span class="dv">2</span>) <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1170196</code></pre>
+</div>
+</div>
 </section></section>
 <section>
 <section id="lecture-2-monte-carlo-integration-for-unbounded-intervals-part-2" class="title-slide slide level1 center">
@@ -455,13 +467,14 @@ Dr.&nbsp;Mehdi Maadooliat
 <ul>
 <li>Handling unbounded intervals in Monte Carlo integration</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># Plotting a function over an unbounded interval</span></span>
-<span id="cb3-3"><a></a><span class="in">x &lt;- seq(.1, 2.5, length.out = 100)</span></span>
-<span id="cb3-4"><a></a><span class="in">y &lt;- exp(-x^2 / 2)</span></span>
-<span id="cb3-5"><a></a><span class="in">plot(x, y, type="l", main="Function Plot for Unbounded Interval", col="blue")</span></span>
-<span id="cb3-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># Plotting a function over an unbounded interval</span></span>
+<span id="cb9-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(.<span class="dv">1</span>, <span class="fl">2.5</span>, <span class="at">length.out =</span> <span class="dv">100</span>)</span>
+<span id="cb9-3"><a></a>y <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="sc">-</span>x<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> <span class="dv">2</span>)</span>
+<span id="cb9-4"><a></a><span class="fu">plot</span>(x, y, <span class="at">type=</span><span class="st">"l"</span>, <span class="at">main=</span><span class="st">"Function Plot for Unbounded Interval"</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter6_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="lecture-3-importance-sampling-part-3" class="title-slide slide level1 center">
 <h1>Lecture 3: Importance Sampling (Part 3)</h1>
@@ -473,24 +486,28 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Importance sampling and its applications</li>
 <li>Example: Applying importance sampling</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in"># Example of importance sampling</span></span>
-<span id="cb4-3"><a></a><span class="in">g &lt;- function(x) exp(-x^2 / 2)</span></span>
-<span id="cb4-4"><a></a><span class="in">f &lt;- function(x) dnorm(x, mean = 1)</span></span>
-<span id="cb4-5"><a></a><span class="in">x &lt;- rnorm(10000, mean = 1)</span></span>
-<span id="cb4-6"><a></a><span class="in">theta.hat &lt;- mean(g(x) / f(x))</span></span>
-<span id="cb4-7"><a></a><span class="in">theta.hat</span></span>
-<span id="cb4-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="co"># Example of importance sampling</span></span>
+<span id="cb10-2"><a></a>g <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">exp</span>(<span class="sc">-</span>x<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> <span class="dv">2</span>)</span>
+<span id="cb10-3"><a></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">dnorm</span>(x, <span class="at">mean =</span> <span class="dv">1</span>)</span>
+<span id="cb10-4"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10000</span>, <span class="at">mean =</span> <span class="dv">1</span>)</span>
+<span id="cb10-5"><a></a>theta.hat <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">g</span>(x) <span class="sc">/</span> <span class="fu">f</span>(x))</span>
+<span id="cb10-6"><a></a>theta.hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.416786</code></pre>
+</div>
+</div>
 </section>
 <section id="visualizing-importance-sampling" class="slide level2">
 <h2>Visualizing Importance Sampling</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb5-2"><a></a><span class="in"># Compare the original function with the importance sampling function</span></span>
-<span id="cb5-3"><a></a><span class="in">curve(g, from = -3, to = 3, col = "blue", lwd = 2, main="Importance Sampling: g(x) vs f(x)")</span></span>
-<span id="cb5-4"><a></a><span class="in">curve(f, add = TRUE, col = "red", lty = 2, lwd = 2)</span></span>
-<span id="cb5-5"><a></a><span class="in">legend("topright", legend=c("g(x)", "f(x)"), col=c("blue", "red"), lty=c(1, 2), lwd=2)</span></span>
-<span id="cb5-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="co"># Compare the original function with the importance sampling function</span></span>
+<span id="cb12-2"><a></a><span class="fu">curve</span>(g, <span class="at">from =</span> <span class="sc">-</span><span class="dv">3</span>, <span class="at">to =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">main=</span><span class="st">"Importance Sampling: g(x) vs f(x)"</span>)</span>
+<span id="cb12-3"><a></a><span class="fu">curve</span>(f, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb12-4"><a></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"g(x)"</span>, <span class="st">"f(x)"</span>), <span class="at">col=</span><span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>), <span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="at">lwd=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter6_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="lecture-4-variance-reduction-techniques-part-4" class="title-slide slide level1 center">
 <h1>Lecture 4: Variance Reduction Techniques (Part 4)</h1>
@@ -502,13 +519,16 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Explanation of control variates and how they reduce variance</li>
 <li>Example: Using control variates in Monte Carlo integration</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb6-2"><a></a><span class="in"># Control variates example</span></span>
-<span id="cb6-3"><a></a><span class="in">m &lt;- 10000</span></span>
-<span id="cb6-4"><a></a><span class="in">x &lt;- runif(m)</span></span>
-<span id="cb6-5"><a></a><span class="in">theta.hat &lt;- mean(exp(-x)) - (mean(x) - 0.5)</span></span>
-<span id="cb6-6"><a></a><span class="in">theta.hat</span></span>
-<span id="cb6-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># Control variates example</span></span>
+<span id="cb13-2"><a></a>m <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb13-3"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(m)</span>
+<span id="cb13-4"><a></a>theta.hat <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">exp</span>(<span class="sc">-</span>x)) <span class="sc">-</span> (<span class="fu">mean</span>(x) <span class="sc">-</span> <span class="fl">0.5</span>)</span>
+<span id="cb13-5"><a></a>theta.hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6325672</code></pre>
+</div>
+</div>
 </section>
 <section id="antithetic-variables" class="slide level2">
 <h2>Antithetic Variables</h2>
@@ -516,13 +536,19 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Explanation of antithetic variables and how they reduce variance</li>
 <li>Example: Applying antithetic variables</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb7-2"><a></a><span class="in"># Antithetic variables example</span></span>
-<span id="cb7-3"><a></a><span class="in">u &lt;- runif(5000)</span></span>
-<span id="cb7-4"><a></a><span class="in">theta.hat &lt;- mean((exp(-u) + exp(-(1 - u))) / 2)</span></span>
-<span id="cb7-5"><a></a><span class="in">theta.hat</span></span>
-<span id="cb7-6"><a></a><span class="in">1 - exp(-1)</span></span>
-<span id="cb7-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="co"># Antithetic variables example</span></span>
+<span id="cb15-2"><a></a>u <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">5000</span>)</span>
+<span id="cb15-3"><a></a>theta.hat <span class="ot">&lt;-</span> <span class="fu">mean</span>((<span class="fu">exp</span>(<span class="sc">-</span>u) <span class="sc">+</span> <span class="fu">exp</span>(<span class="sc">-</span>(<span class="dv">1</span> <span class="sc">-</span> u))) <span class="sc">/</span> <span class="dv">2</span>)</span>
+<span id="cb15-4"><a></a>theta.hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6323274</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6321206</code></pre>
+</div>
+</div>
 </section></section>
 <section id="conclusion" class="title-slide slide level1 center">
 <h1>Conclusion</h1>
@@ -750,6 +776,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

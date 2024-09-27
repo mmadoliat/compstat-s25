@@ -427,24 +427,28 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to Monte Carlo estimation</li>
 <li>Example: Estimating the expected difference of two normal variables</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">m &lt;- 1000</span></span>
-<span id="cb1-3"><a></a><span class="in">g &lt;- numeric(m)</span></span>
-<span id="cb1-4"><a></a><span class="in">for (i in 1:m) {</span></span>
-<span id="cb1-5"><a></a><span class="in">    x &lt;- rnorm(2)</span></span>
-<span id="cb1-6"><a></a><span class="in">    g[i] &lt;- abs(x[1] - x[2])</span></span>
-<span id="cb1-7"><a></a><span class="in">}</span></span>
-<span id="cb1-8"><a></a><span class="in">est &lt;- mean(g)</span></span>
-<span id="cb1-9"><a></a><span class="in">est</span></span>
-<span id="cb1-10"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>m <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb1-2"><a></a>g <span class="ot">&lt;-</span> <span class="fu">numeric</span>(m)</span>
+<span id="cb1-3"><a></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>m) {</span>
+<span id="cb1-4"><a></a>    x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">2</span>)</span>
+<span id="cb1-5"><a></a>    g[i] <span class="ot">&lt;-</span> <span class="fu">abs</span>(x[<span class="dv">1</span>] <span class="sc">-</span> x[<span class="dv">2</span>])</span>
+<span id="cb1-6"><a></a>}</span>
+<span id="cb1-7"><a></a>est <span class="ot">&lt;-</span> <span class="fu">mean</span>(g)</span>
+<span id="cb1-8"><a></a>est</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.136028</code></pre>
+</div>
+</div>
 </section>
 <section id="visualizing-monte-carlo-simulations" class="slide level2">
 <h2>Visualizing Monte Carlo Simulations</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Histogram of the simulated differences</span></span>
-<span id="cb2-3"><a></a><span class="in">hist(g, main="Histogram of Differences (Monte Carlo)", col="lightblue")</span></span>
-<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Histogram of the simulated differences</span></span>
+<span id="cb3-2"><a></a><span class="fu">hist</span>(g, <span class="at">main=</span><span class="st">"Histogram of Differences (Monte Carlo)"</span>, <span class="at">col=</span><span class="st">"lightblue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter7_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="lecture-2-monte-carlo-mse-estimation-part-2" class="title-slide slide level1 center">
 <h1>Lecture 2: Monte Carlo MSE Estimation (Part 2)</h1>
@@ -455,25 +459,29 @@ Dr.&nbsp;Mehdi Maadooliat
 <ul>
 <li>Monte Carlo estimation of MSE for trimmed means</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in">n &lt;- 20</span></span>
-<span id="cb3-3"><a></a><span class="in">m &lt;- 1000</span></span>
-<span id="cb3-4"><a></a><span class="in">mean_trim &lt;- numeric(m)</span></span>
-<span id="cb3-5"><a></a><span class="in">for (i in 1:m) {</span></span>
-<span id="cb3-6"><a></a><span class="in">    x &lt;- rnorm(n)</span></span>
-<span id="cb3-7"><a></a><span class="in">    mean_trim[i] &lt;- mean(x, trim = 0.1)</span></span>
-<span id="cb3-8"><a></a><span class="in">}</span></span>
-<span id="cb3-9"><a></a><span class="in">mse &lt;- mean((mean_trim - 0)^2)</span></span>
-<span id="cb3-10"><a></a><span class="in">mse</span></span>
-<span id="cb3-11"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>n <span class="ot">&lt;-</span> <span class="dv">20</span></span>
+<span id="cb4-2"><a></a>m <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb4-3"><a></a>mean_trim <span class="ot">&lt;-</span> <span class="fu">numeric</span>(m)</span>
+<span id="cb4-4"><a></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>m) {</span>
+<span id="cb4-5"><a></a>    x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb4-6"><a></a>    mean_trim[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(x, <span class="at">trim =</span> <span class="fl">0.1</span>)</span>
+<span id="cb4-7"><a></a>}</span>
+<span id="cb4-8"><a></a>mse <span class="ot">&lt;-</span> <span class="fu">mean</span>((mean_trim <span class="sc">-</span> <span class="dv">0</span>)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb4-9"><a></a>mse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0507935</code></pre>
+</div>
+</div>
 </section>
 <section id="visualizing-mse-simulations" class="slide level2">
 <h2>Visualizing MSE Simulations</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in"># Histogram of the trimmed means</span></span>
-<span id="cb4-3"><a></a><span class="in">hist(mean_trim, main="Trimmed Means (Monte Carlo MSE)", col="lightgreen")</span></span>
-<span id="cb4-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co"># Histogram of the trimmed means</span></span>
+<span id="cb6-2"><a></a><span class="fu">hist</span>(mean_trim, <span class="at">main=</span><span class="st">"Trimmed Means (Monte Carlo MSE)"</span>, <span class="at">col=</span><span class="st">"lightgreen"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter7_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="lecture-3-advanced-monte-carlo-techniques-part-3" class="title-slide slide level1 center">
 <h1>Lecture 3: Advanced Monte Carlo Techniques (Part 3)</h1>
@@ -485,18 +493,21 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Exploring advanced Monte Carlo techniques for inference</li>
 <li>Example: Hypothesis testing with Monte Carlo methods</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb5-2"><a></a><span class="in"># Monte Carlo test example: Hypothesis testing</span></span>
-<span id="cb5-3"><a></a><span class="in">n &lt;- 50</span></span>
-<span id="cb5-4"><a></a><span class="in">m &lt;- 1000</span></span>
-<span id="cb5-5"><a></a><span class="in">test_stat &lt;- numeric(m)</span></span>
-<span id="cb5-6"><a></a><span class="in">for (i in 1:m) {</span></span>
-<span id="cb5-7"><a></a><span class="in">    x &lt;- rnorm(n)</span></span>
-<span id="cb5-8"><a></a><span class="in">    test_stat[i] &lt;- mean(x)</span></span>
-<span id="cb5-9"><a></a><span class="in">}</span></span>
-<span id="cb5-10"><a></a><span class="in">p_value &lt;- mean(test_stat &gt;= 1.96)</span></span>
-<span id="cb5-11"><a></a><span class="in">p_value</span></span>
-<span id="cb5-12"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># Monte Carlo test example: Hypothesis testing</span></span>
+<span id="cb7-2"><a></a>n <span class="ot">&lt;-</span> <span class="dv">50</span></span>
+<span id="cb7-3"><a></a>m <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb7-4"><a></a>test_stat <span class="ot">&lt;-</span> <span class="fu">numeric</span>(m)</span>
+<span id="cb7-5"><a></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>m) {</span>
+<span id="cb7-6"><a></a>    x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb7-7"><a></a>    test_stat[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
+<span id="cb7-8"><a></a>}</span>
+<span id="cb7-9"><a></a>p_value <span class="ot">&lt;-</span> <span class="fu">mean</span>(test_stat <span class="sc">&gt;=</span> <span class="fl">1.96</span>)</span>
+<span id="cb7-10"><a></a>p_value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
 </section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
@@ -724,6 +735,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

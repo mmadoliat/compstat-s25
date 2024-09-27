@@ -427,40 +427,43 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Introduction to density estimation using histograms</li>
 <li>Example: Histogram density estimates using Sturges’ Rule</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">set.seed(12345)</span></span>
-<span id="cb1-3"><a></a><span class="in">n &lt;- 25</span></span>
-<span id="cb1-4"><a></a><span class="in">x &lt;- rnorm(n)</span></span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a><span class="in"># Calculate breaks according to Sturges' Rule</span></span>
-<span id="cb1-7"><a></a><span class="in">nclass &lt;- ceiling(1 + log2(n))</span></span>
-<span id="cb1-8"><a></a><span class="in">cwidth &lt;- diff(range(x) / nclass)</span></span>
-<span id="cb1-9"><a></a><span class="in">breaks &lt;- min(x) + cwidth * 0:nclass</span></span>
-<span id="cb1-10"><a></a></span>
-<span id="cb1-11"><a></a><span class="in"># Default histogram</span></span>
-<span id="cb1-12"><a></a><span class="in">h.default &lt;- hist(x, freq = FALSE, xlab = "default", main = "Histogram: Default")</span></span>
-<span id="cb1-13"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">set.seed</span>(<span class="dv">12345</span>)</span>
+<span id="cb1-2"><a></a>n <span class="ot">&lt;-</span> <span class="dv">25</span></span>
+<span id="cb1-3"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="co"># Calculate breaks according to Sturges' Rule</span></span>
+<span id="cb1-6"><a></a>nclass <span class="ot">&lt;-</span> <span class="fu">ceiling</span>(<span class="dv">1</span> <span class="sc">+</span> <span class="fu">log2</span>(n))</span>
+<span id="cb1-7"><a></a>cwidth <span class="ot">&lt;-</span> <span class="fu">diff</span>(<span class="fu">range</span>(x) <span class="sc">/</span> nclass)</span>
+<span id="cb1-8"><a></a>breaks <span class="ot">&lt;-</span> <span class="fu">min</span>(x) <span class="sc">+</span> cwidth <span class="sc">*</span> <span class="dv">0</span><span class="sc">:</span>nclass</span>
+<span id="cb1-9"><a></a></span>
+<span id="cb1-10"><a></a><span class="co"># Default histogram</span></span>
+<span id="cb1-11"><a></a>h.default <span class="ot">&lt;-</span> <span class="fu">hist</span>(x, <span class="at">freq =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="st">"default"</span>, <span class="at">main =</span> <span class="st">"Histogram: Default"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter12_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="kernel-density-estimation" class="slide level2">
 <h2>Kernel Density Estimation</h2>
 <ul>
 <li>Introduction to kernel density estimation (KDE)</li>
 <li>Example: Applying KDE to data</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Kernel density estimate</span></span>
-<span id="cb2-3"><a></a><span class="in">dens &lt;- density(x)</span></span>
-<span id="cb2-4"><a></a><span class="in">plot(dens, main = "Kernel Density Estimate", col = "blue", lwd = 2)</span></span>
-<span id="cb2-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Kernel density estimate</span></span>
+<span id="cb2-2"><a></a>dens <span class="ot">&lt;-</span> <span class="fu">density</span>(x)</span>
+<span id="cb2-3"><a></a><span class="fu">plot</span>(dens, <span class="at">main =</span> <span class="st">"Kernel Density Estimate"</span>, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter12_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
 <section id="visualizing-kernel-density" class="slide level2">
 <h2>Visualizing Kernel Density</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># Overlay histogram and KDE</span></span>
-<span id="cb3-3"><a></a><span class="in">hist(x, freq = FALSE, col = "lightgray", border = "white", main = "Histogram with KDE")</span></span>
-<span id="cb3-4"><a></a><span class="in">lines(dens, col = "red", lwd = 2)</span></span>
-<span id="cb3-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Overlay histogram and KDE</span></span>
+<span id="cb3-2"><a></a><span class="fu">hist</span>(x, <span class="at">freq =</span> <span class="cn">FALSE</span>, <span class="at">col =</span> <span class="st">"lightgray"</span>, <span class="at">border =</span> <span class="st">"white"</span>, <span class="at">main =</span> <span class="st">"Histogram with KDE"</span>)</span>
+<span id="cb3-3"><a></a><span class="fu">lines</span>(dens, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter12_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
 <ul>
@@ -687,6 +690,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

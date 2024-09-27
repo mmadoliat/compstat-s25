@@ -428,13 +428,14 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Discrete vs Continuous random variables</li>
 <li>Important distributions (Binomial, Normal, Chi-Square)</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in"># Simulating random variables</span></span>
-<span id="cb1-3"><a></a><span class="in">N &lt;- 100; mu &lt;- 5; sig &lt;- 2</span></span>
-<span id="cb1-4"><a></a><span class="in">Y &lt;- rnorm(N, mean = mu, sd = sig)</span></span>
-<span id="cb1-5"><a></a><span class="in">hist(Y, main="Histogram of Normal Distribution", xlab="Y values", col="lightblue")</span></span>
-<span id="cb1-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Simulating random variables</span></span>
+<span id="cb1-2"><a></a>N <span class="ot">&lt;-</span> <span class="dv">100</span>; mu <span class="ot">&lt;-</span> <span class="dv">5</span>; sig <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb1-3"><a></a>Y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(N, <span class="at">mean =</span> mu, <span class="at">sd =</span> sig)</span>
+<span id="cb1-4"><a></a><span class="fu">hist</span>(Y, <span class="at">main=</span><span class="st">"Histogram of Normal Distribution"</span>, <span class="at">xlab=</span><span class="st">"Y values"</span>, <span class="at">col=</span><span class="st">"lightblue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter2_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="some-discrete-distributions" class="title-slide slide level1 center">
 <h1>Some Discrete Distributions</h1>
@@ -446,7 +447,12 @@ Dr.&nbsp;Mehdi Maadooliat
 <li><code>rbinom()</code>, <code>dbinom()</code>, <code>pbinom()</code></li>
 <li>Example: Generating binomial random variables</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">rbinom</span>(<span class="dv">10</span>, <span class="at">size=</span><span class="dv">10</span>, <span class="at">prob=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">rbinom</span>(<span class="dv">10</span>, <span class="at">size=</span><span class="dv">10</span>, <span class="at">prob=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 6 5 4 4 7 6 8 4 5 3</code></pre>
+</div>
+</div>
 </section>
 <section id="poisson-distribution" class="slide level2">
 <h2>Poisson Distribution</h2>
@@ -454,7 +460,12 @@ Dr.&nbsp;Mehdi Maadooliat
 <li><code>rpois()</code>, <code>dpois()</code>, <code>ppois()</code></li>
 <li>Example: Simulating Poisson-distributed data</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">rpois</span>(<span class="dv">10</span>, <span class="at">lambda=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">rpois</span>(<span class="dv">10</span>, <span class="at">lambda=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 2 5 1 1 3 6 4 4 5 3</code></pre>
+</div>
+</div>
 </section></section>
 <section>
 <section id="some-continuous-distributions" class="title-slide slide level1 center">
@@ -467,7 +478,13 @@ Dr.&nbsp;Mehdi Maadooliat
 <li><code>rnorm()</code>, <code>dnorm()</code>, <code>pnorm()</code></li>
 <li>Example: Generating normal random variables</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] -0.5644466 -2.5397832  0.9867228  0.4525835 -0.2267704 -1.6721109
+ [7] -2.0420950  1.4612120 -0.7878602  0.4844884</code></pre>
+</div>
+</div>
 </section>
 <section id="exponential-distribution" class="slide level2">
 <h2>Exponential Distribution</h2>
@@ -487,8 +504,23 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Mean vector, covariance matrix</li>
 <li>Multivariate normal density</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">library</span>(MASS)</span>
-<span id="cb5-2"><a></a><span class="fu">mvrnorm</span>(<span class="at">n=</span><span class="dv">10</span>, <span class="at">mu=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">Sigma=</span><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">0.5</span>,<span class="fl">0.5</span>,<span class="dv">1</span>),<span class="dv">2</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">library</span>(MASS)</span>
+<span id="cb8-2"><a></a><span class="fu">mvrnorm</span>(<span class="at">n=</span><span class="dv">10</span>, <span class="at">mu=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">Sigma=</span><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">0.5</span>,<span class="fl">0.5</span>,<span class="dv">1</span>),<span class="dv">2</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            [,1]        [,2]
+ [1,]  0.8802956  1.12095072
+ [2,]  0.4105690  1.37888981
+ [3,]  1.0823062 -0.38754447
+ [4,] -0.6062202  0.32231596
+ [5,] -0.7549513 -1.11843241
+ [6,]  0.3008293  0.05946766
+ [7,] -1.4460393 -1.20204748
+ [8,]  0.4088226 -0.46566195
+ [9,] -1.6671257 -0.43239872
+[10,] -0.6827996 -1.58504588</code></pre>
+</div>
+</div>
 </section></section>
 <section>
 <section id="limit-theorems" class="title-slide slide level1 center">
@@ -501,9 +533,213 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Statement of the law</li>
 <li>Demonstration using R</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
-<span id="cb6-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb6-3"><a></a><span class="fu">cumsum</span>(x) <span class="sc">/</span> <span class="dv">1</span><span class="sc">:</span>n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb10-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb10-3"><a></a><span class="fu">cumsum</span>(x) <span class="sc">/</span> <span class="dv">1</span><span class="sc">:</span>n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]  1.073626e+00  2.951003e-01 -4.680679e-01 -6.994409e-01 -2.901538e-01
+   [6] -2.893121e-01 -1.888245e-01 -7.008372e-02 -1.802466e-01 -4.489651e-01
+  [11] -4.822328e-01 -5.204046e-01 -5.394169e-01 -4.871064e-01 -3.511988e-01
+  [16] -2.019463e-01 -1.522812e-01 -8.142722e-02 -1.558708e-01 -1.136781e-01
+  [21] -1.704480e-01 -2.775239e-01 -2.597497e-01 -2.220607e-01 -2.621542e-01
+  [26] -2.242598e-01 -2.055620e-01 -2.003974e-01 -1.958669e-01 -1.696693e-01
+  [31] -1.240517e-01 -9.675947e-02 -9.782212e-02 -1.103786e-01 -8.806431e-02
+  [36] -5.995087e-02 -6.494522e-03 -5.221050e-03  5.686310e-03 -2.522436e-02
+  [41] -5.467853e-02 -3.946769e-02 -7.616418e-02 -8.514515e-02 -8.354591e-02
+  [46] -7.055397e-02 -9.498779e-02 -8.606533e-02 -6.434486e-02 -3.827922e-02
+  [51] -1.521263e-02 -2.390377e-03  3.150718e-02  5.008603e-02  4.499738e-02
+  [56]  3.034215e-02  3.970348e-02  6.304249e-02  5.723266e-02  6.001283e-02
+  [61]  7.975909e-02  9.822869e-02  1.223562e-01  1.368471e-01  1.260889e-01
+  [66]  1.239417e-01  1.372854e-01  1.221392e-01  1.302222e-01  1.187102e-01
+  [71]  1.201569e-01  1.302032e-01  1.118102e-01  1.134400e-01  1.094947e-01
+  [76]  1.067734e-01  1.213058e-01  1.134891e-01  1.005927e-01  1.051957e-01
+  [81]  1.114259e-01  1.235697e-01  1.064676e-01  1.151202e-01  1.279443e-01
+  [86]  1.218626e-01  1.232112e-01  1.077603e-01  1.026771e-01  8.348939e-02
+  [91]  7.550143e-02  5.838482e-02  5.225625e-02  4.983599e-02  5.449758e-02
+  [96]  5.498109e-02  6.385356e-02  8.005270e-02  6.360153e-02  8.369134e-02
+ [101]  6.894997e-02  7.721649e-02  6.954550e-02  7.274870e-02  5.940701e-02
+ [106]  7.146464e-02  8.114785e-02  8.578935e-02  8.710149e-02  9.495915e-02
+ [111]  8.096217e-02  8.993761e-02  9.107025e-02  9.618230e-02  8.307860e-02
+ [116]  9.727105e-02  8.613256e-02  8.838069e-02  8.190818e-02  8.391085e-02
+ [121]  7.302880e-02  8.294255e-02  8.028846e-02  7.164115e-02  6.439345e-02
+ [126]  6.480560e-02  5.757148e-02  5.763619e-02  6.649992e-02  5.813652e-02
+ [131]  5.357785e-02  6.183747e-02  7.058047e-02  6.953684e-02  5.729094e-02
+ [136]  5.697021e-02  5.806838e-02  6.481698e-02  7.171211e-02  6.155013e-02
+ [141]  5.777295e-02  5.844945e-02  6.299408e-02  5.932728e-02  5.699429e-02
+ [146]  4.716503e-02  5.796578e-02  5.046668e-02  4.472250e-02  3.990373e-02
+ [151]  3.768053e-02  3.213640e-02  2.596828e-02  2.997710e-02  3.144112e-02
+ [156]  4.088335e-02  3.921636e-02  3.735905e-02  4.002459e-02  3.417117e-02
+ [161]  2.669190e-02  3.614526e-02  2.561341e-02  2.270044e-02  2.024138e-02
+ [166]  3.018281e-02  2.776310e-02  2.164976e-02  2.340904e-02  2.046724e-02
+ [171]  1.820463e-02  2.022844e-02  1.755919e-02  3.257827e-03  3.935253e-03
+ [176]  9.665875e-03  7.803569e-03  2.551349e-03 -7.459049e-03 -1.128813e-02
+ [181] -6.441084e-03  2.346466e-03  1.369946e-03 -5.170724e-03 -3.417145e-03
+ [186] -2.712900e-03 -9.510157e-03 -5.715010e-03 -1.461478e-02 -1.379513e-02
+ [191] -1.827967e-02 -2.198666e-02 -1.754299e-02 -2.599495e-02 -2.539616e-02
+ [196] -2.970135e-02 -2.511675e-02 -2.973565e-02 -2.689053e-02 -2.519958e-02
+ [201] -3.127875e-02 -3.250985e-02 -2.756675e-02 -2.727469e-02 -2.033977e-02
+ [206] -1.219722e-02 -1.179085e-02 -6.404832e-03 -1.427534e-02 -2.378408e-02
+ [211] -2.732762e-02 -2.897699e-02 -3.232904e-02 -3.561030e-02 -3.042282e-02
+ [216] -3.210466e-02 -2.928579e-02 -3.659884e-02 -3.708418e-02 -4.155896e-02
+ [221] -3.741203e-02 -4.241042e-02 -4.204006e-02 -4.841741e-02 -5.091658e-02
+ [226] -5.049627e-02 -4.390201e-02 -4.179374e-02 -4.471881e-02 -5.027190e-02
+ [231] -4.237935e-02 -4.089969e-02 -4.573487e-02 -5.157806e-02 -5.582187e-02
+ [236] -5.337428e-02 -5.221578e-02 -4.803441e-02 -4.513953e-02 -4.986002e-02
+ [241] -5.004377e-02 -4.761158e-02 -5.155368e-02 -5.051349e-02 -5.218667e-02
+ [246] -5.440828e-02 -5.597613e-02 -5.866562e-02 -6.486062e-02 -6.327484e-02
+ [251] -6.737223e-02 -6.125891e-02 -6.484081e-02 -6.519865e-02 -6.369924e-02
+ [256] -7.056685e-02 -7.202948e-02 -7.251543e-02 -7.548946e-02 -7.215799e-02
+ [261] -7.253667e-02 -6.934641e-02 -6.550000e-02 -7.046109e-02 -7.100604e-02
+ [266] -7.043959e-02 -7.638158e-02 -7.337228e-02 -7.363195e-02 -7.254808e-02
+ [271] -7.560877e-02 -7.678348e-02 -8.060183e-02 -8.087803e-02 -8.406265e-02
+ [276] -8.134466e-02 -8.352552e-02 -8.139276e-02 -7.834379e-02 -7.871892e-02
+ [281] -8.224428e-02 -8.911330e-02 -8.978746e-02 -8.637842e-02 -8.306681e-02
+ [286] -7.963138e-02 -7.559765e-02 -7.752880e-02 -7.730393e-02 -7.853779e-02
+ [291] -7.874901e-02 -7.700868e-02 -7.779937e-02 -8.108052e-02 -8.200789e-02
+ [296] -8.241858e-02 -8.733915e-02 -8.068810e-02 -7.645495e-02 -7.307975e-02
+ [301] -7.712033e-02 -7.850684e-02 -7.892782e-02 -8.203802e-02 -8.083066e-02
+ [306] -8.066357e-02 -7.737724e-02 -8.052638e-02 -8.060006e-02 -8.499398e-02
+ [311] -8.601919e-02 -8.474278e-02 -8.862603e-02 -9.301864e-02 -9.633633e-02
+ [316] -9.727616e-02 -8.928132e-02 -8.906864e-02 -8.608424e-02 -8.432298e-02
+ [321] -8.214447e-02 -7.664608e-02 -8.050422e-02 -8.418786e-02 -7.859827e-02
+ [326] -8.045441e-02 -8.009599e-02 -8.055307e-02 -8.297749e-02 -8.332089e-02
+ [331] -8.494817e-02 -8.709938e-02 -8.682885e-02 -8.551384e-02 -8.511221e-02
+ [336] -8.396451e-02 -8.417615e-02 -8.300008e-02 -8.754463e-02 -8.623893e-02
+ [341] -8.626058e-02 -8.240639e-02 -7.992077e-02 -7.880267e-02 -7.827398e-02
+ [346] -8.295501e-02 -8.493480e-02 -9.004814e-02 -8.652569e-02 -8.894740e-02
+ [351] -8.767868e-02 -8.642740e-02 -8.422903e-02 -8.199528e-02 -7.768461e-02
+ [356] -7.838707e-02 -8.306229e-02 -8.807692e-02 -8.488809e-02 -8.255750e-02
+ [361] -7.918404e-02 -7.649171e-02 -7.749388e-02 -7.138469e-02 -7.508844e-02
+ [366] -7.734964e-02 -8.012957e-02 -8.272045e-02 -8.477938e-02 -8.601183e-02
+ [371] -8.206564e-02 -8.520313e-02 -8.911600e-02 -8.766023e-02 -8.881374e-02
+ [376] -8.651935e-02 -8.513910e-02 -8.307783e-02 -8.582613e-02 -8.701854e-02
+ [381] -8.851733e-02 -8.834270e-02 -8.769691e-02 -8.402280e-02 -7.974891e-02
+ [386] -8.175851e-02 -8.029330e-02 -7.727985e-02 -7.653077e-02 -7.474472e-02
+ [391] -7.499877e-02 -7.398248e-02 -6.843535e-02 -7.064385e-02 -7.244272e-02
+ [396] -7.245437e-02 -7.078852e-02 -7.033994e-02 -7.235925e-02 -7.279896e-02
+ [401] -7.278487e-02 -7.056561e-02 -6.645515e-02 -6.181332e-02 -5.992224e-02
+ [406] -5.886312e-02 -5.899222e-02 -5.659340e-02 -5.528714e-02 -5.347469e-02
+ [411] -5.787267e-02 -6.039799e-02 -5.576163e-02 -5.707599e-02 -5.793226e-02
+ [416] -5.004009e-02 -5.391076e-02 -5.164995e-02 -5.216486e-02 -5.105375e-02
+ [421] -5.124719e-02 -5.089306e-02 -5.324552e-02 -4.917172e-02 -4.873113e-02
+ [426] -5.176472e-02 -5.090001e-02 -4.624906e-02 -5.069927e-02 -5.245599e-02
+ [431] -5.295675e-02 -5.634025e-02 -5.911757e-02 -5.795090e-02 -5.684894e-02
+ [436] -5.560663e-02 -5.349237e-02 -5.188360e-02 -5.249394e-02 -5.376565e-02
+ [441] -5.478022e-02 -5.454817e-02 -5.414974e-02 -5.585010e-02 -5.449112e-02
+ [446] -5.182262e-02 -5.171670e-02 -5.213144e-02 -4.838695e-02 -4.769812e-02
+ [451] -4.843994e-02 -4.512380e-02 -4.523436e-02 -4.416249e-02 -4.393092e-02
+ [456] -4.372953e-02 -4.315922e-02 -3.905683e-02 -3.865722e-02 -3.881021e-02
+ [461] -3.915587e-02 -4.271107e-02 -4.675057e-02 -4.757234e-02 -4.322206e-02
+ [466] -4.171380e-02 -4.609834e-02 -4.615602e-02 -4.558935e-02 -4.589375e-02
+ [471] -4.804900e-02 -4.957253e-02 -4.956203e-02 -4.827221e-02 -4.898503e-02
+ [476] -5.277617e-02 -5.068563e-02 -5.325532e-02 -4.989563e-02 -5.102796e-02
+ [481] -5.153214e-02 -5.336854e-02 -5.438739e-02 -5.417456e-02 -5.689652e-02
+ [486] -6.016195e-02 -5.975300e-02 -5.866597e-02 -5.631191e-02 -5.635618e-02
+ [491] -5.835032e-02 -5.900369e-02 -6.006328e-02 -5.900936e-02 -5.934102e-02
+ [496] -5.893672e-02 -5.664717e-02 -5.693117e-02 -5.867036e-02 -5.697899e-02
+ [501] -5.677298e-02 -5.915716e-02 -5.712498e-02 -5.729785e-02 -5.655382e-02
+ [506] -5.800132e-02 -5.428429e-02 -5.341192e-02 -5.409456e-02 -5.234901e-02
+ [511] -5.178899e-02 -5.184644e-02 -5.411382e-02 -5.177346e-02 -4.887386e-02
+ [516] -4.642422e-02 -4.542916e-02 -4.442790e-02 -4.750764e-02 -4.742544e-02
+ [521] -4.786785e-02 -4.626060e-02 -4.890706e-02 -4.565017e-02 -4.662496e-02
+ [526] -4.444974e-02 -4.470484e-02 -4.305310e-02 -4.150839e-02 -4.068438e-02
+ [531] -4.044130e-02 -4.020567e-02 -4.117849e-02 -3.824913e-02 -3.832021e-02
+ [536] -3.733568e-02 -3.559586e-02 -3.454939e-02 -3.473541e-02 -3.507785e-02
+ [541] -3.073144e-02 -2.990908e-02 -2.991371e-02 -3.239982e-02 -2.909044e-02
+ [546] -2.855612e-02 -2.969486e-02 -2.885108e-02 -2.816677e-02 -2.674200e-02
+ [551] -2.737482e-02 -2.404499e-02 -2.559165e-02 -2.473247e-02 -2.481471e-02
+ [556] -2.450112e-02 -2.543798e-02 -2.128154e-02 -2.112527e-02 -2.115482e-02
+ [561] -2.127500e-02 -1.845844e-02 -1.767224e-02 -1.694388e-02 -1.872657e-02
+ [566] -1.666803e-02 -2.140543e-02 -1.960739e-02 -2.013579e-02 -2.093661e-02
+ [571] -1.828505e-02 -1.604006e-02 -1.560641e-02 -1.608556e-02 -1.569830e-02
+ [576] -1.308206e-02 -1.476717e-02 -1.363291e-02 -1.309255e-02 -1.200598e-02
+ [581] -1.218862e-02 -8.978917e-03 -9.326925e-03 -9.687811e-03 -1.131501e-02
+ [586] -1.117411e-02 -9.090919e-03 -9.564024e-03 -9.078537e-03 -7.087988e-03
+ [591] -4.818192e-03 -4.940206e-03 -4.752898e-03 -4.029259e-03 -7.622157e-03
+ [596] -5.561135e-03 -5.368503e-03 -4.748825e-03 -4.213981e-03 -4.841192e-03
+ [601] -5.770263e-03 -2.889434e-03 -1.627641e-03  6.371849e-04  1.635472e-03
+ [606]  1.573476e-03  2.741228e-03  2.034417e-03  1.950701e-03 -9.742196e-04
+ [611] -7.918614e-04 -3.082582e-03 -4.876181e-03 -4.303283e-03 -2.262715e-03
+ [616] -1.587722e-03 -2.131291e-03 -1.520599e-03 -1.334500e-03 -2.668971e-03
+ [621] -1.702718e-03 -2.925932e-03 -4.867298e-03 -6.731289e-03 -6.645773e-03
+ [626] -4.773133e-03 -2.702670e-03 -8.538350e-04 -1.368822e-03 -1.154995e-03
+ [631] -1.964321e-03 -6.412419e-05 -1.949842e-03 -1.415802e-03 -2.682842e-03
+ [636] -2.237769e-03 -3.934343e-03 -4.421100e-03 -5.508894e-03 -8.151514e-03
+ [641] -8.118399e-03 -9.476256e-03 -1.160993e-02 -1.191097e-02 -9.573795e-03
+ [646] -1.030278e-02 -1.114530e-02 -1.014426e-02 -1.102575e-02 -1.020863e-02
+ [651] -9.213544e-03 -5.975885e-03 -8.389806e-03 -7.174785e-03 -1.107109e-02
+ [656] -1.223105e-02 -1.304642e-02 -1.352446e-02 -1.256011e-02 -9.491960e-03
+ [661] -1.535800e-02 -1.529766e-02 -1.818471e-02 -1.953571e-02 -1.759758e-02
+ [666] -1.732057e-02 -1.748179e-02 -1.772865e-02 -1.696380e-02 -1.630162e-02
+ [671] -1.693751e-02 -1.813843e-02 -2.021958e-02 -2.191994e-02 -2.333162e-02
+ [676] -2.402981e-02 -2.860036e-02 -2.953833e-02 -3.136029e-02 -3.110427e-02
+ [681] -3.135371e-02 -3.408670e-02 -3.484920e-02 -3.523757e-02 -3.247986e-02
+ [686] -3.288219e-02 -3.343832e-02 -3.398815e-02 -3.226731e-02 -3.048533e-02
+ [691] -2.695271e-02 -2.630783e-02 -2.738645e-02 -2.839019e-02 -2.954755e-02
+ [696] -3.002350e-02 -2.984885e-02 -3.195260e-02 -2.929262e-02 -3.091391e-02
+ [701] -3.309086e-02 -3.402821e-02 -3.092454e-02 -3.322832e-02 -3.255002e-02
+ [706] -3.209691e-02 -3.359935e-02 -3.254151e-02 -3.307290e-02 -3.210805e-02
+ [711] -3.365825e-02 -3.234844e-02 -3.336965e-02 -3.244513e-02 -3.387313e-02
+ [716] -3.415202e-02 -3.391486e-02 -3.219235e-02 -3.296252e-02 -3.038144e-02
+ [721] -3.078870e-02 -2.941891e-02 -2.930407e-02 -2.805887e-02 -2.561463e-02
+ [726] -2.722379e-02 -2.873538e-02 -3.110699e-02 -3.180857e-02 -3.111643e-02
+ [731] -3.134259e-02 -2.964269e-02 -3.000283e-02 -3.027431e-02 -3.081573e-02
+ [736] -2.964664e-02 -3.044524e-02 -3.093737e-02 -2.997231e-02 -3.164549e-02
+ [741] -3.088644e-02 -2.984065e-02 -2.827645e-02 -2.878065e-02 -2.993070e-02
+ [746] -3.013798e-02 -2.966052e-02 -2.826254e-02 -2.937984e-02 -2.892235e-02
+ [751] -2.763560e-02 -2.659173e-02 -2.646984e-02 -2.500057e-02 -2.440392e-02
+ [756] -2.766811e-02 -2.701701e-02 -2.584128e-02 -2.571604e-02 -2.583081e-02
+ [761] -2.630229e-02 -2.451555e-02 -2.511603e-02 -2.661502e-02 -2.796067e-02
+ [766] -2.863032e-02 -2.912578e-02 -2.744884e-02 -2.761761e-02 -2.881339e-02
+ [771] -2.652022e-02 -2.539025e-02 -2.424265e-02 -2.320143e-02 -2.255629e-02
+ [776] -2.213232e-02 -2.392953e-02 -2.409462e-02 -2.230513e-02 -2.091077e-02
+ [781] -2.102722e-02 -2.287237e-02 -2.208669e-02 -2.187209e-02 -2.227421e-02
+ [786] -2.184948e-02 -1.960823e-02 -2.027020e-02 -2.094777e-02 -2.099181e-02
+ [791] -2.277552e-02 -2.381525e-02 -2.326048e-02 -2.476466e-02 -2.385652e-02
+ [796] -2.371312e-02 -2.441067e-02 -2.515203e-02 -2.364354e-02 -2.431713e-02
+ [801] -2.475929e-02 -2.604844e-02 -2.612598e-02 -2.624059e-02 -2.590177e-02
+ [806] -2.685244e-02 -2.656386e-02 -2.471783e-02 -2.521695e-02 -2.601378e-02
+ [811] -2.579109e-02 -2.857915e-02 -2.821076e-02 -2.941825e-02 -2.996376e-02
+ [816] -2.847164e-02 -2.894862e-02 -2.880393e-02 -2.627969e-02 -2.641816e-02
+ [821] -2.595298e-02 -2.678982e-02 -2.904594e-02 -2.761903e-02 -2.656082e-02
+ [826] -2.506964e-02 -2.185813e-02 -2.240173e-02 -2.091011e-02 -2.159227e-02
+ [831] -1.872390e-02 -1.915911e-02 -1.971129e-02 -2.039260e-02 -2.061370e-02
+ [836] -1.899276e-02 -1.761516e-02 -1.684109e-02 -1.666576e-02 -1.612474e-02
+ [841] -1.549046e-02 -1.572414e-02 -1.541252e-02 -1.480837e-02 -1.509511e-02
+ [846] -1.546160e-02 -1.570912e-02 -1.552756e-02 -1.632695e-02 -1.536236e-02
+ [851] -1.647876e-02 -1.655347e-02 -1.770030e-02 -1.973236e-02 -1.950887e-02
+ [856] -2.273161e-02 -2.400642e-02 -2.404864e-02 -2.397348e-02 -2.526439e-02
+ [861] -2.353833e-02 -2.330430e-02 -2.186825e-02 -2.376578e-02 -2.463678e-02
+ [866] -2.416719e-02 -2.359478e-02 -2.491746e-02 -2.487146e-02 -2.329455e-02
+ [871] -2.351715e-02 -2.333317e-02 -2.375744e-02 -2.453931e-02 -2.500776e-02
+ [876] -2.343157e-02 -2.452047e-02 -2.395960e-02 -2.472302e-02 -2.511250e-02
+ [881] -2.390875e-02 -2.301549e-02 -2.435716e-02 -2.352267e-02 -2.468200e-02
+ [886] -2.396220e-02 -2.315733e-02 -2.523818e-02 -2.453274e-02 -2.464323e-02
+ [891] -2.546329e-02 -2.676880e-02 -2.640765e-02 -2.712092e-02 -2.643917e-02
+ [896] -2.582790e-02 -2.478119e-02 -2.630565e-02 -2.701407e-02 -2.545732e-02
+ [901] -2.664910e-02 -2.812331e-02 -2.908758e-02 -2.746581e-02 -2.725588e-02
+ [906] -2.654164e-02 -2.596131e-02 -2.760493e-02 -2.703906e-02 -2.679380e-02
+ [911] -2.682407e-02 -2.692192e-02 -2.609029e-02 -2.672928e-02 -2.413183e-02
+ [916] -2.394079e-02 -2.415389e-02 -2.394891e-02 -2.428716e-02 -2.355095e-02
+ [921] -2.250312e-02 -2.213326e-02 -2.144486e-02 -2.146946e-02 -1.969595e-02
+ [926] -1.926958e-02 -1.979765e-02 -1.980354e-02 -1.983801e-02 -1.948101e-02
+ [931] -2.093240e-02 -2.162750e-02 -2.197381e-02 -2.340242e-02 -2.296205e-02
+ [936] -2.264890e-02 -2.248057e-02 -2.268547e-02 -2.243132e-02 -2.214811e-02
+ [941] -2.314759e-02 -2.449227e-02 -2.386908e-02 -2.548982e-02 -2.552700e-02
+ [946] -2.500845e-02 -2.393418e-02 -2.303042e-02 -2.200966e-02 -2.480129e-02
+ [951] -2.673217e-02 -2.710598e-02 -2.862335e-02 -2.913392e-02 -3.023325e-02
+ [956] -3.016684e-02 -2.854270e-02 -2.807222e-02 -2.907300e-02 -2.839358e-02
+ [961] -2.828681e-02 -2.788737e-02 -2.735958e-02 -2.863105e-02 -2.806951e-02
+ [966] -2.883066e-02 -2.901694e-02 -2.937034e-02 -2.850397e-02 -2.841988e-02
+ [971] -2.882793e-02 -2.784471e-02 -2.814090e-02 -2.936902e-02 -2.922944e-02
+ [976] -3.107605e-02 -3.126639e-02 -3.118945e-02 -3.042880e-02 -2.927401e-02
+ [981] -2.921404e-02 -2.924886e-02 -2.766295e-02 -2.814052e-02 -2.853979e-02
+ [986] -2.789963e-02 -2.780027e-02 -2.776122e-02 -2.619718e-02 -2.486623e-02
+ [991] -2.440908e-02 -2.395656e-02 -2.328740e-02 -2.349500e-02 -2.310718e-02
+ [996] -2.333425e-02 -2.315447e-02 -2.382179e-02 -2.286902e-02 -2.365491e-02</code></pre>
+</div>
+</div>
 </section>
 <section id="central-limit-theorem" class="slide level2">
 <h2>Central Limit Theorem</h2>
@@ -511,27 +747,29 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Discuss the CLT and its importance in statistics</li>
 <li>Simulating the CLT with normal distributions</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb7-2"><a></a><span class="in"># Central Limit Theorem simulation</span></span>
-<span id="cb7-3"><a></a><span class="in">means &lt;- replicate(1000, mean(rnorm(100, mean = mu, sd = sig)))</span></span>
-<span id="cb7-4"><a></a><span class="in">hist(means, main="Central Limit Theorem", col="lightgreen", border="black")</span></span>
-<span id="cb7-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="co"># Central Limit Theorem simulation</span></span>
+<span id="cb12-2"><a></a>means <span class="ot">&lt;-</span> <span class="fu">replicate</span>(<span class="dv">1000</span>, <span class="fu">mean</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> mu, <span class="at">sd =</span> sig)))</span>
+<span id="cb12-3"><a></a><span class="fu">hist</span>(means, <span class="at">main=</span><span class="st">"Central Limit Theorem"</span>, <span class="at">col=</span><span class="st">"lightgreen"</span>, <span class="at">border=</span><span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter2_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section></section>
 <section id="joint-and-conditional-distributions" class="title-slide slide level1 center">
 <h1>Joint and Conditional Distributions</h1>
 <ul>
 <li>Joint distributions and their importance</li>
 <li>Conditional distributions with examples</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb8-2"><a></a><span class="in"># Simulating joint distributions</span></span>
-<span id="cb8-3"><a></a><span class="in">mu &lt;- c(5, 10); sigma &lt;- matrix(c(1, 0.5, 0.5, 2), 2, 2)</span></span>
-<span id="cb8-4"><a></a><span class="in">library(MASS)</span></span>
-<span id="cb8-5"><a></a><span class="in">X &lt;- mvrnorm(1000, mu = mu, Sigma = sigma)</span></span>
-<span id="cb8-6"><a></a></span>
-<span id="cb8-7"><a></a><span class="in">plot(X[,1], X[,2], main="Scatter plot of Joint Distribution", xlab="X1", ylab="X2", col="blue")</span></span>
-<span id="cb8-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># Simulating joint distributions</span></span>
+<span id="cb13-2"><a></a>mu <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">10</span>); sigma <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="dv">2</span>), <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb13-3"><a></a><span class="fu">library</span>(MASS)</span>
+<span id="cb13-4"><a></a>X <span class="ot">&lt;-</span> <span class="fu">mvrnorm</span>(<span class="dv">1000</span>, <span class="at">mu =</span> mu, <span class="at">Sigma =</span> sigma)</span>
+<span id="cb13-5"><a></a></span>
+<span id="cb13-6"><a></a><span class="fu">plot</span>(X[,<span class="dv">1</span>], X[,<span class="dv">2</span>], <span class="at">main=</span><span class="st">"Scatter plot of Joint Distribution"</span>, <span class="at">xlab=</span><span class="st">"X1"</span>, <span class="at">ylab=</span><span class="st">"X2"</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter2_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 
 <section id="estimators-and-their-properties" class="title-slide slide level1 center">
 <h1>Estimators and Their Properties</h1>
@@ -539,13 +777,19 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Discuss point estimators: Mean, Variance, etc.</li>
 <li>Review bias, consistency, and efficiency</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb9-2"><a></a><span class="in"># Example of calculating mean and variance from samples</span></span>
-<span id="cb9-3"><a></a><span class="in">set.seed(123)</span></span>
-<span id="cb9-4"><a></a><span class="in">sample_data &lt;- rnorm(100, mean = 5, sd = 2)</span></span>
-<span id="cb9-5"><a></a><span class="in">mean(sample_data)</span></span>
-<span id="cb9-6"><a></a><span class="in">var(sample_data)</span></span>
-<span id="cb9-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="co"># Example of calculating mean and variance from samples</span></span>
+<span id="cb14-2"><a></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb14-3"><a></a>sample_data <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">5</span>, <span class="at">sd =</span> <span class="dv">2</span>)</span>
+<span id="cb14-4"><a></a><span class="fu">mean</span>(sample_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.180812</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">var</span>(sample_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.332931</code></pre>
+</div>
+</div>
 </section>
 
 <section id="conclusion" class="title-slide slide level1 center">
@@ -774,6 +1018,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

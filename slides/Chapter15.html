@@ -427,47 +427,52 @@ Dr.&nbsp;Mehdi Maadooliat
 <li>Overview of benchmarking in R</li>
 <li>Example: Benchmarking methods to generate a sequence</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="in">s1 &lt;- 1:10</span></span>
-<span id="cb1-3"><a></a><span class="in">s2 &lt;- seq(1, 10, 1)</span></span>
-<span id="cb1-4"><a></a><span class="in">s3 &lt;- seq.int(1, 10, 1)</span></span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a><span class="in"># Benchmarking</span></span>
-<span id="cb1-7"><a></a><span class="in">library(microbenchmark)</span></span>
-<span id="cb1-8"><a></a><span class="in">library(ggplot2)</span></span>
-<span id="cb1-9"><a></a></span>
-<span id="cb1-10"><a></a><span class="in">n &lt;- 1000</span></span>
-<span id="cb1-11"><a></a><span class="in">mb &lt;- microbenchmark(</span></span>
-<span id="cb1-12"><a></a><span class="in">  seq(1, n, 1),</span></span>
-<span id="cb1-13"><a></a><span class="in">  1:n,</span></span>
-<span id="cb1-14"><a></a><span class="in">  times = 100</span></span>
-<span id="cb1-15"><a></a><span class="in">)</span></span>
-<span id="cb1-16"><a></a><span class="in">mb</span></span>
-<span id="cb1-17"><a></a><span class="in">autoplot(mb)</span></span>
-<span id="cb1-18"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>s1 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb1-2"><a></a>s2 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb1-3"><a></a>s3 <span class="ot">&lt;-</span> <span class="fu">seq.int</span>(<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="co"># Benchmarking</span></span>
+<span id="cb1-6"><a></a><span class="fu">library</span>(microbenchmark)</span>
+<span id="cb1-7"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-8"><a></a></span>
+<span id="cb1-9"><a></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb1-10"><a></a>mb <span class="ot">&lt;-</span> <span class="fu">microbenchmark</span>(</span>
+<span id="cb1-11"><a></a>  <span class="fu">seq</span>(<span class="dv">1</span>, n, <span class="dv">1</span>),</span>
+<span id="cb1-12"><a></a>  <span class="dv">1</span><span class="sc">:</span>n,</span>
+<span id="cb1-13"><a></a>  <span class="at">times =</span> <span class="dv">100</span></span>
+<span id="cb1-14"><a></a>)</span>
+<span id="cb1-15"><a></a>mb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Unit: nanoseconds
+         expr   min      lq     mean  median      uq   max neval
+ seq(1, n, 1) 17232 17873.5 19563.26 18755.0 19205.5 65001   100
+          1:n    90   120.0   206.14   195.5   220.0  2465   100</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">autoplot</span>(mb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="Chapter15_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="profiling-code-for-performance" class="slide level2">
 <h2>Profiling Code for Performance</h2>
 <ul>
 <li>Introduction to profiling in R</li>
 <li>Example: Profiling a function using <code>profvis</code></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="in"># Install profvis for profiling</span></span>
-<span id="cb2-3"><a></a><span class="in">library(profvis)</span></span>
-<span id="cb2-4"><a></a></span>
-<span id="cb2-5"><a></a><span class="in"># Example: Profile a sorting function</span></span>
-<span id="cb2-6"><a></a><span class="in">profvis({</span></span>
-<span id="cb2-7"><a></a><span class="in">  x &lt;- rnorm(1e4)</span></span>
-<span id="cb2-8"><a></a><span class="in">  y &lt;- sort(x)</span></span>
-<span id="cb2-9"><a></a><span class="in">})</span></span>
-<span id="cb2-10"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Install profvis for profiling</span></span>
+<span id="cb4-2"><a></a><span class="fu">library</span>(profvis)</span>
+<span id="cb4-3"><a></a></span>
+<span id="cb4-4"><a></a><span class="co"># Example: Profile a sorting function</span></span>
+<span id="cb4-5"><a></a><span class="fu">profvis</span>({</span>
+<span id="cb4-6"><a></a>  x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="fl">1e4</span>)</span>
+<span id="cb4-7"><a></a>  y <span class="ot">&lt;-</span> <span class="fu">sort</span>(x)</span>
+<span id="cb4-8"><a></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="visualizing-profiling-results" class="slide level2">
 <h2>Visualizing Profiling Results</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="in"># profvis visual interface will show the profiling output</span></span>
-<span id="cb3-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># profvis visual interface will show the profiling output</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
@@ -695,6 +700,44 @@ Dr.&nbsp;Mehdi Maadooliat
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
