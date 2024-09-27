@@ -39,7 +39,7 @@ autoplot(mb)
 -   Introduction to profiling in R
 -   Example: Profiling a function using `profvis`
 
-```{r}
+``` r
 # Install profvis for profiling
 library(profvis)
 
