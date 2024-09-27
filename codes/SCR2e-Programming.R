@@ -197,44 +197,44 @@
   print_me(x)
 
 ### Example 15.20 (Lahman baseball data)
-
-  library(Lahman)
-  str(Batting)
-  # method 1
-  S <- subset(Batting, Batting$yearID == 1999,
-             select = c("playerID", "AB", "H"))
-
-  # method 2 (dplyr)
-  library(dplyr)
-  Batting %>% filter(yearID == 1999) -> b
-
-  # method 1
-  AB <- as.vector(by(S$AB, S$playerID, FUN = sum))
-  H <- as.vector(by(S$H, S$playerID, FUN = sum))
-  S <- data.frame(playerID = unique(S$playerID), 
-                  AB = AB, H = H, AVG = round(H / AB, 3),
-                  stringsAsFactors = FALSE)
-  S400 <- S[S$AB >= 400, ]
-
-  # method 2 (dplyr)
-  b %>% group_by(playerID) %>%
-    summarize(AB = sum(AB), H = sum(H)) -> S
-  S %>% mutate(AVG = round(H / AB, 3)) -> S
-  S %>% filter(AB >= 400) -> S400
-
-  # method 1
-  o <- order(S400$AVG, decreasing = TRUE)
-  S400 <- S400[o, ]
-  top <- S400[1:10, ]
-
-  # method 2 (dplyr)
-  S400 %>% arrange(desc(AVG)) -> S400
-  slice(S400, 1:10) -> top
-  top
-
-  Master %>% select(playerID, nameFirst, nameLast) -> m
-  top %>% inner_join(m) %>%
-    select(nameFirst, nameLast, AVG)
+# 
+#   library(Lahman)
+#   str(Batting)
+#   # method 1
+#   S <- subset(Batting, Batting$yearID == 1999,
+#              select = c("playerID", "AB", "H"))
+# 
+#   # method 2 (dplyr)
+#   library(dplyr)
+#   Batting %>% filter(yearID == 1999) -> b
+# 
+#   # method 1
+#   AB <- as.vector(by(S$AB, S$playerID, FUN = sum))
+#   H <- as.vector(by(S$H, S$playerID, FUN = sum))
+#   S <- data.frame(playerID = unique(S$playerID), 
+#                   AB = AB, H = H, AVG = round(H / AB, 3),
+#                   stringsAsFactors = FALSE)
+#   S400 <- S[S$AB >= 400, ]
+# 
+#   # method 2 (dplyr)
+#   b %>% group_by(playerID) %>%
+#     summarize(AB = sum(AB), H = sum(H)) -> S
+#   S %>% mutate(AVG = round(H / AB, 3)) -> S
+#   S %>% filter(AB >= 400) -> S400
+# 
+#   # method 1
+#   o <- order(S400$AVG, decreasing = TRUE)
+#   S400 <- S400[o, ]
+#   top <- S400[1:10, ]
+# 
+#   # method 2 (dplyr)
+#   S400 %>% arrange(desc(AVG)) -> S400
+#   slice(S400, 1:10) -> top
+#   top
+# 
+#   Master %>% select(playerID, nameFirst, nameLast) -> m
+#   top %>% inner_join(m) %>%
+#     select(nameFirst, nameLast, AVG)
 
 ### Example 15.21 (Comparison with microbenchmark)
 
