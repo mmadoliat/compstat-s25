@@ -1,3 +1,6 @@
+# if (!require("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+# BiocManager::install("SNPRelate")
+
 library("SNPRelate")
 
 genofile <- snpgdsOpen(snpgdsExampleFileName())
