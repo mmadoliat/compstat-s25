@@ -81,7 +81,7 @@ website:
             text: Cheatsheets
 
   page-footer:
-    right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
+    right: "This page is built with [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2025, Mehdi Maadooliat"
     background: "#FFCC00" # Arylide Yellow
     
