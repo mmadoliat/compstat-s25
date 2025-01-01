@@ -9,7 +9,7 @@ format:
 
 **Course Title:** MATH 4750/MSSC 5750: Computational Statistics\
 **Meeting Time:** TuTh 2:00pm - 3:15pm\
-**Location:** Cudahy Hall 145 (Microsoft Teams)
+**Location:** David Straz Nursing 402 (Microsoft Teams)
 
 ## Instructor Details
 

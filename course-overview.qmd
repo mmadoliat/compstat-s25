@@ -8,9 +8,9 @@ You can find the course syllabus [here](/course-syllabus.html) (course flyer [he
 
 ## Class meetings
 
-| Meeting      | Location | Time                       |
-|--------------|----------|----------------------------|
-| Lecture      | CU 351   | Tue & Thur 2:00 - 3:15 pm  |
-| Office Hours | CU 351   | Tue & Thur 12:25 - 1:55 pm |
+| Meeting      | Location                | Time                       |
+|--------------|-------------------------|----------------------------|
+| Lecture      | David Straz Nursing 402 | Tue & Thur 2:00 - 3:15 pm  |
+| Office Hours | CU 351                  | Tue & Thur 12:25 - 1:55 pm |
 
 ![](images/flyer.png)
