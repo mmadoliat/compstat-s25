@@ -3,8 +3,8 @@ project:
 
 website:
   page-navigation: true
-  title: "MATH 4750"
-  description: "Homepage for MATH 4750: Computational Statistics at Marquette University, Spring 2025."
+  title: "MATH 4720 (MSSC 5720)"
+  description: "Homepage for MATH 4750 (MSSC 5720): Computational Statistics at Marquette University, Spring 2025."
   site-url: "https://tinyurl.com/Comp-Stat"
 
   repo-url: https://github.com/mmadoliat/compstat-s25/
