@@ -9,7 +9,7 @@ format:
 
 **Course Title:** MATH 4750/MSSC 5750: Computational Statistics\
 **Meeting Time:** TuTh 2:00pm - 3:15pm\
-**Location:** David Straz Nursing 402 (Microsoft Teams)
+**Location:** David Straz Nursing 402 ([Microsoft Teams](https://teams.microsoft.com/l/meetup-join/19%3awd6Q_CvflXuF_yLLWv5LC6iaIgbXcr62t2pVZE4Q1Jw1%40thread.tacv2/1736282508938?context=%7b%22Tid%22%3a%22abe32f68-c72d-420d-b5bd-750c63a268e4%22%2c%22Oid%22%3a%22b0161be8-acaa-4999-ba8b-8ed780d0b7bf%22%7d))
 
 ## Instructor Details
 
@@ -25,7 +25,19 @@ This course covers traditional core material of computational statistics with an
 
 ## Learning Outcomes
 
-By the end of the course, students will: - Understand core programming concepts, including data structures, functions, iteration, debugging, logical design, and abstraction. - Write maintainable code, debug, and test code for correctness. - Set up and run stochastic simulations in parallel. - Fit basic statistical models and assess the results. - Work with and filter large datasets. - Comment and organize code effectively.
+By the end of the course, students will:
+
+-   Understand core programming concepts, including data structures, functions, iteration, debugging, logical design, and abstraction.
+
+-   Write maintainable code, debug, and test code for correctness.
+
+-   Set up and run stochastic simulations in parallel.
+
+-   Fit basic statistical models and assess the results.
+
+-   Work with and filter large datasets.
+
+-   Comment and organize code effectively.
 
 ## Prerequisites
 
@@ -63,7 +75,7 @@ By the end of the course, students will: - Understand core programming concepts,
 
 **Notes:**
 
--   For students in MSSC 5750, there will be extra questions in Homework.
+-   For students in MSSC 5750, there will be extra questions in Homework, and higher expectation for Project.
 
 -   No late homework will be accepted, and no make-up work will be allowed unless in the case of an emergency. Submit incomplete work if necessary, but ensure scanned PDFs are legible before submission.
 
@@ -85,9 +97,7 @@ Please abide by the following as you work on assignments in this course:
 
 -   **Collaboration:** Only work that is clearly assigned as team work should be completed collaboratively.
 
-    -   The homework assignments must also be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what's the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to lab questions (including any code) with anyone other than myself and the teaching assistants.
-
-    -   The reading quizzes must be completed individually with absolutely no communication with classmates.
+    -   The homework assignments must also be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what's the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to questions (including any code) with anyone other than myself.
 
     -   For the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project across teams.
 
