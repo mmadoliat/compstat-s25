@@ -9,7 +9,8 @@ format:
 
 **Course Title:** MATH 4750/MSSC 5750: Computational Statistics\
 **Meeting Time:** TuTh 2:00pm - 3:15pm\
-**Location:** David Straz Nursing 402 ([Microsoft Teams](https://teams.microsoft.com/l/meetup-join/19%3awd6Q_CvflXuF_yLLWv5LC6iaIgbXcr62t2pVZE4Q1Jw1%40thread.tacv2/1736282508938?context=%7b%22Tid%22%3a%22abe32f68-c72d-420d-b5bd-750c63a268e4%22%2c%22Oid%22%3a%22b0161be8-acaa-4999-ba8b-8ed780d0b7bf%22%7d))
+**Location:** David Straz Nursing 402 ([Microsoft Teams](https://teams.microsoft.com/l/meetup-join/19%3awd6Q_CvflXuF_yLLWv5LC6iaIgbXcr62t2pVZE4Q1Jw1%40thread.tacv2/1736282508938?context=%7b%22Tid%22%3a%22abe32f68-c72d-420d-b5bd-750c63a268e4%22%2c%22Oid%22%3a%22b0161be8-acaa-4999-ba8b-8ed780d0b7bf%22%7d))\
+**Website:** [http://tinyurl.com/Comp-Stat](http://tinyurl.com/Comp-Stat)
 
 ## Instructor Details
 
@@ -152,6 +153,7 @@ If you are unsure if the use of a particular resource complies with the academic
 -   **Tuesday, January 21:** Drop/add ends
 -   **Saturday - Sunday, March 8 - 16**: Spring Break
 -   **Friday, April 11:** Last day to withdraw with W
+-   **Thursday - Monday, April 17 - 21**: Easter Break
 -   **Saturday, May 3**: Classes end
 -   **Monday, May 5, 10:30 am - 12:30 pm**: Presentations
 
