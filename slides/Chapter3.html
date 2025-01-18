@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.9">
 
   <meta name="author" content="Dr.&nbsp;Mehdi Maadooliat">
-  <title>MATH 4720 (MSSC 5720) – Computational Statistics</title>
+  <title>MATH 4750 (MSSC 5750) – Computational Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -387,10 +387,10 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="MATH 4720 (MSSC 5720) - Computational Statistics">
+<meta property="og:title" content="MATH 4750 (MSSC 5750) - Computational Statistics">
 <meta property="og:description" content="Chapter 3 - Methods for Generating Random Variables">
-<meta property="og:site_name" content="MATH 4720 (MSSC 5720)">
-<meta name="twitter:title" content="MATH 4720 (MSSC 5720) - Computational Statistics">
+<meta property="og:site_name" content="MATH 4750 (MSSC 5750)">
+<meta name="twitter:title" content="MATH 4750 (MSSC 5750) - Computational Statistics">
 <meta name="twitter:description" content="Chapter 3 - Methods for Generating Random Variables">
 <meta name="twitter:image" content="https://tinyurl.com/Comp-Stat/slides/images/twitter-card.png">
 <meta name="twitter:creator" content="@mmadoliat">
@@ -431,16 +431,16 @@ Dr.&nbsp;Mehdi Maadooliat
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Sampling examples</span></span>
 <span id="cb1-2"><a></a><span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)  <span class="co"># Tossing coins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 0 1 1 1 1 1 0 0 0 1</code></pre>
+<pre><code> [1] 1 0 0 0 0 1 1 1 0 1</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size =</span> <span class="dv">6</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)  <span class="co"># Choosing lottery numbers</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 67  1 63 40 51 31</code></pre>
+<pre><code>[1] 37 46 56  5 85 79</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">sample</span>(letters)  <span class="co"># Permutation of letters</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "q" "s" "c" "l" "m" "y" "d" "t" "x" "o" "w" "z" "p" "r" "g" "h" "v" "j" "e"
-[20] "n" "u" "k" "f" "b" "a" "i"</code></pre>
+<pre><code> [1] "j" "e" "z" "q" "b" "r" "l" "v" "n" "p" "i" "s" "o" "w" "t" "x" "f" "a" "h"
+[20] "u" "c" "g" "y" "m" "d" "k"</code></pre>
 </div>
 </div>
 </section>
@@ -457,7 +457,7 @@ Dr.&nbsp;Mehdi Maadooliat
 <div class="cell-output cell-output-stdout">
 <pre><code>x
  1  2  3 
-20 32 48 </code></pre>
+18 33 49 </code></pre>
 </div>
 </div>
 </section></section>
