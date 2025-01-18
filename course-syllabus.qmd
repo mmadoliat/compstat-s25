@@ -5,7 +5,7 @@ format:
   pdf: default
 ---
 
-## Course Information
+## Course Information 
 
 **Course Title:** MATH 4750/MSSC 5750: Computational Statistics\
 **Meeting Time:** TuTh 2:00pm - 3:15pm\
