@@ -1,5 +1,5 @@
 ---
-title: "About Comp-Stat"
+title: "About Comp-Stat" 
 ---
 
 About this site
