@@ -4,6 +4,10 @@ title: "Useful links"
 
 +----------------------------+---------------------------------------------------------------------------------------+
 | Homework                   | 🔗 on [D2L](http://d2l.mu.edu)                                                        |
+|                            |                                                                                       |
+| Stat Calculator            | 🔗 [StatCalc(JAMM)](http://dna.mscsnet.mu.edu:3838/mlab/JAMM/)                        |
+|                            |                                                                                       |
+| Distribution Calculator    | 🔗 [DistCalc](http://dna.mscsnet.mu.edu:3838/mlab/DistCalc/)                          |
 +----------------------------+---------------------------------------------------------------------------------------+
 | Texbooks                   | 🔗 [Computational Statistics in Python](https://people.duke.edu/~ccc14/sta-663-2020/) |
 |                            |                                                                                       |
