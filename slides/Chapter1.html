@@ -455,23 +455,26 @@ Dr.&nbsp;Mehdi Maadooliat
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">rnorm</span>(<span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] -0.02770698 -0.64872155  0.56967648  0.73498534 -1.43923321 -1.21299945
-  [7] -0.83902099  0.12402905 -0.86605629 -0.49444872  2.04707431  1.03719865
- [13] -0.68499711 -0.20153943 -1.65689202 -0.51718441 -0.96080353  1.42147417
- [19] -1.25586660  1.83708797  0.51047953 -3.17106814 -0.84619002 -0.63852906
- [25]  0.29783613 -0.10908685 -0.50522884 -0.81022238 -1.22881914  0.05952064
- [31]  0.28839587  1.18817111 -0.12811390  0.19672943 -2.04427537  0.66244925
- [37]  0.58218635  0.02581732  1.87227947 -0.06634629 -0.15509087  0.22994472
- [43] -0.35851164 -2.16832785  0.47277337 -0.79487701 -1.13689364 -0.17854678
- [49] -1.16654695 -0.45937616  0.10876653 -0.83472252  0.15008814  0.04310345
- [55] -0.85408535 -0.35314963  0.26258739  0.19201344  0.28722089  1.26486145
- [61]  1.00274708 -0.74893860  0.10643076 -0.55235845 -0.77364951 -0.64704824
- [67]  1.11637041 -0.38470441  0.22183608 -0.62210423  1.92989607  1.09810260
- [73]  0.46454941  1.95683242 -0.40984417  1.53304707 -1.44342543  0.24359905
- [79]  1.13484718  0.71279726  0.97007884 -1.70517647 -0.68347206  0.74600596
- [85]  0.61221786 -1.02894844 -0.11297160  0.00547893 -1.68903699 -0.38601960
- [91] -0.10720100 -0.56639122 -0.56118773  0.23116680  1.93329121 -1.49821041
- [97]  0.87297944 -0.28566178  0.54627874 -0.29620977</code></pre>
+<pre><code>  [1] -0.159916989 -0.625099754 -0.193885785  0.879136320  0.429882908
+  [6]  0.069022670  1.977939059 -1.049403234 -0.229626858  0.531788047
+ [11]  0.681123898  1.649177140  1.520238826 -0.121760285 -1.346144211
+ [16]  0.803403908  0.932045684 -0.625998353 -0.895895872 -2.056560594
+ [21]  0.197739231 -1.267200315 -0.220677468 -0.369117885  0.617481362
+ [26] -0.881481224  0.902169134  1.647017920  1.898298802 -1.035114381
+ [31]  0.065009046 -0.938831851  0.746484097  0.097649985  0.636958710
+ [36] -1.029394963 -0.272880971 -1.450810077  0.891761926  0.223546856
+ [41]  0.394442292 -1.620995773  0.047954493 -0.106528578 -1.245800375
+ [46]  0.498940115 -0.763847659 -0.711291155  0.555511578  0.392521896
+ [51] -0.006808461 -0.402876048 -1.402712467  0.244760797 -1.986035561
+ [56]  1.295287440 -2.219446258 -0.784604874 -0.932907193  0.047150906
+ [61] -1.096327945 -0.519826576  0.151959918 -0.864766326 -0.116321706
+ [66]  0.724801748  0.978230186  0.129051675  0.025335073  0.618237252
+ [71] -0.813892903 -0.379428660  1.926163954 -0.734571757 -0.818963942
+ [76] -1.389621454 -1.043860065 -0.266093630 -0.195357443  1.775696411
+ [81] -0.415832877 -0.251469443 -0.411181930  1.307913163 -0.514381442
+ [86] -0.454395259  1.561337474  0.174268077  1.340593540 -1.464227267
+ [91]  0.320190374  1.030138080  0.093963561  2.406637585 -1.143786883
+ [96] -0.904905409  0.648306554 -0.034432787  0.867543403  0.903446771</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">t.test</span>(<span class="fu">rnorm</span>(<span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -479,13 +482,13 @@ Dr.&nbsp;Mehdi Maadooliat
     Welch Two Sample t-test
 
 data:  rnorm(10) and rnorm(10)
-t = 0.62478, df = 13.684, p-value = 0.5424
+t = 0.56368, df = 17.91, p-value = 0.58
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -0.8268404  1.5044969
+ -0.6596844  1.1432391
 sample estimates:
   mean of x   mean of y 
- 0.31517899 -0.02364926 </code></pre>
+ 0.19865092 -0.04312646 </code></pre>
 </div>
 </div>
 </section>
@@ -526,7 +529,7 @@ sample estimates:
 <span id="cb7-4"><a></a>}</span>
 <span id="cb7-5"><a></a><span class="fu">sumdice</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 11</code></pre>
+<pre><code>[1] 9</code></pre>
 </div>
 </div>
 </section></section>
@@ -643,7 +646,7 @@ table { font-size: 0.75em; }
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -675,7 +678,7 @@ table { font-size: 0.75em; }
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+<p><img data-src="Chapter1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
 </figure>
 </div>
 </div>
