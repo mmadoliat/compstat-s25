@@ -1,16 +1,16 @@
 ---
-title: "Syllabus - Computational Statistics"
+title: "Syllabus - Computational Statistics - Spring 2025"
 format: 
   html: default
   pdf: default
 ---
 
-## Course Information 
+## Course Information
 
 **Course Title:** MATH 4750/MSSC 5750: Computational Statistics\
 **Meeting Time:** TuTh 2:00pm - 3:15pm\
 **Location:** David Straz Nursing 402 ([Microsoft Teams](https://teams.microsoft.com/l/meetup-join/19%3awd6Q_CvflXuF_yLLWv5LC6iaIgbXcr62t2pVZE4Q1Jw1%40thread.tacv2/1736282508938?context=%7b%22Tid%22%3a%22abe32f68-c72d-420d-b5bd-750c63a268e4%22%2c%22Oid%22%3a%22b0161be8-acaa-4999-ba8b-8ed780d0b7bf%22%7d))\
-**Website:** [http://tinyurl.com/Comp-Stat](http://tinyurl.com/Comp-Stat)
+**Website:** <http://tinyurl.com/Comp-Stat>
 
 ## Instructor Details
 
