@@ -2,4 +2,4 @@
 title: "About Comp-Stat" 
 ---
 
-About this site.
+About this site!
